@@ -5,19 +5,19 @@
     font-family: sans-serif;
 }
 
-#carasol-container{
+#carousel-container{
   transition: all 1s ease-in-out;
 }
 
-#carasol-container>img{
+#carousel-container>img{
     width: 100%;
-    transition: 1s;
+    
 }
-#carasol-container>div{
+#carousel-container>div{
     display: flex;
     justify-content: center;
 }
-#carasol-container>div>div{
+#carousel-container>div>div{
     width:12px;
     height: 12px;
     background-color: grey;
@@ -25,18 +25,15 @@
      margin:8px;
 }
 
-/* .transition {
-    transition: all 1s ease-in-out;
-    transform: translateX(-100%);
-} */
 
-/* below-carasol */
 
-#below-carasol{
+/* below-carousel */
+
+#below-carousel{
     display: flex;
     justify-content: center;
 }
-#below-carasol>div{
+#below-carousel>div{
     width: 270px;
     display: flex;
     padding: 0.5rem 1rem;
@@ -45,14 +42,14 @@
     margin: 10px 20px;
     border-radius:5px;
 }
-#below-carasol>div>div>p{
+#below-carousel>div>div>p{
     font-size:13px
 }
-#below-carasol>div>div>p:last-child{
+#below-carousel>div>div>p:last-child{
     color: #7086BA;
 }
 
-#below-carasol>div>img{
+#below-carousel>div>img{
     margin-right: 10px;
 }
 /* --------shopByCatagory------------------- */
@@ -76,4 +73,46 @@ background-color: #fff;
 padding: 0 24px;
 font-size:26px;
 color: #1D1D1D;
+}
+
+/* Bella Cash Button */
+
+#bellaCash>button{
+    background-color: #FFC400;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    cursor: pointer;
+    height: 60px;
+    padding: 15px 20px;
+     /* position: absolute; */
+     display:flex;
+     align-items: center;
+     font-size:14px;
+     font-weight:100;
+     position:fixed;
+     margin: 10px;
+     bottom:0;
+     letter-spacing:1px
+}
+
+#bellaCash>button>img{
+    margin-right: 10px;
+}
+
+/* WhatsApp button */
+
+
+#whatsAppButton>button{
+    width:60px;
+    height:60px;
+    position:fixed;
+    bottom:0;
+    right:0;
+    margin:30px;
+    outline: none;
+    border-radius:50%;
+    border:5px solid #fff;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }

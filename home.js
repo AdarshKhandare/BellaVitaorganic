@@ -5,7 +5,7 @@ let carasoulImages = [
 ];
 
 
-let carasolContainerImg = document.querySelector("#carasol-container>img");
+let carasolContainerImg = document.querySelector("#carousel-container>img");
 
 let i = 1;
 carasolContainerImg.src = carasoulImages[0];
@@ -25,7 +25,6 @@ setInterval(() => {
     let dots = document.getElementById(i);
     dots.style.backgroundColor = "black"
     carasolContainerImg.src = carasoulImages[i];
-
         i++;
 }, 6000);
 

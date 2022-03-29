@@ -1,0 +1,33 @@
+* body {
+    font-family: 'Montserrat', sans-serif;
+}
+#drymain{
+    background-color: rgb(242,242,242);
+    width: 100%;
+    height: auto;
+}
+#more {display: none;}
+#p1{
+  padding-top: 30px;
+  margin-left: 4%;
+  color: black;
+  font-size: 25px;
+}
+#p2 {
+    margin-left: 4%;
+    color: gray;
+    font-size: 14px;
+    margin-right: 10px;
+}
+#myBtn {
+    margin-left: 4%;
+    margin-top: 40px;
+    background-color: white;
+    border: white;
+    font-size: 20px;
+    border-radius: 5px;
+    font-family: 'Red Hat Mono', monospace;
+    padding: 10px;
+    width: 120px;
+    margin-bottom: 50px;
+}

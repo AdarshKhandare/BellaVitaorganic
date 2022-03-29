@@ -30,6 +30,7 @@ body {
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
+  
 }
 
 .active {
@@ -51,16 +52,23 @@ body {
 @media only screen and (max-width: 300px) {
   .text {font-size: 11px}
 }
-.offer_tab{
+
+.offer{
+    margin-top: 30px;
+    display: flex;
     margin:auto;
     width:400px;
-   height:40px;
-
+   height:80px;
    background-color: aqua;
 }
 .btn{
- width:150px;
- height:20px;
+ width:400px;
+ height:30px;
+ background-color:#ffccd0;
+ border-radius: 5px;
+}
+.btn:hover{
+    background-color: #ff9aa2;
 }
 </style>
 </head>
@@ -89,13 +97,13 @@ body {
 </div>
 <br>
 
-<div style="text-align:center">
+<div style="text-align:center;">
   <span class="dot"></span> 
   <span class="dot"></span> 
   <span class="dot"></span> 
 </div>
 
-<div class="offer_tab">
+<div class="offer">
     <button class="btn" onclick="opentab()">All Offers</button>
     <button class="btn" onclick="opentab1()">Limited Period Offers</button>
 </div>

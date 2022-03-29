@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600;1,700;1,800&display=swap');
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Montserrat', sans-serif;
+}
+#bestseller{
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+    font-size: x-large;
+    padding: 30px 0;
+    background-image: url('https://cdn.shopify.com/s/files/1/0054/6665/2718/files/1_1_ecef2245-1d82-431e-b32d-5d704e1e620d.jpg?v=1606463237');
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+#bestseller>p{
+    padding-left: 32px;
+}
+#bestseller>div{
+    display: flex;
+    justify-content: center;
+margin-top: 15px;
+}
+
+#bestseller>div img{
+    width: 95%;
+}
+.navigator{
+    margin-left: 35px;
+    font-weight: 600;
+    font-size: small;
+}
+.navigator a{
+    text-decoration: none;
+    color: inherit;
+    font-weight: 500;
+}
+#filter{
+    display: flex;
+    justify-content: right;
+    height: fit-content;
+    padding-right: 30px;
+ /* border: 1px solid red; */
+}
+ #filter>select{
+    height: 35px;
+    border-radius: 0%;
+    outline: none;
+} 

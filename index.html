@@ -1,44 +1,109 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/styles/offer.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #ffccd0;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #ff9aa2;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+.offer_tab{
+    margin:auto;
+    width:400px;
+   height:40px;
+
+   background-color: aqua;
+}
+.btn{
+ width:150px;
+ height:20px;
+}
+</style>
 </head>
 <body>
-    <div>navbar</div>
-    <div class="slideshow-container">
+<div>navbar</div>
 
-        <div class="mySlides fade"><a href="">
-            <img  id="slimg" src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/Flexi-Box-Web-Banner-A-com_9f029a49-afb3-444a-9f3b-8819770f969c.jpg?v=1635050503" >
-        </a>
-         
-        </div>
-        
-        <div class="mySlides fade"><a href="">
-            <img id="slimg" src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/4-For-3-latest-Web-Banner-B_14b61ee5-d34b-44c5-88a8-c2f393cd73b4.png?v=1630932287" >
-        </a>
-        </div>
-        
-        <div class="mySlides fade">
-            <a href="">
-                <img id="slimg"src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/Latest-Build-A-box-Banner-A.jpg?v=1629210477" >
-            </a>
-          
-        </div>
-        
-     </div>
-        <br>
-        
-        <div id="dot">
-          <span class="dot"></span> 
-          <span class="dot"></span> 
-          <span class="dot"></span> 
-        </div>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+
+  <img src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/Flexi-Box-Web-Banner-A-com_9f029a49-afb3-444a-9f3b-8819770f969c.jpg?v=1635050503" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+ 
+  <img src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/4-For-3-latest-Web-Banner-B_14b61ee5-d34b-44c5-88a8-c2f393cd73b4.png?v=1630932287" style="width:100%">
+  
+</div>
+
+<div class="mySlides fade">
+
+  <img src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/Latest-Build-A-box-Banner-A.jpg?v=1629210477" style="width:100%">
+
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<div class="offer_tab">
+    <button class="btn" onclick="opentab()">All Offers</button>
+    <button class="btn" onclick="opentab1()">Limited Period Offers</button>
+</div>
+
+
+
 </body>
-</html>
+</html> 
 <script>
     let slideIndex = 0;
     showSlides();

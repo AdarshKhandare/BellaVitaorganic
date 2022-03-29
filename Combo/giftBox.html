@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIFT BOX</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="https://kit.fontawesome.com/d103d8b709.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/sidebar/sidebar.css">
+</head>
+
+<body>
+    <div id="gifttop">
+        <h2>GIFT BOX</h2>
+        <p>Gift giving is one of the oldest traditions in the history of mankind and we as Indians take immense pleasure in being
+        one of best at it. The art of gift giving relies on how well we understand needs and occasions and indulge in something
+        that enhances lives.<span id="dots">...</span><span id="more"> With changing times, needs and desires have been switching more towards what effects people the
+        most. Skincare is one such modern idea of gifts that people switch. It indicates we know people deeply and understand
+        their concerns and want to show our concerns in their wellbeing. The best way to show concern is to make sure what we
+        gift is safe, clean and harmless. Bella Vita Organic fits the description just right. Its natural and ayurvedic range of
+        premium skincare makes the brand gift-worthy and effective. The unique and luxurious packaging combined with
+        concern-relevant products will leave your loved ones in awe. With people indulging more in natural and organic skincare,
+        Bella Vita Organic’s specially curated gift boxes come with hand-picked products for every skin and hair care needs.
+        Each gift box is designed with concern-relevant products combined together to form a healthy routine one can follow and
+        benefit from. Bella Vita Organic takes pride in being a unisex brand and has gift boxes for men and women both. Despite
+        its premium range, the brand remains affordable and pocket-friendly for anyone who wants to show love and care without
+        going over-budget. We all know love comes from heart and Bella Vita Organic helps you show that with ultra care.</span></p>
+        <button onclick="myFunction()" id="myBtn">READ MORE</button>
+    </div>
+
+    <p class="navigator"><a href="#">Home</a> <i class="fas fa-angle-right"></i> Gift Box
+        Products</p>
+
+    <div id="filter">
+        <h3>SORT BY</h3>
+        <select>
+            <option value="">Featured</option>
+            <option value="l2h">Price,low to high</option>
+            <option value="h2l">Price,high to low</option>
+            <option value="">Alphabetically,A-Z</option>
+            <option value="">Alphabetically,Z-A</option>
+            <option value="">Date old to new</option>
+            <option value="">Date new to old</option>
+            <option value="">Best Selling</option>
+        </select>
+    </div>
+    <div id="container">
+        <!-- <div id="sider"></div> -->
+
+        <div id="data">
+        </div>
+
+
+    </div>
+
+
+    <!-- ------------------------------------------------------------------------------- -->
+    <!-- Bella Cash left yellow button -->
+    <section id="bellaCash">
+        <button><img src="https://cdn.sweettooth.io/v1/images/launcher_icons/crown.svg?color=%23000000"
+                alt="">BellaCash</button>
+    </section>
+
+    <!-- Whats app button -->
+    <section id="whatsAppButton">
+        <button><img
+                src="https://cdn.shopify.com/s/files/1/0054/6665/2718/t/277/assets/whatsapp.svg?v=10753259276865380946"
+                alt=""></button>
+    </section>
+
+    <!-- -------------------------------------------------------------------------------------- -->
+</body>
+
+</html>
+<script type="text/javascript" src="/sidebar/sidebar.js"></script>
+<script type="module">
+
+    import sidebar from "/components/sidebarC.js"
+    console.log(sidebar)
+    document.querySelector("#sider").innerHTML = sidebar()
+</script>
+<script src="scripts/giftBox.js"></script>

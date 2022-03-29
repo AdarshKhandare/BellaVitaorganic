@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combos</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="https://kit.fontawesome.com/d103d8b709.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/sidebar/sidebar.css">
+</head>
+<body>
+    <div id="top">
+        <h2>COMBOS</h2>
+        <p>Most Popular Combo's On Up To 50% Discount for a brighter, refreshing and youthful you. We have prepared the bestselling
+        bellavita organic products to make combos that are cost-effective and are delivered faster as well. The best combos that
+        takes care of multiple concerns and skincare needs.</p>
+    </div>
+
+    <p class="navigator"><a href="#">Home</a> <i class="fas fa-angle-right"></i> Combos</p>
+    
+    <div id="filter">
+        <h3>SORT BY</h3>
+        <select>
+                <option value="">Featured</option>
+                <option value="l2h">Price,low to high</option>
+                <option value="h2l">Price,high to low</option>
+                <option value="">Alphabetically,A-Z</option>
+                <option value="">Alphabetically,Z-A</option>
+                <option value="">Date old to new</option>
+                <option value="">Date new to old</option>
+                <option value="">Best Selling</option>
+        </select>
+    </div>
+    <div id="container">
+        <!-- <div id="sider"></div> -->
+            
+        <div id="data">
+    </div>
+
+
+    </div>
+
+
+    <!-- ------------------------------------------------------------------------------- -->
+    <!-- Bella Cash left yellow button -->
+    <section id="bellaCash">
+            <button><img src="https://cdn.sweettooth.io/v1/images/launcher_icons/crown.svg?color=%23000000" alt="">BellaCash</button>
+    </section>
+        
+    <!-- Whats app button -->
+    <section id="whatsAppButton">
+            <button><img src="https://cdn.shopify.com/s/files/1/0054/6665/2718/t/277/assets/whatsapp.svg?v=10753259276865380946"alt=""></button>
+    </section>
+        
+        <!-- -------------------------------------------------------------------------------------- -->
+</body>
+</html>
+<script type="text/javascript" src="/sidebar/sidebar.js"></script>
+<script type="module">
+
+import sidebar from "/components/sidebarC.js"
+console.log(sidebar)
+document.querySelector("#sider").innerHTML = sidebar()
+</script>
+<script src="scripts/combo.js"></script>

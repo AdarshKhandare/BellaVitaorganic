@@ -1,0 +1,264 @@
+body{
+    margin: 0;
+}
+
+#top{
+    width: 100%;
+    height: 100px;
+    background-color:#ededed;
+    padding:20px
+}
+#top > h2{
+    color:#232323
+}
+#top > p{
+    color: #3C3C3C;
+    margin-top: 30px
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600;1,700;1,800&display=swap');
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Montserrat', sans-serif;
+}
+.navigator{
+    margin-top: 40px;
+    margin-left: 35px;
+    font-weight: 600;
+    font-size: small;
+}
+.navigator a{
+    text-decoration: none;
+    color: inherit;
+    font-weight: 500;
+}
+#filter{
+    display: flex;
+    justify-content: right;
+    height: fit-content;
+    padding-right: 30px;
+ /* border: 1px solid red; */
+}
+ #filter>select{
+    height: 35px;
+    border-radius: 0%;
+    outline: none;
+} 
+#filter > h3{
+    margin-top: 8px;
+    margin-right: 10px;
+    color:#232323
+}
+
+/* left filter start here */
+
+#container{
+    display: flex;
+}
+
+#data{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto;
+    gap: 40px;
+    width: 70%;
+    justify-content: space-between;
+    margin-left: 300px;
+   
+}
+#divFlex{
+    margin-top:20px;
+    width: 250px;
+    height: 500px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    text-align: center;
+    border-radius: 15px;
+    position:relative;
+}
+
+
+#divFlex > img{
+    width: 250px;
+    height: 300px;
+}
+
+#divFlex > img:hover{
+    opacity: 0.4;
+}
+#divFlex > button{
+
+    width:180px;
+    height:40px;
+    color:white;
+    background-color:black;
+    font-size:16px;
+    border-radius:0px;
+    border:none
+}
+#divFlex > button:hover{
+    background-color:#52b359
+}
+
+#name{
+    margin-top:50px;
+    
+}
+
+#save{
+    font-size:10px;
+    color: green;
+}
+#divp{
+    display:flex;
+    justify-content:space-around;
+    margin: auto;
+
+}
+#divp > h3:last-child{
+    color: #e95449
+}
+#strickprice{
+    text-decoration: line-through;
+    color:#979fae
+}
+/* boxes end here */
+
+/* total  start here*/
+#total{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width:100%;
+    height:60px;
+    padding: 5px;
+    margin: 0;
+    color:#43403d;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background-color:white
+
+
+}
+
+
+/* Bella Cash Button */
+
+#bellaCash>button{
+    background-color: #FFC400;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    cursor: pointer;
+    height: 60px;
+    padding: 15px 20px;
+     /* position: absolute; */
+     display:flex;
+     align-items: center;
+     font-size:14px;
+     font-weight:100;
+     position:fixed;
+     margin: 10px;
+     bottom:60px;
+     letter-spacing:1px
+}
+
+#bellaCash>button>img{
+    margin-right: 10px;
+}
+
+/* WhatsApp button */
+
+
+#whatsAppButton>button{
+    width:60px;
+    height:60px;
+    position:fixed;
+    bottom:50px;
+    right:0;
+    margin:30px;
+    outline: none;
+    border-radius:50%;
+    border:5px solid #fff;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/* hover button start here */
+.mydivouter{
+	position:relative;
+    width: 200px;
+    height: 120px;
+    margin: 0 auto;
+}
+.mydivoverlap{
+    position: relative;
+    z-index: 1;
+}
+.mybuttonoverlap{
+	position: absolute;
+    z-index: 2;
+    display: none;
+    margin: auto;	
+    margin-left: 35px;
+    margin-top: -120px;
+}
+.mydivouter:hover .mybuttonoverlap{ 
+	display:block;
+}
+/* hover button end here */
+
+/* glow page start here */
+
+#glow{
+    height: 500px;
+    width: 100%;
+    text-align: center;
+    background-color:#ededed;
+    padding:20px
+}
+#glow > img{
+    width:95%;
+    
+}
+#glow > h2{
+    text-align: left;
+    margin-left: 40px;
+    margin-bottom: 20px;
+    color:#232323
+}
+
+
+/* gift page start here */
+
+#gifttop{
+    height: 300px;
+    width: 100%;
+    /* text-align: left; */
+    background-color:#ededed;
+    
+    
+
+}
+#gifttop > h2{
+
+    margin-bottom: 20px;
+    color:#232323;
+    padding:10px;
+    margin-left: 40px;
+}
+#gifttop > button{
+    margin-top: 20px;
+    padding:10px;
+    font-size: 14px;
+    margin-left: 50px;
+    background-color: #fff;
+    border: none;
+    color: black;
+    font-weight: 600;
+    width: 150px;
+    height: 50px;
+}
+#gifttop > p{
+    padding:10px;
+    margin-left: 40px;
+}
+#more {display: none;}

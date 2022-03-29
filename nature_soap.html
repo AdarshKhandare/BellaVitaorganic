@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        padding:0;
+        margin:0;
+    }
+    #nature{
+        width:100%;
+        height:600px;
+        background-image:url("https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS4etLjn7hCBy0lIbkjxKWRWW-7qkQpQh7To7-hlAOl8oq9Kmbm");
+        padding-top:15px;
+        margin-bottom:50px;
+    } 
+    #nat{
+        font-size:25px;
+        margin-left:50px ;
+    }
+    #simg{
+        height:80%;
+        width:93%;
+        margin-top: 40px;
+        margin: auto;
+        margin-left: 50px;
+    } 
+    #des{
+        font-size:16px;
+        margin-left: 50px;
+        text-transform: capitalize;
+      color: #999;
+    }
+    #refine{
+        display:flex;
+        justify-content: space-between;
+        width:93%;
+        height:50px;
+        margin: auto;
+        margin-top: 40px;
+    } 
+    #by{
+        display:flex;
+        height:40px;
+        width:170px;
+        gap:15px;
+        
+    } 
+    #ref{
+        height:40px;
+        width:50px;
+        margin-top: 5px; 
+    }
+     #sort{
+        display:flex;
+        height:40px;
+        width:280px;
+        gap:15px;
+        margin-top: 15px; 
+        
+    } 
+    #sor{
+        height:35px;
+        width:170px;  
+    }
+    #sort>div>p{
+        margin-top:8px;
+    }
+    #main{
+        display:flex;
+        /* justify-content: space-between; */
+        gap:20px;
+        width:93%;
+        height:800px;
+        margin: auto;
+        margin-top: 40px;
+        background-color:#999;
+    }
+    #cat{
+        width: 20%;
+      
+    }
+    #prod{
+        width: 80%;
+        display:grid;
+        grid-template-columns: repeat(3,1fr); 
+        gap:20px;
+        
+    }
+    #vita{
+        width:100%;
+        height:500px; 
+        border-radius: 10px;
+         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;;
+    }
+    #glow{
+        height: 60%;
+        width:80%;
+    }
+</style>
+<body>
+   <div>navbar</div>
+
+   <div id="nature">
+    <p id="nat">NATURAL SOAPS</p>
+  <img id="simg"src="https://cdn.shopify.com/s/files/1/0054/6665/2718/collections/Soap-Banner-web.jpg?v=1630747998">
+   </div>
+
+   <p id="des">Home > Natural Soaps</p>
+   <!-- refine and sort -->
+   <div id="refine">
+     <div id="by">
+        <div><img id="ref"src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQRHO5CgGMGYi3kwgDkEr4Vnb_KpwTMUGGiUHJsGgN5quonSHI_"></div>
+        <div><p>REFINE BY</p></div>
+     </div>
+
+     <div id="sort">
+         <div><p>SORT BY</p></div>
+          <div>
+            <select id="sor">
+                <option value="Featured">Featured</option>
+                <option >Price, low to high</option>
+                <option >Price, high to low</option>
+                <option >Alphabetically, A-Z </option>
+                <option>Alphabetically, A-Z </option>
+                <option>Date, old to new  </option>
+                <option>Date, old to new </option>
+                <option>Best Selling</option>
+            </select>
+         </div>
+     </div>
+   </div>
+ <!-- category -->
+   <div id="main">
+       <div id="cat">category</div>
+       <div id="prod">
+           <div id="vita">
+           <img id="glow" src="https://cdn.shopify.com/s/files/1/0054/6665/2718/products/C-Glow-01_1024x1024.jpg?v=1641471102">
+           <p>C-Glow Body Wash Bar Bath Soap With Vitamin C, Coconut & Shea Butter, 150...</p>
+           <p></p>
+        </div>
+           
+       </div>
+   </div>
+
+</body>
+</html>

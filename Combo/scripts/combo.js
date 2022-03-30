@@ -94,16 +94,18 @@ save:"(Save Rs. 150)"}
 localStorage.setItem("comboObj",JSON.stringify(comboObj))
 
 let comboData = JSON.parse(localStorage.getItem("comboObj")) || []
-console.log(comboData)
+
 let comboappply = document.querySelector("#data")
 
-const comboappend=(comboData)=>{
+const comboappend=()=>{
 
     comboData.forEach(function(ele){
 
             let div = document.createElement("div")
             div.setAttribute("id","divFlex")
             div.setAttribute("class","mydivouter")
+            let divI = document.createElement("div")
+            divI.setAttribute("id","divI")
 
             let img = document.createElement("img")
             img.src = ele.image
@@ -118,6 +120,7 @@ const comboappend=(comboData)=>{
 
             let rating = document.createElement("p")
             rating.innerText = "🌟🌟🌟🌟" + " " +ele.rating
+            rating.setAttribute("id","rating")
             
             let strickedoffprice = document.createElement("h5")
             strickedoffprice.innerText = ele.strickedoffprice
@@ -132,11 +135,60 @@ const comboappend=(comboData)=>{
             let save = document.createElement("p")
             save.innerText = ele.save
             save.setAttribute("id", "save")
+            divI.append(img,button)
             divP.append(strickedoffprice,price)
 
-            div.append(img,button,name,rating,divP,save);
+            div.append(divI,name,rating,divP,save);
             comboappply.append(div)
     })
 
 }
-comboappend(comboData)
+comboappend()
+
+
+// sort function
+
+var FData = JSON.parse(localStorage.getItem("comboObj")) || []
+var Fappply = document.querySelector("#data")
+
+let xx = document.querySelector("#sorter").value;
+function sortP1() {
+    console.log(FData)
+    if(xx == "h2l"){
+
+          FData.sort(function (a, b) {
+          return b.price - a.price;
+        });
+
+        Fappply.innerHTML = "";
+        comboappend()
+    }
+
+}
+// // sortP(comboData) 
+
+
+// comboappend(comboData)
+
+// function sortBy(FData){
+
+//     let sortby = document.getElementById("sorter").value;
+
+//     if(sortby == "h2l"){
+//         FData.sort(function(a, b){
+//             return b.price - a.price;
+//         });
+//         Fappply.innerHTML = "";
+//         comboappend(FData); 
+//     }
+    
+//     else if(sortby == "l2h"){
+//       FData.sort(function(a, b){
+//             return a.price - b.price;
+//         });
+//         Fappply.innerHTML = "";
+//         comboappend(FData);    
+//     }
+    
+    
+// }

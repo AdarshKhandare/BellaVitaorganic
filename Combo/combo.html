@@ -14,7 +14,7 @@
 </head>
 <body>
     <div id="top">
-        <h2>COMBOS</h2>
+        <h3>COMBOS</h3>
         <p>Most Popular Combo's On Up To 50% Discount for a brighter, refreshing and youthful you. We have prepared the bestselling
         bellavita organic products to make combos that are cost-effective and are delivered faster as well. The best combos that
         takes care of multiple concerns and skincare needs.</p>
@@ -24,10 +24,10 @@
     
     <div id="filter">
         <p>SORT BY</p>
-        <select>
-                <option value="">Featured</option>
-                <option value="l2h">Price,low to high</option>
-                <option value="h2l">Price,high to low</option>
+        <select id="sorter" onchange="sortP1()">
+                <option value="--">Featured</option>
+                <option value="l2h" id="low">Price,low to high</option>
+                <option value="h2l" id="high">Price,high to low</option>
                 <option value="">Alphabetically,A-Z</option>
                 <option value="">Alphabetically,Z-A</option>
                 <option value="">Date old to new</option>
@@ -65,16 +65,7 @@
 <script type="module">
 
 import sidebar from "/components/sidebarC.js"
-console.log(sidebar)
+
 document.querySelector("#sider").innerHTML = sidebar()
 </script>
 <script src="scripts/combo.js"></script>
-
-<!-- <script>
-    $(document).ready(function () {
-        $("#divFlex").hide();
-        $("#divFlex").hover(function () {
-            $(this).show();
-        });
-    });
-</script> -->

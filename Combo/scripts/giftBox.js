@@ -126,28 +126,6 @@ comboappend(comboData)
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // read more buttons 
 
 function myFunction() {

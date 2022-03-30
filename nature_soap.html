@@ -78,7 +78,7 @@
         height:800px;
         margin: auto;
         margin-top: 40px;
-        background-color:#999;
+        background-color:yellow;
     }
     #cat{
         width: 20%;
@@ -92,15 +92,50 @@
         
     }
     #vita{
-        width:100%;
-        height:500px; 
+        width:90%;
+        height:480px; 
         border-radius: 10px;
          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;;
     }
     #glow{
         height: 60%;
-        width:80%;
+        width:100%;
+        margin:auto;
     }
+    #p1{
+    font-size: 17px;
+    text-align: center; 
+   }
+   #p{
+    font-size: 13px;
+    text-align: center; 
+    color: #009d00;
+   }
+   #nat{
+        font-size:25px;
+        margin-left:50px ;
+    }
+  
+#pri{
+    height: 25px;
+   width:55%;
+   display:flex;
+   gap:10px;
+   margin:auto;
+  margin-top:-30px;
+  margin-bottom:40px;
+  margin-left:90px;
+}
+#str{
+    color: #969696;
+    text-decoration: line-through;
+    font-size:23px;
+    /* margin-right: 5px; */
+   }
+#str1{
+    color: #e95144;
+    font-size:23px;
+}
 </style>
 <body>
    <div>navbar</div>
@@ -115,11 +150,11 @@
    <div id="refine">
      <div id="by">
         <div><img id="ref"src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQRHO5CgGMGYi3kwgDkEr4Vnb_KpwTMUGGiUHJsGgN5quonSHI_"></div>
-        <div><p>REFINE BY</p></div>
+        <div><p id="p1">REFINE BY</p></div>
      </div>
 
      <div id="sort">
-         <div><p>SORT BY</p></div>
+         <div><p id="p1">SORT BY</p></div>
           <div>
             <select id="sor">
                 <option value="Featured">Featured</option>
@@ -140,11 +175,39 @@
        <div id="prod">
            <div id="vita">
            <img id="glow" src="https://cdn.shopify.com/s/files/1/0054/6665/2718/products/C-Glow-01_1024x1024.jpg?v=1641471102">
-           <p>C-Glow Body Wash Bar Bath Soap With Vitamin C, Coconut & Shea Butter, 150...</p>
-           <p></p>
+           <p id="p1">C-Glow Body Wash Bar Bath Soap With Vitamin C, Coconut & Shea Butter, 150...</p>
+           <p id="p1">⭐⭐⭐⭐⭐5 reviews</p>
+          <div id="pri">
+           <div><p id="str">Rs.199</p> </div>
+           <div><p id="str1">Rs.149</p></div>
+        </div>
+            <p id="p">(save RS.50)</p>
         </div>
            
+        <div id="vita">
+            <img id="glow" src="https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Coalwave-03_26130037-d227-4c23-869b-b8bf74171e1e_1024x1024.jpg?v=1630928992">
+            <p id="p1">CoalWave Body Wash Bar Bath Soap With Charcoal, Basil & Shea Butter, 150 gm</p>
+            <p id="p1">⭐⭐⭐⭐⭐2 reviews</p>
+           <div id="pri">
+            <div><p id="str">Rs.199</p> </div>
+            <div><p id="str1">Rs.149</p></div>
+         </div>
+             <p id="p">(save RS.50)</p>
+            </div>
+            <div id="vita">
+                <img id="glow" src="https://cdn.shopify.com/s/files/1/0054/6665/2718/products/UbtanPlus-03_b4e01cef-c9c5-4ea5-8ed0-8e55fc6ae628_1024x1024.jpg?v=1630949947">
+                <p id="p1">UbtanPlus Body Wash Bar Bath Soap With Haldi, Kesar & Chandan, 150 gm...</p>
+                
+               <div id="pri">
+                <div><p id="str">Rs.199</p> </div>
+                <div><p id="str1">Rs.149</p></div>
+             </div>
+                 <p id="p">(save RS.50)</p>
+             </div>
+
+
        </div>
+       
    </div>
 
 </body>

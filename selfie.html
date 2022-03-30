@@ -54,7 +54,7 @@ body {
      height:700px;
      margin:auto;
     background: transparent;
-    max-width: 600px;
+    max-width: 580px;
     border: solid;
     border-width: 2px;
     border-color: #c7c7c7;
@@ -62,7 +62,20 @@ body {
     padding: 35px;
 }
 #div{
-    display:flex;
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:25px;
+    height:300px;
+    width:100%;
+    background-color: green;
+    margin-top:15px;
+}
+#input{
+    height:0px;
+    width: 100%;
+    padding:20px;
+    border-radius:5px;
+    border-color: #c7c7c7;
 }
 </style>
 <body>
@@ -79,8 +92,14 @@ body {
     <p id="p1">Submit your #SelfieSwitch Form Now.</p>
      <div id="form">
        <div id="div">
-
-       </div>
+        
+        <div>
+            <input id="input" type="text"placeholder="First Name*">
+        </div>
+         <div> <input id="input"type="text"placeholder="Last Name"></div>
+       
+        </div>
      </div>
+     <div>FOOTER</div>
 </body>
 </html>

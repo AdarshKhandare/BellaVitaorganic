@@ -1,61 +1,61 @@
 let comboObj = [{image:"https://cdn.shopify.com/s/files/1/0054/6665/2718/products/LipBalm_-NicoLips-Lip-Scrub-Combo_1024x1024.jpg?v=1647863372",
 name:"NicoLips Lip Scrub & LipBalm Combo For Dry, Chapped & Dark Lips, 20 gm & 5 gm",
 rating:"4.7 (2300 reviews)",
-price:"538",
+price:538,
 strickedoffprice:"Rs. 675",
 save:"(Save Rs. 137)"},
 {image:"https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Deo-White-Women-_-Men_1024x1024.jpg?v=1647342718",
 name:"DeoWhite Natural Under Arm Skin Whitening Roll-On Deodorant Combo For Him & Her 50 ml Each",
 rating:"4.7 (435 reviews)",
-price:"349",
+price:349,
 strickedoffprice:"Rs. 398",
 save:"(Save Rs. 49)"},
 {image:"https://cdn.shopify.com/s/files/1/0054/6665/2718/products/NicoLips-02_1024x1024.jpg?v=1647345121",
 name:"NicoLips Lip Lightening Scrub For Dry & Chapped Lips - Pack Of 2, 20 gm Each",
 rating:"4.7 (2255 reviews)",
-price:"699",
+price:699,
 strickedoffprice:"Rs. 900",
 save:"(Save Rs. 201)"},
 {image:"https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Face-wash_-Glowner_1024x1024.jpg?v=1643781091",
 name:"Pore Minimizing Combo - Face Wash and Face Toner",
 rating:"4.7 (1156 reviews)",
-price:"465",
+price:465,
 strickedoffprice:"Rs. 548",
 save:"(Save Rs. 83)"},
 {image:"https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Pack-of-2_1024x1024.jpg?v=1640436701",
 name:"LipBalm - For Dark, Dry & Chapped Lips - Pack Of 2 , 5 gm Each",
 rating:"4.6 (218 reviews)",
-price:"399",
+price:399,
 strickedoffprice:"Rs. 450",
 save:"(Save Rs. 51)"},
 {image:"https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Deo-White-Men-02_1024x1024.jpg?v=1647326891",
 name:"DeoWhite Underarm Whitening & Lightening Natural Roll On Deodorant Combo For Men 50 ml Each",
 rating:"4.8 (162 reviews)",
-price:"349",
+price:349,
 strickedoffprice:"Rs. 398",
 save:"(Save Rs. 49)"},
 {image:"https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Deo-White-Women-02_1024x1024.jpg?v=1647326857",
 name:"DeoWhite Under Arm Skin Whitening & Lightening Natural Roll On Deodorant Combo For Women 50 ml Each",
 rating:"4.6 (148 reviews)",
-price:"349",
+price:349,
 strickedoffprice:"Rs. 398",
 save:"(Save Rs. 49)"},
 {image:"https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Anti-Acne-Face-wash_-Anti-Acne-Face-Gel-Cream-Combo_1024x1024.jpg?v=1647864525",
 name:"Anti Acne Combo (Face Wash + Face Gel)",
 rating:"4.8 (506 reviews)",
-price:"530",
+price:530,
 strickedoffprice:"Rs. 698",
 save:"(Save Rs. 168)"},
 {image:"https://cdn.shopify.com/s/files/1/0054/6665/2718/products/12_1_1024x1024.jpg?v=1632397421",
 name:"Aroma Candles 4 X 60g each, 100% Pure Soy Wax Vanilla, Cinnamon, Lavender & Rose, Upto 15 hours",
 rating:"4.7 (299 reviews)",
-price:"399",
+price:399,
 strickedoffprice:"Rs. 499",
 save:"(Save Rs. 100)"},
 {image:"https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Brush_1024x1024.jpg?v=1580215524",
 name:"Mini Face Pack Brush for Women & Men - Pack of 2",
 rating:"4.7 (258 reviews)",
-price:"225",
+price:225,
 strickedoffprice:"Rs. 399",
 save:"(Save Rs. 174)"},
 {image:"https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Shampoo_-Silky-Strong_-Conditioner_684c384c-fed1-494f-8ff9-17caf51d2709_1024x1024.jpg?v=1632218387",
@@ -152,22 +152,19 @@ var FData = JSON.parse(localStorage.getItem("comboObj")) || []
 var Fappply = document.querySelector("#data")
 
 let xx = document.querySelector("#sorter").value;
-function sortP1() {
-    console.log(FData)
-    if(xx == "h2l"){
 
-          FData.sort(function (a, b) {
-          return b.price - a.price;
-        });
+function sortP1(event) {
+    event.preventDefault()
+    Fappply.innerHTML = "";
+         if(xx == "h2l"){
 
-        Fappply.innerHTML = "";
-        comboappend()
-    }
-
+            FData.sort(function (a, b){
+                return b.price - a.price;
+            });
+            
+            comboappend()    
+        }
 }
-// // sortP(comboData) 
-
-
 // comboappend(comboData)
 
 // function sortBy(FData){

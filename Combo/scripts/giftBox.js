@@ -100,11 +100,11 @@ const comboappend=(comboData)=>{
             let rating = document.createElement("p")
             rating.innerText = "🌟" + " " +ele.rating
             
-            let strickedoffprice = document.createElement("h3")
+            let strickedoffprice = document.createElement("h5")
             strickedoffprice.innerText = ele.strickedoffprice
             strickedoffprice.setAttribute("id", "strickprice")
 
-            let price = document.createElement("h3")
+            let price = document.createElement("h5")
             price.innerText = "Rs."+" "+ ele.price
 
             let divP = document.createElement("div")

@@ -38,69 +38,86 @@ body{
     height: fit-content;
     padding-right: 30px;
  /* border: 1px solid red; */
+    margin-right: 30px;
 }
  #filter>select{
     height: 35px;
     border-radius: 0%;
     outline: none;
 } 
-#filter > h3{
+#filter > p{
     margin-top: 8px;
     margin-right: 10px;
-    color:#232323
+    color:#232323;
+    font-family: "Century Gothic Thin";
 }
 
 /* left filter start here */
 
 #container{
-    display: flex;
+    display: grid;
+    grid-template-columns: 20% 80%;
 }
 
 #data{
     display: grid;
     grid-template-columns: repeat(4,1fr);
     grid-template-rows: auto;
-    gap: 40px;
-    width: 70%;
+    gap: 10px;
     justify-content: space-between;
-    margin-left: 300px;
    
 }
 #divFlex{
     margin-top:20px;
     width: 250px;
-    height: 500px;
+    height: 430px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
     text-align: center;
     border-radius: 15px;
     position:relative;
+    z-index: 1;   
+    margin-right: 40px;
 }
 
 
 #divFlex > img{
-    width: 250px;
-    height: 300px;
+    width: 200px;
+    height: 250px;
+    margin-bottom: -50px;
 }
 
 #divFlex > img:hover{
     opacity: 0.4;
 }
 #divFlex > button{
-
     width:180px;
     height:40px;
     color:white;
     background-color:black;
     font-size:16px;
     border-radius:0px;
-    border:none
+    position: absolute;
+    z-index: 2;
+    border:none;
+    display:none;
+    margin: auto;	
+    margin-left: 35px;
+    margin-top: -80px;
 }
 #divFlex > button:hover{
-    background-color:#52b359
+    background-color:#52b359;
+    
 }
+#divFlex:hover .mybuttonoverlap{
+        display: block;
+}
+
 
 #name{
     margin-top:50px;
+    position: relative;
+    margin-bottom: 10px;
+    font-size:14px
     
 }
 
@@ -112,9 +129,11 @@ body{
     display:flex;
     justify-content:space-around;
     margin: auto;
+    margin-top:-15px;
+    margin-bottom:-5px;
 
 }
-#divp > h3:last-child{
+#divp > h5:last-child{
     color: #e95449
 }
 #strickprice{
@@ -182,29 +201,7 @@ body{
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-/* hover button start here */
-.mydivouter{
-	position:relative;
-    width: 200px;
-    height: 120px;
-    margin: 0 auto;
-}
-.mydivoverlap{
-    position: relative;
-    z-index: 1;
-}
-.mybuttonoverlap{
-	position: absolute;
-    z-index: 2;
-    display: none;
-    margin: auto;	
-    margin-left: 35px;
-    margin-top: -120px;
-}
-.mydivouter:hover .mybuttonoverlap{ 
-	display:block;
-}
-/* hover button end here */
+
 
 /* glow page start here */
 

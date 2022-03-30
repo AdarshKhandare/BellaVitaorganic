@@ -65,8 +65,8 @@ function sidebar(){
             <div class="nav-link catelog" style="display: flex; justify-content: space-between;" ><a href="#"> Combos</a><i class="fa-solid fa-angle-down"></i> </div>
             <ul class="submenu collapse">
                 <li><a class="nav-link" href="#">Combos </a></li>
-                <li><a class="nav-link" href="#">C-Glow Range </a></li>
-                <li><a class="nav-link" href="#">Gifts </a></li>
+                <li><a class="nav-link" href="/Combo/c-glow-range.html">C-Glow Range </a></li>
+                <li><a class="nav-link" href="/Combo/giftBox.html">Gifts </a></li>
             </ul>
         </li>
         <li class="nav-item has-submenu">

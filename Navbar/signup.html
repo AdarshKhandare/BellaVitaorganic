@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./navbar.css">
+    <link rel="stylesheet" href="./signup.css">
+    <link rel="stylesheet" href="./footer.css">
+    
+</head>
+<body>
+
+    <!-- navbar -->
+    <div id="headerWrapper">
+
+    </div>
+
+    <!-- registration Form -->
+    <div id="container">
+        <h2>CREATE AN ACCOUNT</h2>
+        <hr>
+        <p id="para">Sign up for a free account at Bella Vita Organic.</p>
+        <form  id="registerForm" >
+                <p>First Name</p>
+                <input type="text" name ="firstname" id="firstName">
+
+                <p>Last Name</p>
+                <input type="text" name="lastname"id="lastName">
+
+                <p>Your Email Address <sup style="color:red">*</sup></p>
+                <input type="text" name="email" id="email">
+
+                <p>Your Password <sup style="color:red">*</sup></p>
+                <input type="password" name="password" id="password"> <br>
+
+                <input type="submit" id="btn" value="CREATE AN ACCOUNT">
+        </form>
+    </div>
+    
+    <!-- Footer -->
+    <div id="dhoni">
+
+    </div>
+</body>
+</html>
+
+<script type="module">
+
+    import navbar from "./signup.js"
+    //console.log(navbar)
+
+    var head = document.querySelector("#headerWrapper")
+    head.innerHTML=navbar();
+
+    import footer from "./footer.js"
+
+    var foot = document.getElementById("dhoni");
+    foot.innerHTML=footer();
+    
+
+
+window.addEventListener("load",function(){
+    let registerform = document.getElementById("registerForm")
+
+    registerform.addEventListener("submit", (event)=>{
+        event.preventDefault()
+        
+            const formData = new FormData(registerform);
+        let firstname = formData.get("firstname")
+        let lastname = formData.get("lastname")
+        let email = formData.get("email")
+        let password = formData.get("password")
+
+        let obj = {
+            firstname,
+            lastname,
+            email,
+            password,   
+        }
+
+        fetch("http://localhost:3000/posts/",{
+            method:"POST",
+            header:{
+                "Content-Type":"application/json"
+            },
+            body:JSON.stringify(obj)      
+        })
+        .then((res)=>res.json())
+        .then((res)=>console.log(res))
+        .then((err)=>console.log(err));
+        // const option = {
+        //     method:"POST",
+        //     header:{
+        //         "Content-Type":"application/json"
+        //     },
+        //     body:JSON.stringify(obj)
+        // }
+
+        // const response = await fetch("http://localhost:3000/posts",option)
+
+        // const data = await response.json();
+        // console.log(data);
+    
+        
+        
+        // payLoad = (obj);
+        // console.log(payLoad)
+        // register(payLoad)
+    })
+
+})
+//http://localhost:3000/posts
+// var payLoad;
+// const register = async ()=>{
+//     try{
+//         let res = await fetch("http://localhost:3000/posts");
+//         let data = await res.json();
+//         data.push(payLoad);
+//         console.log(data);
+//         update(data);
+//     }catch(error){
+//         console.log(error)
+//     }
+  
+// }
+
+// const update = (data)=>{
+//     fetch("http://localhost:3000/posts",{
+//         method:"GET",
+//         headers:{
+//             "Content-Type":"application/json"
+//         },
+//         body:JSON.stringify(data)
+       
+//     })
+//     .then((res) => res.json())
+//     .then((data)=>console.log(data))
+//     .catch((err) => console.log("err"))
+// }
+
+
+
+</script>

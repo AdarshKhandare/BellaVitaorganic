@@ -29,3 +29,33 @@
     width: 120px;
     margin-bottom: 50px;
 }
+#consiner{
+    display: flex;
+}
+
+#img1{
+    width: auto;
+    height: 250px;
+}
+#apped{
+    display: grid;
+    gap: 20px;
+    grid-template-columns:repeat(3,1fr);
+    margin-right: 60px;
+    /* margin: auto; */
+    /* justify-content: center; */
+
+}
+#apped>div{
+    /* margin: auto; */
+    margin-left: 1PX;
+    height: 450px;
+    justify-content: center;
+    text-align: center;
+    border-radius:  10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#sidebar{
+    width: 70%;
+    margin-right: 20px;
+}

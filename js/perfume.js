@@ -13,12 +13,11 @@ function myFunction() {
       moreText.style.display = "inline";
     }
   }
- 
-   var sa=JSON.parse(localStorage.getItem("sensitive_data"))||[];
-     skin_data(sa)
+  var perfumes_data=JSON.parse(localStorage.getItem("perfumes"))||[];
+     skin_data(perfumes_data)
 
-     function skin_data(sa){
-      sa.map(function(elem,index){
+     function skin_data(perfumes_data){
+        perfumes_data.map(function(elem,index){
          let maindiv=document.createElement("div")
          let img=document.createElement("img")
          img.src=elem.image 
@@ -49,14 +48,3 @@ function myFunction() {
 
        });
      }
-
-          // sagar(sensitiveskin_data)
-          // function sagar(sensitiveskin_data){
-          //   sensitiveskin_data.map(function(elem,index){
-          //     var main= document.createElement("div");
-          //     let titie=document.createElement("p")
-          //     titie.innerText=elem.name
-          //     main.append(titie)
-          //     document.getElementById("append").append(main)
-          //   })
-          // }

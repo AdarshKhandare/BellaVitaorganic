@@ -6,14 +6,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/dullskin.css">
+    <link rel="stylesheet" href="./sidebar/sidebar.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
 </head>
 <body>
     <div id="drymain">
         <p id="p1">DRY SKIN CARE PRODUCTS</p>
-<p id="p2">Dull skin is a common concern. Clear and glowing skin is a sign of good health, and taking care of it requires patience and a healthy diet. Several factors like exposure to pollution, UV rays from the sun, and a poor diet can lead to Dull Face and other skin concerns. As a result, your skin loses its natural moisture and tends to become dull and dark.<span id="dots">...</span><span id="more">.Even you try to use beauty products that claim to reverse the damage, still, they are full of chemicals and hence cause more harm than good. Use our Bella Vita Organic Beauty products that have natural ingredients which help to brighten the skin.</span></p>
+<p id="p2">Dry skin is a very common condition that causes small fine flakes and dry patches. whether it is caused by ageing or environmental factors, having dry skin can be very uncomfortable and itchy. There are various treatments and home remedies available to relieve dry skin - but which are most effective?<span id="dots">...</span><span id="more">Dry skin is often caused by a lack of moisture, so deep hydration is required to combat dry skin problems. Use Bella Vita Organic dry skin care products to treat dry skin naturally and pamper your skin with natural ingredients.</span></p>
 
-<button onclick="my()" id="button1">Read more</button>
+<button onclick="myFunction()" id="myBtn">Read more</button>
+    </div>
+    <div id="consiner">
+        <div id="sidebar"></div>
+        <div id="apped"></div>
+    </div>
     </div>
 </body>
 </html>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/13760dee3d.js" crossorigin="anonymous"></script>
 <script src="./js/dullsrin.js"></script>
+<script src="./js/data.js"></script>
+
+<script type="module">
+    import sidebar from './components/sidebar.js'
+    let side=document.getElementById("sidebar")
+    side.innerHTML=sidebar()
+    document.addEventListener("DOMContentLoaded", function(){
+       document.querySelectorAll('.sidebar .nav-link').forEach(function(element){
+         
+         element.addEventListener('click', function (e) {
+     
+           let nextEl = element.nextElementSibling;
+           let parentEl  = element.parentElement;	
+     
+             if(nextEl) {
+                 e.preventDefault();	
+                 let mycollapse = new bootstrap.Collapse(nextEl);
+                 
+                 if(nextEl.classList.contains('show')){
+                   mycollapse.hide();
+                 } else {
+                     mycollapse.show();
+                     // find other submenus with class=show
+                     var opened_submenu = parentEl.parentElement.querySelector('.submenu.show');
+                     // if it exists, then close all of them
+                     if(opened_submenu){
+                       new bootstrap.Collapse(opened_submenu);
+                     }
+                 }
+             }
+         }); // addEventListener
+       }) // forEach
+     }); 
+   </script>
+   <script src="./sidebar/sidebar.js"></script>

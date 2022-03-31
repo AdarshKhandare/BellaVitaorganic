@@ -266,7 +266,7 @@
             </div>
             
             <div class="cart-icon svg-mb" data-cart-header-parallax="">
-                <a href="#" title="Cart Icon" data-cart-toggle="" style="text-decoration:none">       
+                <a href="#" title="Cart Icon" onClick="openCart()"data-cart-toggle="" style="text-decoration:none">       
                     
                     <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
                         <path class="path1" d="M409.6 1024c-56.464 0-102.4-45.936-102.4-102.4s45.936-102.4 102.4-102.4S512 865.136 512 921.6 466.064 1024 409.6 1024zm0-153.6c-28.232 0-51.2 22.968-51.2 51.2s22.968 51.2 51.2 51.2 51.2-22.968 51.2-51.2-22.968-51.2-51.2-51.2z"></path>
@@ -303,6 +303,22 @@
         <button id="btn" onClick="sign()">CREATE AN ACCOUNT</button>
         </div>
     </div>
+
+    
+    <!-- cart pop-upwindow -->
+
+    <div class="cartpop">
+        <div class="bag">
+            <div class="close" onClick="closeCart()"> +</div>
+            <h4>SHOPPING CART :</h4>
+            <hr>
+             <p>Your cart is currently empty.</p>
+             <button id="btn1">CONTINUE SHOPPING</button>
+        </div>
+       
+    </div>
+
+    </div>
 </body>
 </html>
 <script>
@@ -315,4 +331,10 @@
    function sign(){
        window.location.href="./signup.html"
    }
+   function openCart(){
+        document.querySelector(".cartpop").style.display="flex"
+    }
+    function closeCart(){
+        document.querySelector(".cartpop").style.display="none"
+    }
 </script>

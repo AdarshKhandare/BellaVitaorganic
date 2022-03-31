@@ -1,3 +1,4 @@
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -5,31 +6,26 @@
     font-family: sans-serif;
 }
 
-#carousel-container{
-  transition: all 1s ease-in-out;
+#carousel .carousel-indicators{
+    position:static;
 }
 
-#carousel-container>img{
-    width: 100%;
-    
-}
-#carousel-container>div{
-    display: flex;
-    justify-content: center;
-}
-#carousel-container>div>div{
-    width:12px;
-    height: 12px;
+#carousel .carousel-indicators button{
     background-color: grey;
+    width:12px;
+    height:12px;
     border-radius:50%;
-     margin:8px;
 }
-
-
+#carousel .carousel-item>img{
+    cursor: pointer;
+}
+#carousel .carousel-indicators button[aria-current="true"]{
+    background-color: #000;
+}
 
 /* below-carousel */
 
-#below-carousel{
+ #below-carousel{
     display: flex;
     justify-content: center;
 }
@@ -39,25 +35,29 @@
     padding: 0.5rem 1rem;
     box-shadow: 0 0 10px 1px rgb(224, 224, 224);
     align-items: center;
-    margin: 10px 20px;
+    margin: 0px 20px;
     border-radius:5px;
 }
 #below-carousel>div>div>p{
-    font-size:13px
+    font-size:13px;
+    margin: 0px;
+}
+#below-carousel>div>div>p{
+    font-weight: 500;
 }
 #below-carousel>div>div>p:last-child{
-    color: #7086BA;
+    color: grey;
 }
 
 #below-carousel>div>img{
-    margin-right: 10px;
+    margin-right: 15px;
 }
 /* --------shopByCatagory------------------- */
 #shopByCatagory{
     position: relative;
     display: flex;
     justify-content: center;
-    margin: 40px 0px;
+    margin: 70px 0px 30px 0px;
 }
 #shopByCatagory>p{
     width:80%;
@@ -68,11 +68,12 @@
 #shopByCatagory>h2{
 font-weight:100;
 position:absolute;
-top: -12px;
+top: -15px;
 background-color: #fff;
 padding: 0 24px;
-font-size:26px;
+font-size:28px;
 color: #1D1D1D;
+
 }
 
 /* Bella Cash Button */
@@ -93,7 +94,8 @@ color: #1D1D1D;
      position:fixed;
      margin: 10px;
      bottom:0;
-     letter-spacing:1px
+     letter-spacing:1px;
+     z-index: 1;
 }
 
 #bellaCash>button>img{
@@ -115,4 +117,149 @@ color: #1D1D1D;
     border:5px solid #fff;
     background-color: #fff;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    z-index: 1;
 }
+
+/* ---------------------------------------------------------------------------- */
+
+/* belowCategory-cards */
+
+#belowCategory-cards{
+    width:80%;
+     margin: auto;
+}
+
+#belowCategory-cards>div{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+#belowCategory-cards>div>img{
+    width:91%;
+    margin:20px auto;
+    cursor: pointer;
+}
+
+/* ----belowVideo-carousel */
+#belowVideo-carousel>video{
+width:500px;
+height:500px;
+}
+
+/* --------------------------------------------- */
+/* sampleWork */
+
+#sampleWork{
+    border: 5px solid red;
+    overflow: hidden
+}
+#sampleWork>.slides{
+    width:100%;
+    display: flex;
+}
+
+/* ------------------------------- */
+#bestSellers{
+    width:76%;
+    margin: 20px auto;
+}
+#bestSellers .carousel {
+    height:400px;
+  }
+  
+  #bestSellers .carousel-cell {
+      margin-top: 10px;
+    width: 19%;
+    height: 95%;
+    margin-right: 20px;
+    box-shadow: 0 0 15px 0 rgb(0 0 0 / 18%);
+    border-radius: 10px;
+    text-align:center;
+  }
+  #bestSellers .carousel-cell small{
+      font-size:13px;
+  }
+  #bestSellers .carousel-cell>div{
+      padding:10px
+  }
+  #bestSellers .carousel button{
+      border:1px solid #000;
+      width:40px;
+      height:40px;
+  }
+  #bestSellers .carousel-cell>.icons{
+      padding:5px;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+  }
+  #bestSellers .carousel-cell>.icons>i{
+      color: #F3C621;
+  }
+ 
+  #bestSellers .carousel-cell>div>p{
+  margin: 0px;
+  }
+
+  #bestSellers .carousel-cell>img{
+   width:100%;
+   height:60%;
+   border-radius: 10px;
+  }
+  
+    
+  #bestSellers .carousel-cell>.price{
+display: flex;
+justify-content: center;
+padding: 0px;
+font-size:20px
+  }
+
+  #bestSellers .carousel-cell>.save{
+      font-size:10px !important;
+      color: #009d00;
+      font-weight:600
+  }
+  #bestSellers .carousel-cell>.price>p:first-child{
+      color: grey;
+      text-decoration:line-through;
+      margin-right: 10px;
+  }
+  #bestSellers .carousel-cell>.price>p:last-child{
+      color: #E95144;
+  }
+
+  /* Reviews */
+
+  #reviews{
+      margin-top:60px;
+      height:505px;
+      background-color: #E2E8CC;
+      display: flex;
+      flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #reviews>div{
+      text-align:center;
+      width:50%;
+      border: 1px solid #000;
+   
+  }
+  #reviews>div>p{
+    font-weight: 600;
+    line-height:25px
+  }
+  #reviews>div>img{
+      width:200px;
+      margin-bottom: 30px;
+  }
+  #reviews>p{
+font-size:26px;
+  }
+  #reviews>div>h6{
+      font-size:19.5px;
+      font-weight:bold;
+      font-style: italic;
+  }

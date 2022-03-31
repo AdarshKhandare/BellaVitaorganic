@@ -14,6 +14,9 @@ const DataAppend=(data, parent)=>{
             let button = document.createElement("button")
             button.innerText = "ADD TO BOX"
             button.setAttribute("class","mybuttonoverlap btn btn-info")
+            button.addEventListener("click", function(){
+                addtocart(ele)
+            })
 
             let quick = document.createElement("p")
             quick.innerText = "QUICK VIEW"
@@ -50,3 +53,13 @@ const DataAppend=(data, parent)=>{
 
 }
 export { DataAppend }
+
+
+function addtocart(ele)
+{
+    let cartarr = JSON.parse(localStorage.getItem("cartItems")) || []
+    console.log(ele)
+    cartarr.push(ele)
+    console.log(cartarr)
+    localStorage.setItem("cartItems",JSON.stringify(cartarr))
+}

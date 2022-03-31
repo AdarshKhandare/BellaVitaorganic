@@ -1,11 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Delivery Address - Bella Vita Organic - Checkout</title>
+    <script src="https://kit.fontawesome.com/d103d8b709.js" crossorigin="anonymous"></script>
     <!-- favicon  -->
     <link rel="shortcut icon" href="//cdn.shopify.com/s/files/1/0054/6665/2718/files/logo_02_32x32.png?v=1606307450"
         type="image/png" />
@@ -67,151 +64,127 @@
                     </div>
                 </div>
             </div>
-            <div id="container_left_bottom"></div>
+            <div id="container_left_bottom">
+                <section id="contact_info">
+                    <div id="contact_info_top">
+                        <h2 class="title">CONTACT INFORMATION</h2>
+                        <div id="login_details">
+                            <div id="admin">
+                                <img src="/checkout/images/admin.png" alt="" />
+                            </div>
+                            <div id="details">
+                                <p id="checkout_user_details"></p>
+                                <a href="#cart">Logout</a>
+                            </div>
+                        </div>
+                        <div id="check">
+                            <input type="checkbox" class="checkbox_size" />
+                            <label id="check_label">Email/SMS me with news and offers</label>
+                        </div>
+                        <div class="dotted_div"></div>
+                    </div>
+                    <div id="contact_info_bottom">
+                        <h2 class="title">SHIPPING ADDRESS</h2>
+                        <div id="fl">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control bw" id="floatingInput1" placeholder="Password" />
+                                <label for="floatingInput">First Name</label>
+                            </div>
+                            <div class="form-floating">
+                                <input type="text" class="form-control bw" id="floatingInput2" placeholder="Password" />
+                                <label for="floatingPassword">Last Name</label>
+                            </div>
+                        </div>
+                        <div class="form-floating">
+                            <input type="text" class="form-control bw" id="floatingInput3" placeholder="Password" />
+                            <label for="floatingPassword">Flat, House No, Building, Company, Apartment</label>
+                        </div>
+                        <div class="form-floating">
+                            <input type="text" class="form-control bw" id="floatingInput4" placeholder="Password" />
+                            <label for="floatingPassword">Area, Colony, Street, Sector, Village</label>
+                        </div>
+                        <div id="f2">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control bw" id="floatingInput5" placeholder="name@example.com" />
+                                <label for="floatingInput">City</label>
+                            </div>
+                            <div class="form-floating">
+                                <select class="form-select" id="floatingInput6" aria-label="Floating label select example">
+                                    <option>State</option>
+                                    <option value="Maharashtra">Andhra Pradesh</option>
+                                    <option value="Tamilnadu">Tamilnadu</option>
+                                    <option value="Gujrat">Kerala</option>
+                                    <option value="Delhi">Delhi</option>
+                                </select>
+                                <label for="floatingSelectGrid">State</label>
+                            </div>
+                            <div class="form-floating">
+                                <input type="number" class="form-control bw" id="floatingInput7" />
+                                <label for="floatingPassword">PIN code</label>
+                            </div>
+                        </div>
+                        <div class="form-floating">
+                            <input type="number" class="form-control bw" id="floatingInput8" placeholder="Password" />
+                            <label for="floatingPassword">Phone</label>
+                        </div>
+                        <button id="btn">CONTINUE TO SHIPPING & PAYMENT</button>
+                        <div id="payment_methods">
+                            <img src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/payments-stripe-sub-footer_2.svg?v=1616140901"
+                                alt="payment_methods" id="pm" />
+                        </div>
+                    </div>
+                    <footer>
+                        <span>Refund policy</span>
+                        <span>Privacy policy</span>
+                    </footer>
+                </section>
+            </div>
         </div>
         <div id="container_right" class="payment_marge">
             <div id="item_div"></div>
-            <div id="item_div_bottom"></div>
+            <div id="item_div_bottom">
+                <div id="advert">
+                    <h2>Checkout Offer - 50% Additional<br />Discount</h2>
+                    <p class="blink_me">Last Few Hours Left!</p>
+                    <div id="slider">
+                        <div class="child">
+                            <img src="/checkout/images/check_1_1.jpg" alt="" />
+                        </div>
+                        <div class="child">
+                            <img src="/checkout/images/check_1_2.jpg" alt="" />
+                        </div>
+                    </div>
+                </div>
+                <div id="coupon_div">
+                    <div id="tag">
+                        <i class="bi bi-tag"></i>
+                    </div>
+                    <input type="text" />
+                    <button>APPLY</button>
+                </div>
+                <div id="total_div">
+                    <div id="total_div_top">
+                        <div id="sub_total_div">
+                            <p>Subtotal</p>
+                            <p id="sub_total"></p>
+                        </div>
+                        <div id="shipping_div">
+                            <p>Shipping</p>
+                            <p id="sub_total">Free</p>
+                        </div>
+                    </div>
+                    <div id="line"></div>
+                    <div id="total_div_bottom">
+                        <div id="tdb">
+                            <p>Total</p>
+                            <p id="span"></p>
+                        </div>
+                        <div id="tdb_amount"></div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </body>
-
 </html>
-<script type="module">
-    // element catching
-    let cart_items = JSON.parse(localStorage.getItem("cart_items")) || [];
-    // let u_address = JSON.parse(localStorage.getItem("user_address"));
-    // let user_address = u_address.join(",");
-    let check_status = JSON.parse(localStorage.getItem("check_status"));
-    let cart_page = document.getElementById("cart_page");
-    let delivery_page = document.getElementById("delivery_page");
-    let prepaid_page = document.getElementById("prepaid_page");
-    let payment_page = document.getElementById("payment_page");
-
-    // let obj = {
-    //   cart: 0,
-    //   delivery: 1,
-    //   cod: 0,
-    //   payment: 0,
-    // };
-    // check_status;
-
-    // checkout status
-    cart_page.addEventListener("click", () => {
-        window.location.href = "./cart.html";
-    });
-
-    delivery_page.addEventListener("click", () => {
-        for (let key in check_status) {
-            key == "delivery" ? (check_status[key] = "1") : (check_status[key] = "0");
-        }
-        localStorage.setItem("check_status", JSON.stringify(check_status));
-        document.location.reload();
-    });
-
-    prepaid_page.addEventListener("click", () => {
-        for (let key in check_status) {
-            key == "cod" ? (check_status[key] = "1") : (check_status[key] = "0");
-        }
-        localStorage.setItem("check_status", JSON.stringify(check_status));
-        document.location.reload();
-    });
-
-    payment_page.addEventListener("click", () => {
-        for (let key in check_status) {
-            key == "payment" ? (check_status[key] = "1") : (check_status[key] = "0");
-        }
-        localStorage.setItem("check_status", JSON.stringify(check_status));
-        document.location.reload();
-    });
-
-    // importing data
-    import { content, formValidate } from  "./checkout.js";
-    console.log(content)
-    import {price_desc,check_content,header,prepaid_content,payment_content,} from "./checkout_con.js";
-    console.log(check_content)
-    let container_left_bottom = document.getElementById("container_left_bottom");
-    container_left_bottom.innerHTML = check_content();
-
-    if (check_status == 1) {
-        let container_left_bottom = document.getElementById("container_left_bottom");
-        container_left_bottom.innerHTML = check_content();
-        formValidate();
-    } 
-    else if (check_status == 1) {
-        let container_left_bottom = document.getElementById("container_left_bottom");
-        let u_address = JSON.parse(localStorage.getItem("user_address"));
-        let user_address = u_address.join(",");
-        container_left_bottom.innerHTML = prepaid_content();
-        let btn_prepaid = document.getElementById("btn_prepaid");
-        let shipping_address = document.getElementById("shipping_address");
-        let prepaid_circle = document.getElementById("prepaid");
-        let delivery_cicle = document.getElementById("da");
-        let prepaid_dot = document.getElementById("prepaid_dot");
-
-        prepaid_dot.classList.toggle("toggle");
-        delivery_cicle.style.boxShadow = "none";
-        prepaid_circle.style.boxShadow = "0 0 21px rgb(59 179 0)";
-        prepaid_circle.style.backgroundColor = "#52b359";
-        shipping_address.innerHTML = `${u_address}`;
-        btn_prepaid.addEventListener("click", () => {
-            for (let key in check_status) {
-                key == "payment"
-                    ? (check_status[key] = "1")
-                    : (check_status[key] = "0");
-            }
-            localStorage.setItem("check_status", JSON.stringify(check_status));
-            document.location.reload();
-        });
-    } 
-    // else if (check_status.payment == 1) {
-    //     let container_left_bottom = document.getElementById(
-    //         "container_left_bottom"
-    //     );
-    //     let u_address = JSON.parse(localStorage.getItem("user_address"));
-    //     let user_address = u_address.join(",");
-    //     container_left_bottom.innerHTML = payment_content();
-    //     let btn_payment = document.getElementById("btn_payment");
-    //     let shipping_address = document.getElementById("shipping_address");
-    //     let prepaid_circle = document.getElementById("prepaid");
-    //     let delivery_cicle = document.getElementById("da");
-    //     let prepaid_dot = document.getElementById("prepaid_dot");
-    //     let payment_dot = document.getElementById("payment_dot");
-    //     let payment_circle = document.getElementById("pay");
-
-    //     payment_dot.classList.toggle("toggle");
-    //     prepaid_dot.classList.toggle("toggle");
-    //     delivery_cicle.style.boxShadow = "none";
-    //     payment_circle.style.boxShadow = "0 0 21px rgb(59 179 0)";
-    //     payment_circle.style.backgroundColor = "#52b359";
-    //     prepaid_circle.style.backgroundColor = "#52b359";
-
-    //     shipping_address.innerHTML = `${u_address}`;
-    //     btn_payment.addEventListener("click", () => {
-    //         window.location.href = "./payment.html";
-    //     });
-    // }
-
-    // displaying data on UI
-    let item_div = document.getElementById("item_div");
-    let item_div_bottom = document.getElementById("item_div_bottom");
-
-    item_div_bottom.innerHTML = price_desc();
-
-    // setting total amount
-    var sub_total = document.getElementById("sub_total");
-    var sub_total_bottom = document.getElementById("tdb_amount");
-
-    let x = 0;
-    for (let i = 0; i < cart_items.length; i++) {
-        if (cart_items[i].Amount === undefined) {
-            x = x + Number(cart_items[i].Qty) * Number(cart_items[i].Price);
-        } else {
-            x = x + Number(cart_items[i].Amount);
-        }
-    }
-    sub_total.innerHTML = `₹ ${x}.00`;
-    sub_total_bottom.innerHTML = `<span>INR</span> ₹${x}.00`;
-
-    content(cart_items, item_div, sub_total, sub_total_bottom);
-</script>
+<script src="checkout.js"></script>

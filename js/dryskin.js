@@ -19,11 +19,24 @@ function myFunction() {
      function skin_data(dryskin_data){
        dryskin_data.map(function(elem,index){
          let maindiv=document.createElement("div")
+         let div0=document.createElement("div")
+         div0.id="div0"
          let img=document.createElement("img")
          img.src=elem.image 
          img.setAttribute("id","img1")
+         let btu=document.createElement("button")
+         btu.innerText="BUY NOW"
+         btu.id="imgbutton"
+         btu.addEventListener("click", function () {
+          addToCart(elem);
+      });
+      
+         let q=document.createElement("p")
+         q.innerText="QUICK VIEW"
+         q.id="quick"
          let title=document.createElement("p")
          title.innerText=elem.name
+         title.id="title"
          title.style.fontWeight="bold"
          title.style.fontSize="12PX"
          let div1=document.createElement("div")
@@ -40,17 +53,23 @@ function myFunction() {
           save.innerText=elem.savePrice
           save.style.color="green"
           let review=document.createElement("p")
-          review.innerText=elem.review
+          review.innerHTML=`<i style="color :gold;" class="fa-solid fa-star"></i><i style="color :gold;" class="fa-solid fa-star"></i><i style="color :gold;" class="fa-solid fa-star"></i><i style="color :gold;" class="fa-solid fa-star"></i><i style="color :gold;" class="fa-solid fa-star-half-stroke"></i>${elem.review}`
           div1.style.justifyContent="center"
+          div0.append(img,btu,q)
           div1.append(stkOfPrice,price)
-          maindiv.append(img,title,review,div1,save)
+          maindiv.append(div0,title,review,div1,save)
           document.getElementById("apped").append(maindiv)
 
        });
      }
-    //  image :"https://cdn.shopify.com/s/files/1/0054/6665/2718/products/DeoWhiteWomen-01_1ceabf20-f1f7-429b-86c7-93bd5d92ee20_1024x1024.jpg?v=1646292343",
-    //  name:"DeoWhite Underarm Whitening Natural Roll On Deodorant For Women - 50 ml",
-    //  stkOfPrice:"Rs. 249",
-    //  price:"199",
-    //  savePrice:"(Save Rs. 50)",
-    //  review:"232 reviews"
+    
+    var cardArr=JSON.parse(localStorage.getItem("cardArr"))||[];
+  
+    function addToCart(elem){
+      elem.quant=1
+      cardArr.push(elem)
+     localStorage.setItem("cardArr", JSON.stringify(cardArr));
+      window.location.href="buy.html"
+     console.log(cardArr)
+  
+    };

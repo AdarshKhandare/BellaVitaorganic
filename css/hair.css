@@ -40,7 +40,7 @@
 #apped{
     display: grid;
     gap: 20px;
-    grid-template-columns:repeat(3,1fr);
+    grid-template-columns:repeat(4,1fr);
     margin-right: 60px;
     /* margin: auto; */
     /* justify-content: center; */
@@ -59,10 +59,54 @@
     width: 70%;
     margin-right: 20px;
 }
-#img23{
-    width: 92%;
-    margin: auto;
-    margin-left: 4%;
-   height: 330px;
-   margin-bottom: 20px;
+#title{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 20px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+#imgbutton{
+   position: relative ;
+   bottom: 150px;
+   background-color: black;
+   border: 1px soild black;
+   color: white;
+   width: 120px;
+   margin: auto;
+   justify-content: center;
+   margin-bottom: -70px;
+   display: none;
+}
+#div0 {
+    position: relative;
+}
+
+#div0 img:hover{
+    opacity: 0.3;
+
+}
+
+#imgbutton:hover{
+    background-color: green;
+    border: 1px soild green;
+}
+#div0:hover #imgbutton {
+   display: block;
+}
+
+#quick{
+    position: relative ;
+    background-color: black;
+    border: 1px soild black;
+    color: white;
+    display: none;
+ }
+ #quick:hover{
+    background-color: black;
+}
+#div0:hover #quick {
+   display: block;
 }

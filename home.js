@@ -108,7 +108,11 @@ let counter = 0;
 console.log(reviewsArr[counter].image)
 let reviewsDiv = document.querySelector("#reviews>div");
 const displayReviews = () => {
+
   setInterval(() => {
+    if (counter === reviewsArr.length) {
+      counter = 0;
+    }
     reviewsDiv.innerHTML = null;
     let img = createTag("img");
     img.src = reviewsArr[counter].image;
@@ -118,6 +122,7 @@ const displayReviews = () => {
     h6.innerText = reviewsArr[counter].name;
     reviewsDiv.append(img, para, h6);
     counter++;
+    console.log(counter);
   },4000);
    
 } 

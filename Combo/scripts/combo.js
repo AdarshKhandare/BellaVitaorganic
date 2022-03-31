@@ -151,41 +151,33 @@ comboappend()
 var FData = JSON.parse(localStorage.getItem("comboObj")) || []
 var Fappply = document.querySelector("#data")
 
-let xx = document.querySelector("#sorter").value;
+// function sortP1() {
+    
+//          if(xx == "h2l"){
 
-function sortP1(event) {
-    event.preventDefault()
-    Fappply.innerHTML = "";
-         if(xx == "h2l"){
-
-            FData.sort(function (a, b){
-                return b.price - a.price;
-            });
+//             FData.sort(function (a, b){
+//                 return b.price - a.price;
+//             });
             
-            comboappend()    
-        }
-}
-// comboappend(comboData)
-
-// function sortBy(FData){
-
-//     let sortby = document.getElementById("sorter").value;
-
-//     if(sortby == "h2l"){
-//         FData.sort(function(a, b){
-//             return b.price - a.price;
-//         });
-//         Fappply.innerHTML = "";
-//         comboappend(FData); 
-//     }
-    
-//     else if(sortby == "l2h"){
-//       FData.sort(function(a, b){
-//             return a.price - b.price;
-//         });
-//         Fappply.innerHTML = "";
-//         comboappend(FData);    
-//     }
-    
-    
+//             comboappend()    
+//         }
 // }
+// comboappend(comboData)
+document.getElementById("sorter").addEventListener("change" , ()=>{
+
+    let sortby = document.getElementById("sorter").value;
+
+    if(sortby == "h2l"){
+        comboObj.sort(function(a, b){
+            return b.price - a.price;
+        });
+        comboappend(comboObj,Fappply); 
+    }
+    
+    else if(sortby == "l2h"){
+      comboObj.sort(function(a, b){
+            return a.price - b.price;
+        });
+        comboappend(comboObj,Fappply);   
+    }
+})

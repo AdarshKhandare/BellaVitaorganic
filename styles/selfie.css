@@ -1,0 +1,177 @@
+
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+#bella{
+    height:750px;
+    width:100%;
+    margin:auto;
+}
+#sel{
+    width:100%;
+    height:65%;
+}
+#h2{
+ margin-top:25px;
+  text-align:center;
+  font-size:27px;
+}
+#p{
+ margin-top:25px;
+  text-align:center;
+  color: #6c757d;
+    font-size: 15px;
+}
+#bella1{
+    height:500px;
+    width:60%;
+    margin:auto;
+    margin-top:-100px;
+}
+#sel1{
+    width:100%;
+    height:500px;
+}
+#p1{
+  margin-top:10px;
+  text-align:center;
+  color: #6c757d;
+  font-size: 15px;
+}
+#form{
+     height:650px;
+     margin:auto;
+    background: transparent;
+    max-width: 580px;
+    border: solid;
+    border-width: 2px;
+    border-color: #c7c7c7;
+    border-radius: 1px;
+    padding: 35px;
+}
+#div{
+    height:250px;
+    width:100%;
+    margin-top:15px;
+}
+#input{
+    height:0px;
+    width: 100%;
+    padding:14px;
+    border:1.5px solid #c7c7c7;
+    border-radius:5px;
+}
+#div1{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    width:100%;  
+    gap:25px;
+   
+}
+#div2{
+    margin-top:15px;
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    width:100%;  
+    gap:25px;
+}
+select{
+    height:100%;
+    width:100%;
+    color:#747171;
+    border:1.5px solid #c7c7c7;
+    border-radius:5px;
+    padding:10px;
+}
+#div3{
+    height:60%;
+    width: 100%;
+    margin-top:20px;
+    padding-left:-10px;
+    border:1.5px solid #c7c7c7;
+    border-radius:5px;
+}
+#input1{height:0px;
+    width: 100%;
+    padding:15px;
+    border-top-style: hidden;
+        border-right-style: hidden;
+        border-left-style: hidden;
+        border-bottom-style: hidden;
+}
+#upl{
+    height:60%;
+    width: 30%; 
+    margin-top:15px;
+}
+#cap{
+    height:35%;
+    width: 100%; 
+    margin-top:-100px;
+}
+#capc{
+    height:100%;
+    width: 63%; 
+   margin-top:-7px;
+}
+#but{
+    width:100%;
+   height:45px;
+   margin-top:17px;
+}
+.btn{
+ width:100%;
+ height:40px;
+ background-color:#333333;
+ color:#fff;
+ border-radius: 5px;
+ font-size: 16px;
+ border:none;
+}
+
+/* Bella Cash Button */
+
+#bellaCash>button{
+    background-color: #FFC400;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    cursor: pointer;
+    height: 60px;
+    padding: 15px 20px;
+     /* position: absolute; */
+     display:flex;
+     align-items: center;
+     font-size:14px;
+     font-weight:100;
+     position:fixed;
+     margin: 10px;
+     bottom:0;
+     letter-spacing:1px
+}
+
+#bellaCash>button>img{
+    margin-right: 10px;
+}
+
+/* WhatsApp button */
+
+
+#whatsAppButton>button{
+    width:60px;
+    height:60px;
+    position:fixed;
+    bottom:0;
+    right:0;
+    margin:30px;
+    outline: none;
+    border-radius:50%;
+    border:5px solid #fff;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}

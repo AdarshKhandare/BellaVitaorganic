@@ -1,0 +1,97 @@
+
+    #des{
+        font-size:16px;
+        margin-left: 40px;
+        text-transform: capitalize;
+       color: #999;
+    }
+    #img{                                                               
+        width:95%;
+       margin-left: 40px;
+    }
+  #content{
+      display: flex;
+      width:80%;
+      margin: auto;
+      margin-left:160px;
+  }
+  #construct{
+      width:80%;
+      line-height:10px;
+  }
+  #ease{
+      padding-top: 30px;
+
+  }
+  h2{
+    color: #212529;
+  }
+  #eas{
+      height:170px;
+  }
+  li{
+    font-size: 16px;
+    color: #3c3c3c;
+    line-height:28px;
+    margin-top: 2px;
+  }
+  #val{
+      margin: auto;
+      margin-left:160px;
+      line-height:10px;
+      margin-top: 35px;
+  }
+  #val>p{
+    text-transform: capitalize;
+    color: #999;
+    font-size: 18px; 
+  }
+  #term{
+      width:70%;
+      margin: auto;
+      margin-left:160px;
+      margin-top: 35px;
+      line-height:10px;
+  }
+  
+/* Bella Cash Button */
+
+#bellaCash>button{
+    background-color: #FFC400;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    cursor: pointer;
+    height: 60px;
+    padding: 15px 20px;
+     /* position: absolute; */
+     display:flex;
+     align-items: center;
+     font-size:14px;
+     font-weight:100;
+     position:fixed;
+     margin: 10px;
+     bottom:0;
+     letter-spacing:1px
+}
+
+#bellaCash>button>img{
+    margin-right: 10px;
+}
+
+/* WhatsApp button */
+
+
+#whatsAppButton>button{
+    width:60px;
+    height:60px;
+    position:fixed;
+    bottom:0;
+    right:0;
+    margin:30px;
+    outline: none;
+    border-radius:50%;
+    border:5px solid #fff;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}

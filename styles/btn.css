@@ -1,0 +1,135 @@
+
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+  margin-top: 30px;
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #ffccd0;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  
+}
+
+.active {
+  background-color: #ff9aa2;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+.offer{
+    margin-top: 30px;
+    display: flex;
+    gap:20px;
+    padding-top: 25px;
+    margin:auto;
+    width:950px;
+   height:80px;
+}
+.btn{
+ width:700px;
+ height:40px;
+ background-color:#ffccd0;
+ border-radius: 10px;
+ font-size: 16px;
+ border:none;
+}
+.btn:hover{
+    background-color: #ff9aa2;
+}
+.product{
+    height:1100px;
+    width:63%;
+    margin: auto;
+    margin-top: 30px;
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:20px;
+}
+.product>div{
+    border:none;
+}
+p{
+    font-size: 11px;
+    color: #6b5d5d;
+    text-align: center; 
+}
+#buy{
+    height:300px;
+    width:300px;
+}
+/* Bella Cash Button */
+
+#bellaCash>button{
+    background-color: #FFC400;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    cursor: pointer;
+    height: 60px;
+    padding: 15px 20px;
+     /* position: absolute; */
+     display:flex;
+     align-items: center;
+     font-size:14px;
+     font-weight:100;
+     position:fixed;
+     margin: 10px;
+     bottom:0;
+     letter-spacing:1px
+}
+
+#bellaCash>button>img{
+    margin-right: 10px;
+}
+
+/* WhatsApp button */
+
+
+#whatsAppButton>button{
+    width:60px;
+    height:60px;
+    position:fixed;
+    bottom:0;
+    right:0;
+    margin:30px;
+    outline: none;
+    border-radius:50%;
+    border:5px solid #fff;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+

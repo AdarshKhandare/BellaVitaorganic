@@ -1,53 +1,54 @@
+
 import sidebar from "../components/sidebar.js";
 let side= document.getElementById("sider");
 side.innerHTML=sidebar();
 
-// =======================appendData================================
 
-let data= JSON.parse(localStorage.getItem("data"));
-console.log("xyz",data)
+let bestData= JSON.parse(localStorage.getItem("Bestsellers"));
+console.log("bestdata",bestData);
+
 import { displayData } from "../appendFunction/appendData.js";
 
-let container=document.getElementById("parent");
+let container=document.getElementById("bestsell");
 
-displayData(data,container);
+displayData(bestData,container);
 
 
-// ==================sort=======================
+// ==============sort======================
 
 document.getElementById("sort").addEventListener("change",()=>{
     var sorting= document.querySelector("#sort").value;
-    if(sorting == "l2h"){
-        data.sort(function(a,b){
+    if(sorting === "l2h"){
+        bestData.sort(function(a,b){
             return a.price-b.price;
         })
-        displayData(data,container);
+        displayData(bestData,container);
     }
 
-    else if(sorting == "h2l"){
-        data.sort(function(a,b){
+    else if(sorting === "h2l"){
+        bestData.sort(function(a,b){
             return b.price-a.price;
         })
-        displayData(data,container);
+        displayData(bestData,container);
     }
 
     else if(sorting==="A2Z"){
-        data.sort((a,b)=>{
+        bestData.sort((a,b)=>{
             if(a.name<b.name){
                 return -1;
             }
            return 0;
         });
-        displayData(data,container);
+        displayData(bestData,container);
     }
     else if(sorting==="Z2A"){
-        data.sort((a,b)=>{
+        bestData.sort((a,b)=>{
             if(a.name>b.name){
                 return -1;
             }
            return 0;
         });
-        displayData(data,container);
+        displayData(bestData,container);
     }
     
 })

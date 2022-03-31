@@ -51,4 +51,54 @@ margin-top: 15px;
     height: 35px;
     border-radius: 0%;
     outline: none;
+    font-weight: 600;
+    font-size: 15px;
+}
+select option{
+    font-weight: 600;
 } 
+#refine{
+    font-weight: 600;
+    font-size: 14px;
+}
+#refine img{
+    width: 25px;
+    margin-left: 35px;
+    margin-right: 10px;
+}
+
+#bellacash{
+    width: 150px;
+    height: 60px;
+    background-color: #ffc400;
+    border-radius: 50px;
+    position: fixed;
+    bottom: 20px;
+    left: 10px;
+    z-index: 100;
+    padding-top: 13px;
+    font-size: 15px;
+    font-weight: 600;
+}
+#bellacash img{
+   margin-left: 20px;
+   margin-right: 7px;
+  
+}
+#whatsapp{
+    width: 60px;
+    height: 60px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 50%;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+
+}
+#whatsapp img{
+    width: 70%;
+}

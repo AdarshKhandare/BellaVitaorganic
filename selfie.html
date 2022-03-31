@@ -16,12 +16,13 @@ body {
     padding: 0;
 }
 #bella{
-    height:700px;
+    height:750px;
     width:100%;
     margin:auto;
 }
 #sel{
     width:100%;
+    height:65%;
 }
 #h2{
  margin-top:25px;
@@ -38,11 +39,11 @@ body {
     height:500px;
     width:60%;
     margin:auto;
-    margin-top:-80px;
+    margin-top:-100px;
 }
 #sel1{
     width:100%;
-    height:470px;
+    height:500px;
 }
 #p1{
   margin-top:10px;
@@ -51,7 +52,7 @@ body {
   font-size: 15px;
 }
 #form{
-     height:700px;
+     height:650px;
      margin:auto;
     background: transparent;
     max-width: 580px;
@@ -64,15 +65,14 @@ body {
 #div{
     height:250px;
     width:100%;
-    background-color: green;
     margin-top:15px;
 }
 #input{
     height:0px;
     width: 100%;
-    padding:20px;
+    padding:14px;
+    border:1.5px solid #c7c7c7;
     border-radius:5px;
-    border-color: #c7c7c7;
 }
 #div1{
     display:grid;
@@ -92,18 +92,54 @@ select{
     height:100%;
     width:100%;
     color:#747171;
-
+    border:1.5px solid #c7c7c7;
+    border-radius:5px;
+    padding:10px;
 }
 #div3{
     height:60%;
     width: 100%;
     margin-top:20px;
     padding-left:-10px;
-    background-color:yellow;
-}#input1{
-    height:100%;
+    border:1.5px solid #c7c7c7;
+    border-radius:5px;
+}
+#input1{height:0px;
     width: 100%;
-    
+    padding:15px;
+    border-top-style: hidden;
+        border-right-style: hidden;
+        border-left-style: hidden;
+        border-bottom-style: hidden;
+}
+#upl{
+    height:60%;
+    width: 30%; 
+    margin-top:15px;
+}
+#cap{
+    height:35%;
+    width: 100%; 
+    margin-top:-100px;
+}
+#capc{
+    height:100%;
+    width: 63%; 
+   margin-top:-7px;
+}
+#but{
+    width:100%;
+   height:45px;
+   margin-top:17px;
+}
+.btn{
+ width:100%;
+ height:40px;
+ background-color:#333333;
+ color:#fff;
+ border-radius: 5px;
+ font-size: 16px;
+ border:none;
 }
 </style>
 <body>
@@ -162,11 +198,19 @@ select{
          </div>
         </div>
         <div id="div3">
-         <input id="input1"type="text" placeholder="Why*">
+         <input  id="input1"type="text" placeholder="Why*">
         </div>            
+     
+        <div id="upl">
+            <input  id="input"type="text" placeholder="Upload an Image"> 
+        </div>
+       <div id="cap">
+           <img id="capc"src="https://mijat.s3.eu-central-1.amazonaws.com/330/Screen-Shot-2020-10-04-at-9.28.06-PM.png">
+       </div>
 
-       
-
+       <div id="but">
+           <button class="btn"value="Submit">Submit</button>
+       </div>
         </div>
      </div>
      <div>FOOTER</div>

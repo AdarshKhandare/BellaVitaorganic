@@ -19,11 +19,13 @@ DataAppend(bestData,container);
 
 document.getElementById("sorter").addEventListener("change",()=>{
     var sorting= document.querySelector("#sorter").value;
+
     if(sorting === "l2h"){
         bestData.sort(function(a,b){
+
             return a.price - b.price;
         })
-        displayData(bestData,container);
+        DataAppend(bestData,container);
     }
 
     else if(sorting === "h2l"){

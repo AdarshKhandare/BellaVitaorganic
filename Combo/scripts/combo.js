@@ -24,7 +24,7 @@ document.getElementById("sort").addEventListener("change",()=>{
         bestData.sort(function(a,b){
             return a.price-b.price;
         })
-        displayData(bestData,container);
+        DataAppend(bestData,container);
     }
 
     else if(sorting === "h2l"){

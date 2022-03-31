@@ -116,12 +116,14 @@ body{
 
 #quick{
     width:100%;
-    margin-top:-15px;
-    background-color:black;
+    margin-top:-10px;
+    background-color:#43403d;;
     color:white;
     position: absolute;
     z-index: 2;
     border:none;
+    display:none;
+    height: 20px;
 }
 #divI:hover .mybquickoverlap {
     display: block;
@@ -261,7 +263,7 @@ body{
     height: 300px;
     width: 100%;
     /* text-align: left; */
-    background-color:#ededed;
+    background-image: url('https://cdn.shopify.com/s/files/1/0054/6665/2718/files/1_1_ecef2245-1d82-431e-b32d-5d704e1e620d.jpg?v=1606463237');
     
     
 

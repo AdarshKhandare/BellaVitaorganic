@@ -1,5 +1,5 @@
 const DataAppend=(data, parent)=>{
-
+    parent.innerHTML = "";
     data.forEach(function(ele){
 
             let div = document.createElement("div")

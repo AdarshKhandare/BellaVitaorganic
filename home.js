@@ -100,12 +100,11 @@ let review8 = new Review(
 );
 
 reviewsArr.push( review2, review3, review4, review5, review6, review7, review8);
-console.log(reviewsArr)
+
 const createTag = (tag) => {
   return document.createElement(tag);
 }
 let counter = 0;
-console.log(reviewsArr[counter].image)
 let reviewsDiv = document.querySelector("#reviews>div");
 const displayReviews = () => {
 
@@ -122,8 +121,17 @@ const displayReviews = () => {
     h6.innerText = reviewsArr[counter].name;
     reviewsDiv.append(img, para, h6);
     counter++;
-    console.log(counter);
   },4000);
    
 } 
-displayReviews()
+displayReviews();
+
+// -------bestSellers absolute Button--------------------------------
+let bestSellerImg = document.querySelector("#bestSellers .carousel-cell>img");
+let buyButton = document.querySelector("#bestSellers .carousel-cell .buy")
+console.log(buyButton)
+buyButton.addEventListener("hover", () => {
+  bestSellerImg.style.opacity = "0.2";
+  
+console.log("dvdv")
+})

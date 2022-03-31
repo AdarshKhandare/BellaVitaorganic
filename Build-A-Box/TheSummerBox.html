@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Summer Box</title>
     <link rel="stylesheet" href="styles/buying.css">
+    <script src="https://kit.fontawesome.com/d103d8b709.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -18,7 +19,7 @@
         <h1>Select Your Hydration</h1>
         <p>You can select only one item</p>
     </div>
-    <div id="FlexData">
+    <div id="data">
 
     </div>
     <div id="total">
@@ -41,4 +42,15 @@
 </body>
 
 </html>
-<script src="scripts/TheSummerBox.js"></script>
+<script type="module">
+
+    let bestData = JSON.parse(localStorage.getItem("summerbox"));
+    console.log("bestdata", bestData);
+
+    import { DataAppend } from "./component/BabC.js";
+
+    let container = document.getElementById("data");
+
+    DataAppend(bestData, container);
+</script>
+<script type="module" src="scripts/data.js"></script>

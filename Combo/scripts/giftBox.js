@@ -17,8 +17,8 @@ DataAppend(bestData,container);
 
 // ==============sort======================
 
-document.getElementById("sider").addEventListener("change",()=>{
-    var sorting= document.querySelector("#sider").value;
+document.getElementById("sorter").addEventListener("change",()=>{
+    var sorting= document.querySelector("#sorter").value;
     if(sorting === "l2h"){
         bestData.sort(function(a,b){
             return a.price - b.price;

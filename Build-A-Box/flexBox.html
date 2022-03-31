@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flex Box</title>
     <link rel="stylesheet" href="styles/buying.css">
+    <script src="https://kit.fontawesome.com/d103d8b709.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div id="banner">
@@ -40,4 +41,15 @@
         <!-- -------------------------------------------------------------------------------------- -->
 </body>
 </html>
-<script src="scripts/flexbox.js"></script>
+<script type="module">
+
+    let bestData = JSON.parse(localStorage.getItem("flexObj"));
+        console.log("bestdata", bestData);
+
+        import { DataAppend } from "./component/BabC.js";
+
+        let container = document.getElementById("data");
+
+        DataAppend(bestData, container);
+</script>
+<script type="module" src="scripts/data.js"></script>

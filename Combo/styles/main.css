@@ -103,7 +103,7 @@ body{
     border:none;
     display:none;
     margin: auto;	
-    margin-left: 35px;
+    margin-left: 45px;
     margin-top: -120px;
 }
 #divI > button:hover{
@@ -112,6 +112,19 @@ body{
 }
 #divI:hover .mybuttonoverlap{
         display: block;
+}
+
+#quick{
+    width:100%;
+    margin-top:-15px;
+    background-color:black;
+    color:white;
+    position: absolute;
+    z-index: 2;
+    border:none;
+}
+#divI:hover .mybquickoverlap {
+    display: block;
 }
 
 
@@ -194,7 +207,7 @@ body{
      font-weight:100;
      position:fixed;
      margin: 10px;
-     bottom:60px;
+     bottom:30px;
      letter-spacing:1px
 }
 
@@ -208,8 +221,8 @@ body{
 #whatsAppButton>button{
     width:60px;
     height:60px;
-    position:fixed;
-    bottom:50px;
+    position: fixed;
+    bottom:0px;
     right:0;
     margin:30px;
     outline: none;
@@ -278,42 +291,3 @@ body{
 }
 #more {display: none;}
 
-/* option_css */
-.options {
-    display: none;
-    background-color: white;
-    border: 1px solid #b4b0b0;
-    width: 170px;
-    position: absolute;
-    right: 3%;
-    height: 250px;
-    font-family: calibri;
-    color: #555758;
-    line-height: 5px;
-    padding: 7px;
-    padding-left: 12px;
-    z-index: 1;
-}
-
-.options p {
-    padding: 5px;
-    font-size: 14px;
-    font-weight: bold;
-    color: #555758;
-}
-
-.options p:hover {
-    background-color: #f4f4f4;
-}
-
-.options .fea {
-    background-color: #f4f4f4;
-}
-
-@media screen and (max-width: 400px) {
-    .options {
-        width: 210px;
-        position: absolute;
-        right: 20px;
-    }
-}

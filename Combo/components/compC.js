@@ -15,6 +15,11 @@ const DataAppend=(data, parent)=>{
             button.innerText = "ADD TO BOX"
             button.setAttribute("class","mybuttonoverlap btn btn-info")
 
+            let quick = document.createElement("p")
+            quick.innerText = "QUICK VIEW"
+            quick.setAttribute("id","quick")
+            quick.setAttribute("class","mybquickoverlap")
+
             let name = document.createElement("p")
             name.innerText = ele.name
             name.setAttribute("id","name")
@@ -36,7 +41,7 @@ const DataAppend=(data, parent)=>{
             let save = document.createElement("p")
             save.innerText = ele.save
             save.setAttribute("id", "save")
-            divI.append(img,button)
+            divI.append(img,button,quick)
             divP.append(strickedoffprice,price)
 
             div.append(divI,name,rating,divP,save);

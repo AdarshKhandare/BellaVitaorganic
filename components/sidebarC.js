@@ -5,7 +5,7 @@ function sidebar(){
         <li class="nav-item">
             <a class="nav-link" href="#"> All Products </a>
             <a class="nav-link" href="#"> Best Seller </a>
-            <a class="nav-link" href="#"> Build A Box </a>
+            <a class="nav-link" href="/Build-A-Box/bab.html"> Build A Box </a>
         </li>
         <li class="nav-item has-submenu">
             <div class="nav-link catelog" style="display: flex; justify-content: space-between;" ><a href="#"> Offers</a><i class="fa-solid fa-angle-down"></i> </div>

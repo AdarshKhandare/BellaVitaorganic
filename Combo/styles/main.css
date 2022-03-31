@@ -277,3 +277,43 @@ body{
     margin-left: 40px;
 }
 #more {display: none;}
+
+/* option_css */
+.options {
+    display: none;
+    background-color: white;
+    border: 1px solid #b4b0b0;
+    width: 170px;
+    position: absolute;
+    right: 3%;
+    height: 250px;
+    font-family: calibri;
+    color: #555758;
+    line-height: 5px;
+    padding: 7px;
+    padding-left: 12px;
+    z-index: 1;
+}
+
+.options p {
+    padding: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #555758;
+}
+
+.options p:hover {
+    background-color: #f4f4f4;
+}
+
+.options .fea {
+    background-color: #f4f4f4;
+}
+
+@media screen and (max-width: 400px) {
+    .options {
+        width: 210px;
+        position: absolute;
+        right: 20px;
+    }
+}

@@ -14,13 +14,12 @@ price:"Rs. 225"},]
 
 localStorage.setItem("completeCare",JSON.stringify(completeCare))
 
-let flexData = JSON.parse(localStorage.getItem("completeCare")) || []
-console.log(flexData)
-let flexappply = document.querySelector("#FlexData")
 
-const flexappend=(flexData)=>{
+let container = document.getElementById("data");
+let data = JSON.parse(localStorage.getItem("completeCare"));
+const DataAppend=()=>{
 
-    flexData.forEach(function(ele){
+    data.forEach(function(ele){
 
             let div = document.createElement("div")
             div.setAttribute("id","divFlex")
@@ -36,11 +35,14 @@ const flexappend=(flexData)=>{
             name.setAttribute("id","name")
 
             let rating = document.createElement("p")
-            rating.innerText = "🌟" + " " +ele.rating
+             rating.innerHTML=`<i style="color:gold;"class="fa-solid fa-star"></i><i style="color:gold;" class="fa-solid fa-star"></i><i style="color:gold;" class="fa-solid fa-star"></i><i style="color:gold;" class="fa-solid fa-star"></i><i style="color:gold;" class="fa-regular fa-star-half-stroke"></i>`+""+ele.rating;
 
             div.append(img,button,name,rating)
-            flexappply.append(div)
+            container.append(div)
     })
 
 }
-flexappend(flexData)
+DataAppend()
+
+
+

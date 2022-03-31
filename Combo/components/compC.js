@@ -1,0 +1,47 @@
+const DataAppend=(data, parent)=>{
+
+    data.forEach(function(ele){
+
+            let div = document.createElement("div")
+            div.setAttribute("id","divFlex")
+            div.setAttribute("class","mydivouter")
+            let divI = document.createElement("div")
+            divI.setAttribute("id","divI")
+
+            let img = document.createElement("img")
+            img.src = ele.image
+
+            let button = document.createElement("button")
+            button.innerText = "ADD TO BOX"
+            button.setAttribute("class","mybuttonoverlap btn btn-info")
+
+            let name = document.createElement("p")
+            name.innerText = ele.name
+            name.setAttribute("id","name")
+
+            let rating = document.createElement("p")
+            rating.innerHTML=`<i style="color:gold;"class="fa-solid fa-star"></i><i style="color:gold;" class="fa-solid fa-star"></i><i style="color:gold;" class="fa-solid fa-star"></i><i style="color:gold;" class="fa-solid fa-star"></i><i style="color:gold;" class="fa-regular fa-star-half-stroke"></i>`+""+ele.rating;
+            rating.setAttribute("id","rating")
+            
+            let strickedoffprice = document.createElement("h5")
+            strickedoffprice.innerText = ele.strickedoffprice
+            strickedoffprice.setAttribute("id", "strickprice")
+
+            let price = document.createElement("h5")
+            price.innerText = "Rs."+" "+ ele.price
+
+            let divP = document.createElement("div")
+            divP.setAttribute("id","divp")
+
+            let save = document.createElement("p")
+            save.innerText = ele.save
+            save.setAttribute("id", "save")
+            divI.append(img,button)
+            divP.append(strickedoffprice,price)
+
+            div.append(divI,name,rating,divP,save);
+            parent.append(div)
+    })
+
+}
+export { DataAppend }

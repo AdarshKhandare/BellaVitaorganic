@@ -24,15 +24,15 @@
     
     <div id="filter">
         <p>SORT BY</p>
-        <select id="sorter">
-                <option value="--">Featured</option>
-                <option value="l2h" id="low">Price,low to high</option>
-                <option value="h2l" id="high">Price,high to low</option>
-                <option value="">Alphabetically,A-Z</option>
-                <option value="">Alphabetically,Z-A</option>
-                <option value="">Date old to new</option>
-                <option value="">Date new to old</option>
-                <option value="">Best Selling</option>
+        <select id="sort">
+            <option value="">Featured</option>
+            <option value="l2h">Price,low to high</option>
+            <option value="h2l">Price,high to low</option>
+            <option value="A2Z">Alphabetically,A-Z</option>
+            <option value="Z2A">Alphabetically,Z-A</option>
+            <option value="">Date old to new</option>
+            <option value="">Date new to old</option>
+            <option value="">Best Selling</option>
         </select>
     </div>
     <div id="container">
@@ -62,10 +62,5 @@
 </body>
 </html>
 <script type="text/javascript" src="/sidebar/sidebar.js"></script>
-<script type="module">
 
-import sidebar from "/components/sidebarC.js"
-
-document.querySelector("#sider").innerHTML = sidebar()
-</script>
-<script src="scripts/combo.js"></script>
+<script type="module" src="scripts/combo.js"></script>

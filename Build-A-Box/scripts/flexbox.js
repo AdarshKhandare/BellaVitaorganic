@@ -1,3 +1,4 @@
+
 let flexObj = [{image:"https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Exfoliate-01_8155634b-1029-437e-862d-f927a3202fb1_1024x1024.jpg?v=1646654035",
 name:"Exfoliate Face and Body Scrub Grit, Skin Brightening, De-Tan Removal - 75gm",
 rating:"     4.8 (2013 reviews)",
@@ -81,13 +82,11 @@ price:"Rs. 149"},]
 
 localStorage.setItem("flexObj",JSON.stringify(flexObj))
 
-let flexData = JSON.parse(localStorage.getItem("flexObj")) || []
-console.log(flexData)
-let flexappply = document.querySelector("#FlexData")
+let container = document.getElementById("data");
+let data = JSON.parse(localStorage.getItem("flexObj"));
+const DataAppend=()=>{
 
-const flexappend=(flexData)=>{
-
-    flexData.forEach(function(ele){
+    data.forEach(function(ele){
 
             let div = document.createElement("div")
             div.setAttribute("id","divFlex")
@@ -103,11 +102,11 @@ const flexappend=(flexData)=>{
             name.setAttribute("id","name")
 
             let rating = document.createElement("p")
-            rating.innerText = "🌟" + " " +ele.rating
+             rating.innerHTML=`<i style="color:gold;"class="fa-solid fa-star"></i><i style="color:gold;" class="fa-solid fa-star"></i><i style="color:gold;" class="fa-solid fa-star"></i><i style="color:gold;" class="fa-solid fa-star"></i><i style="color:gold;" class="fa-regular fa-star-half-stroke"></i>`+""+ele.rating;
 
             div.append(img,button,name,rating)
-            flexappply.append(div)
+            container.append(div)
     })
 
 }
-flexappend(flexData)
+DataAppend()

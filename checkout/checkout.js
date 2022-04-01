@@ -57,6 +57,7 @@ let item_div = document.getElementById("item_div")
 
     document.querySelector("#tdb_amount").innerText = "Rs."+" "+ total;
     document.querySelector("#sub_total").innerText = "Rs."+" "+ total;
+    localStorage.setItem("Final_Total",JSON.stringify(total))
 
     display(cart_items)
 }

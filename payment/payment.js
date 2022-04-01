@@ -18,17 +18,9 @@ document.querySelectorAll(".payment_method").forEach((el) => {
 
 // setting total amount
 
-let cart_items = JSON.parse(localStorage.getItem("cart_items")) || [];
-let x = 0;
-for (let i = 0; i < cart_items.length; i++) {
-  if (cart_items[i].Amount === undefined) {
-    x = x + Number(cart_items[i].Qty) * Number(cart_items[i].Price);
-  } else {
-    x = x + Number(cart_items[i].Amount);
-  }
-}
+let total = JSON.parse(localStorage.getItem("Final_Total")) || [];
 
-document.getElementById("price").innerHTML = `₹ ${x}.00`;
+document.getElementById("price").innerText = "Rs."+" "+ total;
 
 // form validation
 

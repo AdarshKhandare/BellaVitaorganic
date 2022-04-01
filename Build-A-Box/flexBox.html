@@ -41,15 +41,16 @@
         <!-- -------------------------------------------------------------------------------------- -->
 </body>
 </html>
+<script type="module" src="scripts/data.js"></script>
+<script type="module" src="component/BabC.js"></script>
 <script type="module">
 
-    let bestData = JSON.parse(localStorage.getItem("flexObj"));
-        console.log("bestdata", bestData);
+    let bestData = JSON.parse(localStorage.getItem("mansoonCare"));
+    console.log("bestdata", bestData);
 
-        import { DataAppend } from "./component/BabC.js";
+    import { DataAppend } from "./component/BabC.js";
 
-        let container = document.getElementById("data");
+    let container = document.getElementById("data");
 
-        DataAppend(bestData, container);
+    DataAppend(bestData, container);
 </script>
-<script type="module" src="scripts/data.js"></script>

@@ -1,6 +1,6 @@
 
 
-import sidebar from "/components/sidebarC.js";
+import sidebar from "../components/sidebarC.js";
 let side= document.getElementById("sider");
 side.innerHTML=sidebar();
 
@@ -57,24 +57,3 @@ document.getElementById("sorter").addEventListener("change",()=>{
 })
 
 
-
-
-
-
-// read more buttons 
-
-function myFunction() {
-  var dots = document.getElementById("dots");
-  var moreText = document.getElementById("more");
-  var btnText = document.getElementById("myBtn");
-
-  if (dots.style.display === "none") {
-    dots.style.display = "inline";
-    btnText.innerHTML = "READ MORE"; 
-    moreText.style.display = "none";
-  } else {
-    dots.style.display = "none";
-    btnText.innerHTML = "READ LESS"; 
-    moreText.style.display = "inline";
-  }
-}

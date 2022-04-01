@@ -1,7 +1,7 @@
 
 
 
-import sidebar from "/components/sidebarC.js";
+import sidebar from "../components/sidebarC.js";
 let side= document.getElementById("sider");
 side.innerHTML=sidebar();
 

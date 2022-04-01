@@ -6,13 +6,16 @@ body{
 *{
     margin: 0%;
     padding: 0%;
-    font-family: 'Montserrat', sans-serif;
+  
 }
 .navigator{
     margin-top: 40px;
-    margin-left: 35px;
+    margin-left: 60px;
     font-weight: 600;
     font-size: small;
+    font-size:16px;
+    text-transform: capitalize;
+  color: rgb(88, 88, 88);
 }
 .navigator a{
     text-decoration: none;
@@ -49,26 +52,26 @@ body{
 #data{
     
     display: grid;
-    grid-template-columns: repeat(4, 23%);
-    row-gap: 30px;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 20px;
     justify-content: space-between;
    
 }
 #divFlex{
     margin-top:20px;
     width: 280px;
-    height: 400px;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    height: 450px;
     text-align: center;
     border-radius: 15px;
     position:relative;
-    margin-right: 40px;
+    margin-right: 0px;
+    box-shadow: rgba(0, 0, 0, 0.35) 4px 5px 15px;
 }
 
 
 #divI > img{
-    width: 220px;
-    height: 250px;
+    width: 100%;
+    height: 300px;
     margin-bottom: 0px;
 }
 
@@ -123,20 +126,21 @@ body{
   overflow: hidden;
   line-height: 19px;
   font-family: 'Museo Sans', sans-serif;;
-  font-weight: bold;
+  /* font-weight:bold; */
   color: #232323;
   text-align: center;
   padding: 1px;
-  font-size: 13px;
+  font-size: 17px;
+text-align: center; 
     
 }
 #rating{
-    margin-top: -15px;
+    margin-top: -10px;
 }
 
 #save{
-    font-size:10px;
-    color: green;
+    font-size:13px;
+    color: rgb(9, 168, 9);
 }
 #divp{
     display:flex;
@@ -149,14 +153,16 @@ body{
 
 }
 #divp > h5:last-child{
-    color: #e95449;
-    margin-right:30px
+    color: #e95144;
+     font-size:20px;
+    margin-right:60px
 }
 #strickprice{
-  color: rgb(124, 124, 124);
+    color: #969696;
   text-decoration: line-through;
-  margin-left:30px
-  
+  margin-left:70px;
+  font-size:20px;
+ 
 }
 /* boxes end here */
 
@@ -239,7 +245,8 @@ body{
     text-align: left;
     margin-left: 40px;
     margin-bottom: 20px;
-    color:#232323
+    color:#232323;
+    
 }
 
 

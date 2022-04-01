@@ -36,7 +36,7 @@ const DataAppend=(data, parent)=>{
             strickedoffprice.setAttribute("id", "strickprice")
 
             let price = document.createElement("h5")
-            price.innerText =  ele.price
+            price.innerText = "Rs."+""+ ele.price
 
             let divP = document.createElement("div")
             divP.setAttribute("id","divp")

@@ -138,7 +138,7 @@ font-family: sans-serif;
 .bag>h4{
     margin-top: 0px;margin-left: 10px;font-family: sans-serif;
 }
-.bag>p{
+.bag p{
     margin-left: 10px;font-size: 14px;text-align: center;
 font-family: sans-serif;
 }
@@ -148,4 +148,8 @@ font-family: sans-serif;
 }
 #btn1:hover{
     background-color: green;
+}
+#acc{
+    font-size: 14px;text-align: center;
+font-family: sans-serif;
 }

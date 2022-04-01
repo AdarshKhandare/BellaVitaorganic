@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./navbar.css">
+    <link rel="stylesheet" href="./signup.css">
+    <link rel="stylesheet" href="./footer.css">
+    
+</head>
+<body>
+
+    <!-- navbar -->
+    <div id="headerWrapper">
+
+    </div>
+
+    <!-- registration Form -->
+    <div id="container">
+        <h2>CREATE AN ACCOUNT</h2>
+        <hr>
+        <p id="para">Sign up for a free account at Bella Vita Organic.</p>
+        <form  id="registerForm" >
+                <p>First Name</p>
+                <input required type="text" name ="firstname" id="firstName">
+
+                <p>Last Name</p>
+                <input required type="text" name="lastname"id="lastName">
+
+                <p>Your Email Address <sup style="color:red">*</sup></p>
+                <input required type="text" name="email" id="mail">
+
+                <p>Your Password <sup style="color:red">*</sup></p>
+                <input required type="password" name="password" id="pass"> <br>
+
+                <input type="submit" id="btn" value="CREATE AN ACCOUNT">
+        </form>
+    </div>
+    
+    <!-- Footer -->
+    <div id="dhoni">
+
+    </div>
+</body>
+</html>
+
+<script type="module">
+
+    import navbar from "./signup.js"
+    //console.log(navbar)
+
+    var head = document.querySelector("#headerWrapper")
+    head.innerHTML=navbar();
+
+    import footer from "./footer.js"
+
+    var foot = document.getElementById("dhoni");
+    foot.innerHTML=footer();
+    
+
+
+    // signup JS part
+
+    var reguserarr=[]
+    
+    let registerform = document.getElementById("registerForm")
+
+    var reguserarr = JSON.parse(localStorage.getItem("storedreguser"))||[]
+
+    registerform.addEventListener("submit",(event)=>{
+        event.preventDefault();
+        //console.log("yes");
+
+        let firstname = document.getElementById("firstName").value
+        let lastname=document.getElementById("lastName").value;
+        let email = document.getElementById("mail").value;
+        let password = document.getElementById("pass").value;
+
+        let obj={
+            firstname:firstname,
+            lastname:lastname,
+            email:email,
+            password:password,
+        }
+        reguserarr.push(obj)
+        console.log(reguserarr);
+        var flag = false
+
+for(var i=0;i<reguserarr.length;i++)
+{
+    if(reguserarr[i].fullname=="" || reguserarr[i].email==""||reguserarr[i].company==""||reguserarr[i].website=="" )
+    {
+        flag = true;
+    }
+    else{
+        flag = false;
+    }
+}
+if(flag==true)
+{
+    alert("Missing Credential");
+
+}
+else if(flag==false)
+{
+    alert("Signup Successfull")
+    window.location.href="./navbar.html"
+    // let profile = JSON.parse(localStorage.getItem("profile"))
+    // let icon = document.querySelector(".icon-user")
+    // icon.setAttribute("src","profile.url")
+
+    // let div = document.querySelector(".acc")
+    // div.append(icon);
+    
+}
+
+localStorage.setItem("storedreguser",JSON.stringify(reguserarr))
+    })
+
+
+    // var imageUrl ={
+    //     url:"https://www.pinclipart.com/picdir/middle/565-5658381_login-icon-png-clipart.png"
+    // }
+    // var profile = localStorage.setItem("profile",JSON.stringify(imageUrl))
+
+
+</script>

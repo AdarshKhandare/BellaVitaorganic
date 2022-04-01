@@ -4,14 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dryskin</title>
-     <link rel="stylesheet" href="./css/dryskin.css"> 
-    <link rel="stylesheet" href="./sidebar/sidebar.css">
-    <link rel="stylesheet" href="./Navbar/navbar.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <title>Document</title>
+    <link rel="stylesheet" href="./navbar.css">
 </head>
 <body>
-  <!-- main header -->
+
+    <!-- main header -->
     <div id="headerWrapper">
 
         <!-- left header -->
@@ -253,7 +251,7 @@
             </div>
             
             <div class="acc-mb svg-mb">
-                <a href="#" title="User Icon" onclick="openWindow()" class="icon-user" data-user-mobile-toggle="">
+                <a href="#" title="User Icon" onClick="openWindow()" class="icon-user" data-user-mobile-toggle="">
                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="lnr-user" viewBox="0 0 1024 1024" width="100%" height="100%">
                         <title>user</title>
                         <path class="path1" d="M486.4 563.2c-155.275 0-281.6-126.325-281.6-281.6s126.325-281.6 281.6-281.6 281.6 126.325 281.6 281.6-126.325 281.6-281.6 281.6zM486.4
@@ -268,7 +266,7 @@
             </div>
             
             <div class="cart-icon svg-mb" data-cart-header-parallax="">
-                <a href="#" title="Cart Icon" onclick="openCart()"data-cart-toggle="" style="text-decoration:none">       
+                <a href="#" title="Cart Icon" onClick="openCart()"data-cart-toggle="" style="text-decoration:none">       
                     
                     <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
                         <path class="path1" d="M409.6 1024c-56.464 0-102.4-45.936-102.4-102.4s45.936-102.4 102.4-102.4S512 865.136 512 921.6 466.064 1024 409.6 1024zm0-153.6c-28.232 0-51.2 22.968-51.2 51.2s22.968 51.2 51.2 51.2 51.2-22.968 51.2-51.2-22.968-51.2-51.2-51.2z"></path>
@@ -276,7 +274,7 @@
                         <path class="path3" d="M898.021 228.688C885.162 213.507 865.763 204.8 844.8 204.8H217.954l-5.085-30.506C206.149 133.979 168.871 102.4 128 102.4H76.8c-14.138 0-25.6 11.462-25.6 25.6s11.462 25.6 25.6 25.6H128c15.722 0 31.781 13.603 34.366 29.112l85.566 513.395C254.65 736.421 291.929 768 332.799 768h512c14.139 0 25.6-11.461 25.6-25.6s-11.461-25.6-25.6-25.6h-512c-15.722 0-31.781-13.603-34.366-29.11l-12.63-75.784 510.206-44.366c39.69-3.451 75.907-36.938 82.458-76.234l34.366-206.194c3.448-20.677-1.952-41.243-14.813-56.424zm-35.69 48.006l-34.366 206.194c-2.699 16.186-20.043 32.221-36.39 33.645l-514.214 44.714-50.874-305.246h618.314c5.968 0 10.995 2.054 14.155 5.782 3.157 3.73 4.357 9.024 3.376 14.912z"></path>
                     </svg>
                     <div class="cartCount" data-cart-count="">
-                    <span id="countcard">0</span>
+                    <span>0</span>
                     </div>
                 </a>                    
             </div>
@@ -288,7 +286,7 @@
     <div class="pop-up">
         
         <div class="login">
-            <div class="close" onclick="closeWindow()"> +</div>
+            <div class="close" onClick="closeWindow()"> +</div>
            
             <h4>CUSTOMER LOGIN :</h4>
             <hr>
@@ -302,7 +300,7 @@
                 <input type="submit" id ="login" value="LOGIN">          
             </form>
         <p>Forgot Your password?</p>  
-        <button id="btn" onclick="sign()">CREATE AN ACCOUNT</button>
+        <button id="btn" onClick="sign()">CREATE AN ACCOUNT</button>
         </div>
     </div>
 
@@ -311,102 +309,24 @@
 
     <div class="cartpop">
         <div class="bag">
-            <div class="close" onclick="closeCart()"> +</div>
+            <div class="close" onClick="closeCart()"> +</div>
             <h4>SHOPPING CART :</h4>
-            
-             <!-- sagar you can add  cart items here -->
-            <div id="appedcard11">
-               
-            </div>
             <hr>
-             <div id="cardtotal" style="display: flex; justify-content: space-between; width: 80%; margin: auto; ">
-              <h4>Total</h4>
-              <div style="display: flex;">
-                <h3>Rs.</h3>
-                <h3 id="total">234</h3></div>
-              
+             <!-- sagar you can add  cart items here -->
+            <div>
+                <p>Your cart is currently empty.</p>
             </div>
-             <button id="btn1">CHECK OUT</button>
-             <button id="btn2">VIEW CART</button>
+
+             <button id="btn1">CONTINUE SHOPPING</button>
         </div>
        
     </div>
 
     </div>
-  
-    <div id="drymain">
-        <p id="p1">DRY SKIN CARE PRODUCTS</p>
-<p id="p2">Dry skin is a very common condition that causes small fine flakes and dry patches. whether it is caused by ageing or environmental factors, having dry skin can be very uncomfortable and itchy. There are various treatments and home remedies available to relieve dry skin - but which are most effective?<span id="dots">...</span><span id="more">Dry skin is often caused by a lack of moisture, so deep hydration is required to combat dry skin problems. Use Bella Vita Organic dry skin care products to treat dry skin naturally and pamper your skin with natural ingredients.</span></p>
-
-<button onclick="myFunction()" id="myBtn">Read more</button>
-    </div>
-    <div id="filler" style="display: flex; justify-content: space-between; margin-left: 4%; margin-top: 2%;" >
-        <div style="display: flex;">
-         <p><a  style="text-decoration: none; color: rgba(0, 0, 0, 0.719); margin-right: 5px;"href="#">Home</a></p>
-         <p>></p>
-         <p><a style="text-decoration: none; color: rgba(97, 96, 96, 0.719);margin-left: 5px;"href="#">
-            Dry Skin Care Products</a></p>
-     </div>
-     <div style="display: flex; justify-content: space-between; margin-bottom: 50px; margin-right: 5%;">
-        <P style="margin-top: 5px; margin-right: 10px;">SORT BY</P> 
-         <select id="select" style="height: 35px;">
-             <option>Featured</option>
-             <option value="ltoh">Price, low to high</option>
-             <option value="htol">Price, high to low</option>
-             <option value="atoz">Aiphabetically, A-Z</option>
-             <option value="ztoa">Aiphabetically, Z-A</option>
-             
-         </select>
-     </div>
-     </div> 
-    <div id="consiner">
-        <div id="sidebar"></div>
-        <div id="apped"></div>
-    </div>
-   
 </body>
 </html>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"crossorigin="anonymous"></script>
-<script src="https://kit.fontawesome.com/13760dee3d.js" crossorigin="anonymous"></script>
-<script src="./js/dryskin.js"></script>
-<script src="./js/data.js"></script>
-
-<script type="module">
-
-
- import sidebar from './components/sidebar.js'
- let side=document.getElementById("sidebar")
- side.innerHTML=sidebar()
- document.addEventListener("DOMContentLoaded", function(){
-    document.querySelectorAll('.sidebar .nav-link').forEach(function(element){
-      
-      element.addEventListener('click', function (e) {
-  
-        let nextEl = element.nextElementSibling;
-        let parentEl  = element.parentElement;	
-  
-          if(nextEl) {
-              e.preventDefault();	
-              let mycollapse = new bootstrap.Collapse(nextEl);
-              
-              if(nextEl.classList.contains('show')){
-                mycollapse.hide();
-              } else {
-                  mycollapse.show();
-                  // find other submenus with class=show
-                  var opened_submenu = parentEl.parentElement.querySelector('.submenu.show');
-                  // if it exists, then close all of them
-                  if(opened_submenu){
-                    new bootstrap.Collapse(opened_submenu);
-                  }
-              }
-          }
-      }); // addEventListener
-    }) // forEach
-  }); 
-</script>
 <script>
-     function openWindow(){
+    function openWindow(){
         document.querySelector(".pop-up").style.display="flex"
     }
     function closeWindow(){
@@ -421,47 +341,62 @@
     function closeCart(){
         document.querySelector(".cartpop").style.display="none"
     }
-    var cardArr=JSON.parse(localStorage.getItem("cardArr"))||[];
-       document.getElementById("countcard").innerHTML=cardArr.length
-       display(cardArr)
-       function display(cardArr){
-        document.querySelector("#appedcard11").innerHTML=""
-        cardArr.map(function(elem,index){
-             let div=document.createElement("div")
-             div.style.display="flex"
-             let img=document.createElement("img")
-             img.src=elem.image
-             img.style.width="70PX"
-             img.style.height="70px"
-             let div1=document.createElement("div")
-             let name=document.createElement("p")
-             name.style.fontSize="10px"
-             name.style.textAlign="left"
-             name.innerText=elem.name
-             let price=document.createElement("h6")
-             price.style.marginTop="0px"
-             price.innerHTML=`${elem.quant}X Rs.${elem.price}`
-             price.style.textAlign="right"
-            let hr=document.createElement("hr")
-             div1.append(name,price)
-             div.append(img,div1)
-             document.querySelector("#appedcard11").append(div,hr)
-             
 
-        })
-       }
-       function subto(){
-    var total=cardArr.reduce(function(acc,e ,index){
-   return acc+(e.price*e.quant)
-//    display(cardArr)
-  
-     },0);
-     document.getElementById("total").innerText=total
-    //  addE()
-  display(cardArr)
+     // login part
+
+     var regUser = JSON.parse(localStorage.getItem("storedreguser"))
+    console.log(regUser)
+
+
+    document.querySelector("#loginForm").addEventListener("submit",loginDetails)
+    function loginDetails(event){
+        event.preventDefault()
+
+        let email = document.getElementById("email").value;
+        let pass = document.getElementById("password").value;
+        console.log(email,pass)
+        var flag = false;
+        var firstname;
+        var lastname;
+        for(var i=0;i<regUser.length;i++)
+        {
+            if(email == regUser[i].email && pass == regUser[i].password)
+            {
+                var firstname = regUser[i].firstname;
+                var lastname = regUser[i].lastname;
+                flag = true;
+            }
+            
+        }
+        if(flag==true)
+        {
+            alert("Login Successful"); 
+            console.log(firstname,lastname);
+            document.querySelector(".login").innerHTML="";
+
+            let div = document.createElement("div");
+            div.setAttribute("class","close");
+            div.addEventListener("click",closeWindow)
+            div.innerText="+";
+
+            let h4 = document.createElement("h4");
+            h4.innerText=firstname.toUpperCase()+" "+lastname.toUpperCase();
+
+            let hr = document.createElement("hr");
+
+            let p = document.createElement("p");
+            p.setAttribute("id","acc")
+            p.innerText="My Account";
+
+            let btn1 = document.createElement("button");
+            btn1.setAttribute("id","btn");
+            btn1.innerText="LOGOUT";
+
+            document.querySelector(".login").append(div,h4,hr,p,btn1);
+        }
+        else if(flag==false)
+        {
+            alert("Invalid Credential")
+        }
     }
-
-    subto()
 </script>
-
-<script src="./sidebar/sidebar.js"></script>

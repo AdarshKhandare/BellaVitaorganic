@@ -1,4 +1,4 @@
-let cart_items = JSON.parse(localStorage.getItem("cartItems")) || [];
+let cart_items = JSON.parse(localStorage.getItem("cardArr")) || []
 console.log(cart_items)
 let item_div = document.getElementById("item_div")
   function display(cart_items) {
@@ -48,7 +48,7 @@ let item_div = document.getElementById("item_div")
 
 
 
-  function showTotal(cart_items){
+function showTotal(cart_items){
 
     let total = cart_items.reduce(function(acc,ele){
 
@@ -125,3 +125,9 @@ function formValidate() {
   });
 }
 formValidate()
+
+
+var reguserarr = JSON.parse(localStorage.getItem("storedreguser"))||[]
+console.log(reguserarr);
+
+document.getElementById("checkout_user_details").innerText = reguserarr.email;

@@ -59,7 +59,7 @@ function addtocart(ele)
 {
     let cardArr = JSON.parse(localStorage.getItem("cardArr")) || []
     console.log(ele)
-    cartarr.push(ele)
-    console.log(cartarr)
+    cardArr.push(ele)
+    console.log(cardArr)
     localStorage.setItem("cardArr", JSON.stringify(cardArr));
 }

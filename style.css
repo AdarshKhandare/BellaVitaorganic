@@ -193,7 +193,7 @@ height:500px;
       height:40px;
   }
 
-  #bestSellers .carousel .buy{
+  #bestSellers .carousel-cell .buy{
       position:absolute;
       top:100px;
       left:35px;
@@ -212,7 +212,13 @@ height:500px;
   }
   
   #bestSellers .carousel-cell>img:hover~.buy{
+    
     display: block;
+    
+}
+
+#bestSellers .carousel-cell>img:hover{
+    opacity:0.2
 }
   #bestSellers .carousel-cell>.icons{
       padding:5px;
@@ -228,12 +234,12 @@ height:500px;
   margin: 0px;
   }
 
-  #bestSellers .carousel-cell>img{
+  #bestSellers .carousel-cell img{
    width:100%;
    height:60%;
    border-radius: 10px;
   }
-  #bestSellers .carousel-cell>img:hover{
+  #bestSellers .carousel-cell div:hover{
       transition:opacity 0.3s;
       opacity: 0.2;
       cursor: pointer;
@@ -261,6 +267,11 @@ font-size:20px
   #bestSellers .carousel-cell>.price>p:last-child{
       color: #E95144;
   }
+
+/* New Arrivals */
+
+
+ 
 
   /* Reviews */
 
@@ -366,6 +377,7 @@ font-size:26px;
 
   /* ----------------------- */
   /* newArrivals */
+
   #newArrivals>#bestSellers{
       margin-top:50px;
       display: flex;
@@ -376,12 +388,15 @@ font-size:26px;
   #newArrivals>#bestSellers>div{
       width:23%;
       margin: 10px;
-      height:400px
+      height:420px;
   }
 
   #newArrivals>#bestSellers .icons>small{
       margin-left: 10px;
   }
   #newArrivals>#bestSellers img{
-      height:65%
+      height:65%;
   }
+
+
+  /*  */

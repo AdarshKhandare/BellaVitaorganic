@@ -2,21 +2,6 @@ body{
     margin: 0;
 }
 
-#top{
-    width: 100%;
-    height: 120px;
-    background-color:#ededed;
-    
-}
-#top > h3{
-    color:#232323;
-    padding:30px
-}
-#top > p{
-    color: #3C3C3C;
-    margin-top: -50px;
-    padding:30px
-}
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600;1,700;1,800&display=swap');
 *{
     margin: 0%;
@@ -257,40 +242,4 @@ body{
     color:#232323
 }
 
-
-/* gift page start here */
-
-#gifttop{
-    height: 300px;
-    width: 100%;
-    /* text-align: left; */
-    background-image: url('https://cdn.shopify.com/s/files/1/0054/6665/2718/files/1_1_ecef2245-1d82-431e-b32d-5d704e1e620d.jpg?v=1606463237');
-    
-    
-
-}
-#gifttop > h2{
-
-    margin-bottom: 20px;
-    color:#232323;
-    padding:10px;
-    margin-left: 40px;
-}
-#gifttop > button{
-    margin-top: 20px;
-    padding:10px;
-    font-size: 14px;
-    margin-left: 50px;
-    background-color: #fff;
-    border: none;
-    color: black;
-    font-weight: 600;
-    width: 150px;
-    height: 50px;
-}
-#gifttop > p{
-    padding:10px;
-    margin-left: 40px;
-}
-#more {display: none;}
 

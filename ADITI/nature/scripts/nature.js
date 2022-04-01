@@ -8,7 +8,7 @@
 let bestData= JSON.parse(localStorage.getItem("naturalSoapObj"));
 console.log("bestdata",bestData);
 
-import { DataAppend} from "script/comp.js";
+import { DataAppend} from "components/append.js";
 
 let container=document.getElementById("data");
 

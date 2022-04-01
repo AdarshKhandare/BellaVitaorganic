@@ -57,9 +57,9 @@ export { DataAppend }
 
 function addtocart(ele)
 {
-    let cartarr = JSON.parse(localStorage.getItem("cartItems")) || []
+    let cardArr = JSON.parse(localStorage.getItem("cardArr")) || []
     console.log(ele)
     cartarr.push(ele)
     console.log(cartarr)
-    localStorage.setItem("cartItems",JSON.stringify(cartarr))
+    localStorage.setItem("cardArr", JSON.stringify(cardArr));
 }

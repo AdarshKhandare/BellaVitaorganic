@@ -16,8 +16,9 @@ function myFunction() {
   var hair_data=JSON.parse(localStorage.getItem("hair"))||[];
      skin_data(hair_data)
 
-     function skin_data(dryskin_data){
-       dryskin_data.map(function(elem,index){
+     function skin_data(hair_data){
+      document.getElementById("apped").innerHTML=""
+      hair_data.map(function(elem,index){
         let maindiv=document.createElement("div")
         let div0=document.createElement("div")
         div0.id="div0"
@@ -73,3 +74,41 @@ function myFunction() {
     console.log(cardArr)
  
    };
+   document.getElementById("select").addEventListener("change",sorting)
+    
+   function sorting(){
+     let sorting= document.getElementById("select").value 
+     console.log(sorting)
+     if(sorting==="htol"){
+      hair_data.sort(function(a,b){
+         return b.price - a.price
+       })
+        console.log(hair_data)
+        skin_data(hair_data)
+     }
+        else if(sorting==="ltoh"){
+          hair_data.sort(function(a,b){
+         return a.price - b.price
+       })
+       console.log(hair_data)
+       skin_data(hair_data)
+        }
+        else if(sorting=="atoz"){
+          hair_data.sort(function(a,b){
+            if(a.name<b.name){
+              return -1;
+            }
+            return 0;
+          })
+          skin_data(hair_data)
+        }
+        else if(sorting=="ztoa"){
+          hair_data.sort(function(a,b){
+           if(a.name>b.name){
+             return -1;
+           }
+           return 0;
+         })
+         skin_data(hair_data)
+       }
+   }

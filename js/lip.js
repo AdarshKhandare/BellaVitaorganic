@@ -17,6 +17,7 @@ function myFunction() {
      skin_data(lip_data)
 
      function skin_data(lip_data){
+      document.getElementById("apped").innerHTML=""
        lip_data.map(function(elem,index){
         let maindiv=document.createElement("div")
         let div0=document.createElement("div")
@@ -73,3 +74,41 @@ function myFunction() {
     console.log(cardArr)
  
    };
+   document.getElementById("select").addEventListener("change",sorting)
+    
+   function sorting(){
+     let sorting= document.getElementById("select").value 
+     console.log(sorting)
+     if(sorting==="htol"){
+      lip_data.sort(function(a,b){
+         return b.price - a.price
+       })
+        console.log(lip_data)
+        skin_data(lip_data)
+     }
+        else if(sorting==="ltoh"){
+          lip_data.sort(function(a,b){
+         return a.price - b.price
+       })
+       console.log(lip_data)
+       skin_data(lip_data)
+        }
+        else if(sorting=="atoz"){
+          lip_data.sort(function(a,b){
+            if(a.name<b.name){
+              return -1;
+            }
+            return 0;
+          })
+          skin_data(lip_data)
+        }
+        else if(sorting=="ztoa"){
+          lip_data.sort(function(a,b){
+           if(a.name>b.name){
+             return -1;
+           }
+           return 0;
+         })
+         skin_data(lip_data)
+       }
+   }

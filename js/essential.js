@@ -16,8 +16,9 @@ function myFunction() {
   var esse_data=JSON.parse(localStorage.getItem("esse"))||[];
      skin_data(esse_data)
 
-     function skin_data(dryskin_data){
-       dryskin_data.map(function(elem,index){
+     function skin_data(esse_data){
+       document.getElementById("apped").innerHTML=""
+       esse_data.map(function(elem,index){
         let maindiv=document.createElement("div")
         let div0=document.createElement("div")
         div0.id="div0"
@@ -73,3 +74,41 @@ function myFunction() {
     console.log(cardArr)
  
    };
+   document.getElementById("select").addEventListener("change",sorting)
+    
+   function sorting(){
+     let sorting= document.getElementById("select").value 
+     console.log(sorting)
+     if(sorting==="htol"){
+      esse_data.sort(function(a,b){
+         return b.price - a.price
+       })
+        console.log(esse_data)
+        skin_data(esse_data)
+     }
+        else if(sorting==="ltoh"){
+          esse_data.sort(function(a,b){
+         return a.price - b.price
+       })
+       console.log(esse_data)
+       skin_data(esse_data)
+        }
+        else if(sorting=="atoz"){
+          esse_data.sort(function(a,b){
+            if(a.name<b.name){
+              return -1;
+            }
+            return 0;
+          })
+          skin_data(esse_data)
+        }
+        else if(sorting=="ztoa"){
+          esse_data.sort(function(a,b){
+           if(a.name>b.name){
+             return -1;
+           }
+           return 0;
+         })
+         skin_data(esse_data)
+       }
+   }

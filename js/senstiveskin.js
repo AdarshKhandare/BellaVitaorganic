@@ -18,6 +18,7 @@ function myFunction() {
      skin_data(sa)
 
      function skin_data(sa){
+      document.getElementById("apped").innerHTML=""
       sa.map(function(elem,index){
         let maindiv=document.createElement("div")
         let div0=document.createElement("div")
@@ -74,3 +75,40 @@ function myFunction() {
     console.log(cardArr)
  
    };
+   document.getElementById("select").addEventListener("change",sorting)
+    
+   function sorting(){
+     let sorting= document.getElementById("select").value 
+     console.log(sorting)
+     if(sorting==="htol"){
+      sa.sort(function(a,b){
+         return b.price - a.price
+       })
+        skin_data(sa)
+     }
+        else if(sorting==="ltoh"){
+          sa.sort(function(a,b){
+         return a.price - b.price
+       })
+      
+       skin_data(sa)
+        }
+        else if(sorting=="atoz"){
+          sa.sort(function(a,b){
+            if(a.name<b.name){
+              return -1;
+            }
+            return 0;
+          })
+          skin_data(sa)
+        }
+        else if(sorting=="ztoa"){
+          sa.sort(function(a,b){
+           if(a.name>b.name){
+             return -1;
+           }
+           return 0;
+         })
+         skin_data(sa)
+       }
+   }

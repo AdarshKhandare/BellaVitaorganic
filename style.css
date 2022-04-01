@@ -187,11 +187,10 @@ height:500px;
   #bestSellers .carousel-cell>div{
       padding:10px
   }
-  #bestSellers .carousel button{
+  #bestSellers .carousel .flickity-button{
       border:1px solid #000;
       width:40px;
       height:40px;
-      display:none;
   }
 
   #bestSellers .carousel .buy{
@@ -202,6 +201,9 @@ height:500px;
       background-color:#000;
       color:#fff;
       border:none;
+      padding:8px 0px;
+      display:none;
+      transition:display 0.4s ease;
   } 
   #bestSellers .carousel .buy:hover{
       transition:background-color 0.4s ease;
@@ -301,3 +303,85 @@ font-size:26px;
      margin-bottom: 15px;
   }
 
+  #BecomePart>div:nth-child(3){
+      display: flex;
+      width:80%;
+      flex-wrap: wrap;
+      margin:auto;
+      text-align:center;
+      justify-content: center;
+      margin-bottom: 25px;
+  }
+  #BecomePart>div:nth-child(3)>div{
+      margin: 30px;
+     
+  }
+  #BecomePart>div:nth-child(3)>div>img{
+      width:100px;
+  }
+  #BecomePart>div:nth-child(3)>div>p,#BecomePart>div:nth-child(3)>div>h4{
+      font-size:13px;
+  }
+  #BecomePart>div:nth-child(3)>div>h4{
+      font-weight: 600;
+  }
+  /* ---------------------------------- */
+  /* Redeem Part */
+  #Redeem>#shopByCatagory{
+      margin-top:40px
+  }
+
+  #Redeem>div:nth-child(2){
+      display: flex;
+      width: 80%;
+      margin: auto;
+      text-align: center;
+      justify-content: center;
+  }
+  #Redeem>div:nth-child(2)>div{
+      margin:20px;
+
+  }
+  #Redeem>div:nth-child(2)>div>img{
+      width:100px;
+      height: 120px;
+  }
+  #Redeem>div:nth-child(2)>div>h4{
+      font-size:13px;
+      font-weight:bold;
+      width:160px
+  }
+
+  #Redeem>div:nth-child(3){
+      display: flex;
+      justify-content: center;
+  }
+  #Redeem>div:nth-child(3)>button{
+    background-color:#52B359;
+    color:#fff;
+    border:none;
+    padding:8px 40px;
+    margin-bottom:40px
+  }
+
+  /* ----------------------- */
+  /* newArrivals */
+  #newArrivals>#bestSellers{
+      margin-top:50px;
+      display: flex;
+      width:78%;
+      justify-content: center;
+  }
+
+  #newArrivals>#bestSellers>div{
+      width:23%;
+      margin: 10px;
+      height:400px
+  }
+
+  #newArrivals>#bestSellers .icons>small{
+      margin-left: 10px;
+  }
+  #newArrivals>#bestSellers img{
+      height:65%
+  }

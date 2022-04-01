@@ -129,9 +129,17 @@ displayReviews();
 // -------bestSellers absolute Button--------------------------------
 let bestSellerImg = document.querySelector("#bestSellers .carousel-cell>img");
 let buyButton = document.querySelector("#bestSellers .carousel-cell .buy")
-console.log(buyButton)
 buyButton.addEventListener("hover", () => {
   bestSellerImg.style.opacity = "0.2";
   
 console.log("dvdv")
 })
+
+
+// -----------------------------------------------------------------
+// BECOME PART OF OUR EXCLUSIVE BELLA CASH!
+
+
+
+
+

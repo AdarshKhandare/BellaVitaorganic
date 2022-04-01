@@ -1,14 +1,14 @@
-import sidebar from "../components/sidebar.js";
-let side= document.getElementById("sider");
-side.innerHTML=sidebar();
+// import sidebar from "../components/sidebar.js";
+// let side= document.getElementById("sider");
+// side.innerHTML=sidebar();
 
 
-let bestData= JSON.parse(localStorage.getItem("Bestsellers"));
+let bestData= JSON.parse(localStorage.getItem("soap_products"));
 console.log("bestdata",bestData);
 
 import { displayData } from "append.js";
 
-let container=document.getElementById("bestsell");
+let container=document.getElementById("products");
 
 displayData(bestData,container);
 

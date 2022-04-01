@@ -93,7 +93,9 @@ body{
     width:100%;
     margin:auto;
 }
-
+#glow1:hover{
+    opacity:0.4;
+}
 #p1{
 font-size: 17px;
 text-align: center; 

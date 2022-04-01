@@ -5,10 +5,10 @@
 // side.innerHTML=sidebar();
 
 
-let bestData= JSON.parse(localStorage.getItem("glowRangeObj"));
+let bestData= JSON.parse(localStorage.getItem("naturalSoapObj"));
 console.log("bestdata",bestData);
 
-import { DataAppend} from "comp.js";
+import { DataAppend} from "script/comp.js";
 
 let container=document.getElementById("data");
 

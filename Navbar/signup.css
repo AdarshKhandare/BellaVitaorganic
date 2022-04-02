@@ -1,0 +1,25 @@
+*{
+    font-family: sans-serif;
+}
+#container{
+    height:600px;width:1170px;margin: auto;
+}
+#para{
+    font-size: 15px;color:#6C757D;margin:0px 0px 25px;padding: 28px 0px 0px;
+}
+#container>p{
+    font-weight: lighter;
+}
+form>input{
+    height:30px;width:380px;padding:7px 12px 5px;
+}
+form>#btn{
+    height:37px;width:250px;background-color: black;color:white;margin:30px 0px 0px 0px;
+    padding: 8px 42px 6px;border: none;font-weight: bold;
+}
+#container>hr{
+    border:0.0001px solid rgb(235, 231, 231)
+}
+#btn:hover{
+    background-color: green;
+}

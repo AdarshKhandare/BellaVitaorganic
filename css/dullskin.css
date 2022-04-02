@@ -1,0 +1,112 @@
+* body {
+    font-family: 'Montserrat', sans-serif;
+}
+#drymain{
+    background-color: rgb(242,242,242);
+    width: 100%;
+    height: auto;
+}
+#more {display: none;}
+#p1{
+  padding-top: 30px;
+  margin-left: 4%;
+  color: black;
+  font-size: 25px;
+}
+#p2 {
+    margin-left: 4%;
+    color: gray;
+}
+#myBtn {
+    margin-left: 4%;
+    margin-top: 40px;
+    background-color: white;
+    border: white;
+    font-size: 20px;
+    border-radius: 5px;
+    font-family: 'Red Hat Mono', monospace;
+    padding: 10px;
+    width: 120px;
+    margin-bottom: 50px;
+}
+#consiner{
+    display: flex;
+}
+
+#img1{
+    width: auto;
+    height: 250px;
+}
+#apped{
+    display: grid;
+    gap: 20px;
+    grid-template-columns:repeat(4,1fr);
+    margin-right: 60px;
+    /* margin: auto; */
+    /* justify-content: center; */
+
+}
+#apped>div{
+    /* margin: auto; */
+    margin-left: 1PX;
+    height: 450px;
+    justify-content: center;
+    text-align: center;
+    border-radius:  10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#sidebar{
+    width: 70%;
+    margin-right: 20px;
+}
+#title{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 20px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+#imgbutton{
+   position: relative ;
+   bottom: 150px;
+   background-color: black;
+   border: 1px soild black;
+   color: white;
+   width: 120px;
+   margin: auto;
+   justify-content: center;
+   margin-bottom: -70px;
+   display: none;
+}
+#div0 {
+    position: relative;
+}
+
+#div0 img:hover{
+    opacity: 0.3;
+
+}
+
+#imgbutton:hover{
+    background-color: green;
+    border: 1px soild green;
+}
+#div0:hover #imgbutton {
+   display: block;
+}
+
+#quick{
+    position: relative ;
+    background-color: black;
+    border: 1px soild black;
+    color: white;
+    display: none;
+ }
+ #quick:hover{
+    background-color: black;
+}
+#div0:hover #quick {
+   display: block;
+}

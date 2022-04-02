@@ -62,4 +62,6 @@ function addtocart(ele)
     cardArr.push(ele)
     console.log(cardArr)
     localStorage.setItem("cardArr", JSON.stringify(cardArr));
+    document.getElementById("cartC").innerText = cardArr.length
 }
+

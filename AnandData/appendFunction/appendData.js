@@ -1,7 +1,7 @@
 
 function displayData(data,parent){
    parent.innerHTML=null;
-   data.forEach(({image,name,price,stkOfPrice,savePrice,review}) => {
+   data.forEach(({image,name,price,stkOfPrice,savePrice,review},index) => {
        let div=document.createElement("div");
        let imagediv= document.createElement("div");
        let img= document.createElement("img");
@@ -17,6 +17,11 @@ function displayData(data,parent){
        button.textContent="BUY NOW";
        button.id="hoverButton";
        img.id="hoverImage";
+
+      button.addEventListener("click",()=>{
+          gotocart(data[index])
+      })
+
       let quickview= document.createElement("p");
       quickview.textContent="Quick View";
       quickview.id="quickview";
@@ -39,5 +44,11 @@ function displayData(data,parent){
 
    });
 }
-
+let cartArr= JSON.parse(localStorage.getItem("cardArr"))||[];
+function gotocart(data){
+   data.quant=1;
+   cartArr.push(data);
+   console.log("newcart",cartArr);
+   localStorage.setItem("cardArr", JSON.stringify(cartArr));
+}
 export {displayData};

@@ -17,6 +17,7 @@
     background-attachment: fixed;
     overflow: hidden;
     margin-bottom: 50px;
+    margin-top: 70px;
 }
 #bestseller>p{
     padding-left: 32px;
@@ -35,6 +36,13 @@ margin-top: 15px;
     font-weight: 600;
     font-size: small;
 }
+.navigator+div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
 .navigator a{
     text-decoration: none;
     color: inherit;
@@ -43,9 +51,15 @@ margin-top: 15px;
 #filter{
     display: flex;
     justify-content: right;
+    align-items: center;
     height: fit-content;
     padding-right: 30px;
+    gap: 10px;
  /* border: 1px solid red; */
+}
+#filter>span{
+    font-weight: 500;
+    font-size: 14px;
 }
  #filter>select{
     height: 35px;
@@ -101,4 +115,40 @@ select option{
 }
 #whatsapp img{
     width: 70%;
+}
+
+
+
+
+/* ==============================search================== */
+
+
+
+/* nav{
+    text-align: right;
+    padding-right: 50px;
+    margin-top: 100px;
+} */
+#searchbar{
+    border: 2px solid black;
+    width: fit-content;
+    padding-right: 10px;
+    height: 35px;
+    background-color: white;
+   position: absolute;
+   /* top: 50; */
+   margin-top: 25px;
+   right: 30px;
+   display: none;
+}
+#searchbar input{
+  border: none;
+  outline: none;
+  width: 300px;
+  margin-right: 10px;
+  height: 100%;
+  /* border: 1px solid red; */
+}
+#icon-search{
+    font-size: x-large;
 }

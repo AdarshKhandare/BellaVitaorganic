@@ -1,0 +1,129 @@
+body{
+    font-family: 'Museo Sans',sans-serif;
+    font-weight: 300;
+}
+#landing > img{
+    height: 450px;
+    width: 95%;
+    margin-left:50px;
+    margin-top:150px;
+    margin-bottom:50px
+}
+.flex_box{
+    display:flex;
+    width: 80%;
+    height: 500px;
+    border: 1px solid red;
+    text-align: center;
+    margin: auto;
+    border-radius:10px;
+    margin-bottom:20px
+}
+.flex_img > img{
+    height: 500px;
+    border-bottom-left-radius:10px;
+    border-top-left-radius:10px
+}
+.flex_content{
+    margin: auto;
+    text-align: left;
+    width: 55%;
+    margin-left: 20px;
+    margin-top:150px;
+    color: #787b7d
+    
+}
+.flex_content > h2{
+    margin-bottom: 30px;
+    color:#43403d
+}
+.flex_content > button{
+    width: 200px;
+    height: 50px;
+    background-color:#52b359;
+    font-size: 20px;
+    border-radius: 5px;
+    border: none;
+    
+}
+.flex_content > button > a{
+
+    text-decoration: none;
+    color: white;
+}
+
+
+.flex_imgR > img{
+    height: 500px;
+    border-bottom-right-radius:10px;
+    border-top-right-radius:10px
+}
+.flex_contentL{
+    margin: auto;
+    width: 55%;
+    text-align: right;
+    margin-right: 20px;
+    margin-top:150px;
+    color: #787b7d
+    
+}
+.flex_contentL > h2{
+    margin-bottom: 30px;
+    color:#43403d
+}
+.flex_contentL > button{
+    width: 200px;
+    height: 50px;
+    color: white;
+    background-color:#52b359;
+    font-size: 20px;
+    border-radius: 5px;
+    border: none;
+}
+.flex_contentL > button > a{
+
+    text-decoration: none;
+    color: white;
+}
+
+/* Bella Cash Button */
+
+#bellaCash>button{
+    background-color: #FFC400;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    cursor: pointer;
+    height: 60px;
+    padding: 15px 20px;
+     /* position: absolute; */
+     display:flex;
+     align-items: center;
+     font-size:14px;
+     font-weight:100;
+     position:fixed;
+     margin: 10px;
+     bottom:0;
+     letter-spacing:1px
+}
+
+#bellaCash>button>img{
+    margin-right: 10px;
+}
+
+/* WhatsApp button */
+
+
+#whatsAppButton>button{
+    width:60px;
+    height:60px;
+    position:fixed;
+    bottom:0;
+    right:0;
+    margin:30px;
+    outline: none;
+    border-radius:50%;
+    border:5px solid #fff;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}

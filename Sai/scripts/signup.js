@@ -41,7 +41,7 @@ alert("Missing Credential");
 else if(flag==false)
 {
 alert("Signup Successfull")
-window.location.href="./navbar.html"
+window.location.href="../index.html"
 
 
 }

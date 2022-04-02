@@ -1,10 +1,13 @@
 
-     var regUser = JSON.parse(localStorage.getItem("storedreguser"))
-     console.log(regUser)
- 
- 
-     document.querySelector("#loginForm").addEventListener("submit",loginDetails)
-     function loginDetails(event){
+    var regUser = JSON.parse(localStorage.getItem("storedreguser"))
+    console.log(regUser)
+
+    let xx = document.querySelector("#loginForm")
+    
+    xx.addEventListener("submit", loginDetails)
+    
+function loginDetails(event){
+         
          event.preventDefault()
  
          let email = document.getElementById("email").value;
@@ -20,6 +23,7 @@
                  var firstname = regUser[i].firstname;
                  var lastname = regUser[i].lastname;
                  flag = true;
+                 break;
              }
              
          }
@@ -53,4 +57,5 @@
          {
              alert("Invalid Credential")
          }
-     }
+}
+

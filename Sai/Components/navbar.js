@@ -246,9 +246,13 @@ const navbar =()=>{
         <!-- right header -->
         <div id="right-header">
             <div class="nav-search svg-mb">                    
-                 
-                <nav><i id="icon-search" class="fa-solid fa-magnifying-glass"></i></nav>
-    <div id="searchbar"><input id="searchinput" type="text" placeholder="Start typing... Nicolips, Eyelift, Face Wash"><i class="fa-solid fa-xmark"></i></div>
+                <a href="#" title="Search Icon" class="icon-search" data-search-mobile-toggle="">
+                    <svg data-icon="search" viewBox="0 0 512 512" width="100%" height="100%">
+                        <path d="M495,466.2L377.2,348.4c29.2-35.6,46.8-81.2,46.8-130.9C424,103.5,331.5,11,217.5,11C103.4,11,11,103.5,11,217.5  
+                         S103.4,424,217.5,424c49.7,0,95.2-17.5,130.8-46.7L466.1,495c8,8,20.9,8,28.9,0C503,487.1,503,474.1,495,466.2z M217.5,382.9  
+                          C126.2,382.9,52,308.7,52,217.5S126.2,52,217.5,52C308.7,52,383,126.3,383,217.5S308.7,382.9,217.5,382.9z"></path>
+                </svg>
+                </a> 
             </div>
             
             <div class="acc-mb svg-mb">
@@ -291,7 +295,7 @@ const navbar =()=>{
            
             <h4>CUSTOMER LOGIN :</h4>
             <hr>
-            <form action="" id="loginForm">
+            <form id="loginForm">
                 <p>Email Address <sup style="color:red">*</sup></p>
                 <input type="text" id="email" placeholder="Email Address">
 
@@ -301,7 +305,7 @@ const navbar =()=>{
                 <input type="submit" id ="login" value="LOGIN">          
             </form>
         <p>Forgot Your password?</p>  
-        <button id="btn">CREATE AN ACCOUNT</button>
+        <button id="btn" onclick="SignUp()">CREATE AN ACCOUNT</button>
         </div>
     </div>
 

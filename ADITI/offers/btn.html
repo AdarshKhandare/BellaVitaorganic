@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Button</title>
     <link rel="stylesheet" href="styles/btn.css">
+                <link rel="stylesheet" href="../../AnandData/navbar.css">
+                <link rel="stylesheet" href="../../Sai/styles/footer.css">
 </head>
 <body>
-<div>navbar</div>
+<div id="navbar"></div>
 
 <div class="slideshow-container">
 
@@ -57,7 +59,7 @@
 
 </div>
 
-<div>Footer</div>
+<div id="footer"></div>
  <!-- Bella Cash left yellow button -->
  <section id="bellaCash">
   <button><img src="https://cdn.sweettooth.io/v1/images/launcher_icons/crown.svg?color=%23000000"
@@ -100,3 +102,14 @@
 
     // }
     </script>
+        <script type="module">
+          import navbar from "../../Sai/Components/navbar.js";
+          import footer from "../../Sai/Components/Footer.js";
+
+          let navbarDiv = document.querySelector("#navbar");
+          navbarDiv.innerHTML = navbar();
+
+          let footerDiv = document.querySelector("#footer");
+
+          footerDiv.innerHTML = footer();
+        </script>

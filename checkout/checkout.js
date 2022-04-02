@@ -52,7 +52,7 @@ function showTotal(cart_items){
 
     let total = cart_items.reduce(function(acc,ele){
 
-        return acc + ele.price
+        return acc + (+ele.price)
     },0)
 
     document.querySelector("#tdb_amount").innerText = "Rs."+" "+ total;
@@ -127,7 +127,7 @@ function formValidate() {
 formValidate()
 
 
-var reguserarr = JSON.parse(localStorage.getItem("storedreguser"))||[]
-console.log(reguserarr);
+// var reguserarr = JSON.parse(localStorage.getItem("storedreguser"))||[]
+// console.log(reguserarr);
 
-document.getElementById("checkout_user_details").innerText = reguserarr.email;
+// document.getElementById("checkout_user_details").innerText = reguserarr.email;

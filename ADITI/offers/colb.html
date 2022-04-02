@@ -6,10 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Collabration</title>
     <link rel="stylesheet" href="styles/colb.css">
+            <link rel="stylesheet" href="../../AnandData/navbar.css">
+            <link rel="stylesheet" href="../../Sai/styles/footer.css">
 </head>
 
 <body>
-    <div>navbar</div>
+    <div id="navbar"></div>
     <p id="des">Home > Bella Vita Organic - EaseMyTrip Offer</p>
     <img id="img"src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/easemytrip-offfer-desktop-banner.png?v=2625309499675813789">
     <div id="content">
@@ -55,7 +57,7 @@
     <li>EaseMyTrip reserves the right, at any time, without prior notice and liability and without assigning any reason whatsoever, to add/alter/modify/change or vary all of these terms and conditions or to replace, wholly or in part, this offer by another offer, whether similar to this offer or not, or to extend or withdraw it altogether.</li>
     <li>EaseMyTrip shall not be liable for any loss or damage arising due to force majeure.</li>
 </div>
-<div>Footer</div>
+<div id="footer"></div>
  <!-- Bella Cash left yellow button -->
  <section id="bellaCash">
     <button><img src="https://cdn.sweettooth.io/v1/images/launcher_icons/crown.svg?color=%23000000"
@@ -70,3 +72,14 @@
 </section>
 </body>
 </html>
+    <script type="module">
+        import navbar from "../../Sai/Components/navbar.js";
+        import footer from "../../Sai/Components/Footer.js";
+
+        let navbarDiv = document.querySelector("#navbar");
+        navbarDiv.innerHTML = navbar();
+
+        let footerDiv = document.querySelector("#footer");
+
+        footerDiv.innerHTML = footer();
+    </script>

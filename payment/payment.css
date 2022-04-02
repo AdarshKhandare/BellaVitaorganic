@@ -43,8 +43,9 @@ header {
     margin: 0;
 }
 
-span {
+span > a {
     color: red;
+    text-decoration: none;
 }
 
 span:hover {
@@ -211,6 +212,11 @@ input[type="radio"] {
     margin-left: 7.3em;
     border: none;
 }
+#home_btn > a{
+    text-decoration: none;
+    color: white
+}
+
 
 #home_btn:hover {
     cursor: pointer;

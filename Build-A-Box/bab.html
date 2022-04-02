@@ -6,8 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Build A Box</title>
     <link rel="stylesheet" href="styles/bab.css">
+    <link rel="stylesheet" href="../AnandData/navbar.css">
+    <link rel="stylesheet" href="../Sai/styles/footer.css">
 </head>
 <body>
+    <div id="navbar"></div>
     <div id="landing">
         <img src="img/build-a-box-landing-page.webp" alt="">
     </div>
@@ -116,6 +119,7 @@
             <button><a href="TheSummerBox.html">BUY NOW</a></button>
         </div>
     </div>
+    <footer id="footer"></footer>
 
     <!-- ------------------------------------------------------------------------------- -->
     <!-- Bella Cash left yellow button -->
@@ -133,3 +137,15 @@
     <!-- -------------------------------------------------------------------------------------- -->
 </body>
 </html>
+<script src="../Sai/scripts/slidebar.js"></script>
+<script type="module">
+    import navbar from "../Sai/Components/navbar.js";
+    import footer from "../Sai/Components/Footer.js";
+
+    let navbarDiv = document.querySelector("#navbar");
+    navbarDiv.innerHTML = navbar();
+
+    let footerDiv = document.querySelector("#footer");
+
+    footerDiv.innerHTML = footer();
+</script>

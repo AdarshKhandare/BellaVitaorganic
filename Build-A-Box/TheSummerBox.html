@@ -7,10 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Summer Box</title>
     <link rel="stylesheet" href="styles/buying.css">
+        <link rel="stylesheet" href="../AnandData/navbar.css">
+        <link rel="stylesheet" href="../Sai/styles/footer.css">
     <script src="https://kit.fontawesome.com/d103d8b709.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
+    <div id="navbar"></div>
     <div id="banner">
         <img src="https://cdn.shopify.com/s/files/1/0054/6665/2718/collections/20-04.jpg?v=1622023475" alt="">
     </div>
@@ -25,6 +28,7 @@
     <div id="total">
         <h1>Total: Rs. 999/-</h1>
     </div>
+    <div id="footer"></div>
             <!-- ------------------------------------------------------------------------------- -->
             <!-- Bella Cash left yellow button -->
             <section id="bellaCash">
@@ -42,11 +46,12 @@
 </body>
 
 </html>
+<script src="../Sai/scripts/slidebar.js"></script>
 <script type="module" src="scripts/data.js"></script>
 <script type="module" src="component/BabC.js"></script>
 <script type="module">
 
-    let bestData = JSON.parse(localStorage.getItem("mansoonCare"));
+    let bestData = JSON.parse(localStorage.getItem("summerbox"));
     console.log("bestdata", bestData);
 
     import { DataAppend } from "./component/BabC.js";
@@ -54,4 +59,15 @@
     let container = document.getElementById("data");
 
     DataAppend(bestData, container);
+</script>
+<script type="module">
+    import navbar from "../Sai/Components/navbar.js";
+    import footer from "../Sai/Components/Footer.js";
+
+    let navbarDiv = document.querySelector("#navbar");
+    navbarDiv.innerHTML = navbar();
+
+    let footerDiv = document.querySelector("#footer");
+
+    footerDiv.innerHTML = footer();
 </script>

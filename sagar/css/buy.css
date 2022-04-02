@@ -1,0 +1,71 @@
+#buy {
+    width: 80%;
+    margin: auto;
+    margin-top: 6%;
+    height: 700px;
+}
+#card{
+    display: flex;
+}
+#carditem{
+    display: flex;
+}
+#product{
+    width: 60%;
+    margin-right: 40px;
+
+}
+#orders{
+    width: 33%;
+}
+#probutton{
+    background-color: rgb(17, 184, 17);
+    width: 100%;
+    font-size: 15px;
+    font-weight: bold;
+    border: white;
+    color: white;
+    padding: 15px;
+}
+#div1 {
+    display: flex;
+}
+#div1 >img {
+    margin-top: 2%;
+    width: 150px;
+    height: 130px;
+}
+#div2{
+    display: flex;
+}
+
+#btu1{
+    margin-top: -3%;
+ }
+ #btu2 {
+     margin-left: 10px;
+     margin-top: -3%;;
+ }
+  #btu1 , #btu2 {
+    color: red;
+    width: auto;
+    height: 30px;
+    font-size: large;
+    /* margin-top: 3%; */
+    border: 1px solid white;
+    
+    
+    /* width: 15px;
+    height: 15px; */
+}
+#qunty{
+    margin-left: 10px;
+    margin-top: -2%;
+}
+#btu3 {
+    background-color: white;
+    border: 1px solid white;
+    margin-left: 30px;
+    color: rgb(110, 109, 109);
+    margin-top: -20px;
+}

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Sai/styles/footer.css">
     <link rel="stylesheet" href="./mystyles/allProducts.css">
     <script src="https://kit.fontawesome.com/13760dee3d.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./sidebar/sidebar.css">
@@ -368,6 +369,7 @@
     </div>
     <div id="bellacash"><img src="https://cdn.sweettooth.io/v1/images/launcher_icons/crown.svg?color=%23000000" alt="">Bella Cash</div>
     <div id="whatsapp"><img src="https://cdn.iconscout.com/icon/free/png-256/whatsapp-42-189793.png" alt=""></div>
+    <div id="footer"></div>
 </body>
 </html>
 <script type="module" src="./myscripts/appendData.js"></script>
@@ -376,7 +378,12 @@
 <script src="./data.js"></script>
 <script type="module" src="./appendFunction/searchfun.js"></script>
 
-<script>
+<script type="module">
+        import footer from "../Sai/Components/Footer.js";
+
+let footerDiv = document.querySelector("#footer");
+
+footerDiv.innerHTML = footer();
      function openWindow(){
         document.querySelector(".pop-up").style.display="flex"
     }

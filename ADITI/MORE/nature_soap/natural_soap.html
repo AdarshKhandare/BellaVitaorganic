@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Natural Soap</title>
+    <link rel="stylesheet" href="../../../AnandData/navbar.css">
+    <link rel="stylesheet" href="../../../Sai/styles/footer.css">
     <link rel="stylesheet" href="styles/natural_soap.css">
     <script src="https://kit.fontawesome.com/d103d8b709.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"crossorigin="anonymous"></script>
@@ -14,7 +16,7 @@
 </head>
 
 <body>
-    <div>navbar</div>
+    <nav id="navbar"></nav>
 
     <div id="glow">
         <p>NATURAL SOAPS</p>
@@ -61,6 +63,21 @@
 </body>
 
 </html>
-<!-- <script type="text/javascript" src="/sidebar/sidebar.js"></script> -->
-<script type="module" src="scripts/nature.js"></script> 
-<script type="module" src="scripts/dataN.js"></script>
+
+<footer id="footer"></footer>
+
+
+<script type="module">
+import navbar from "../../../Sai/Components/navbar.js";
+import footer from "../../../Sai/Components/Footer.js";
+
+let navbarDiv = document.querySelector("#navbar");
+navbarDiv.innerHTML = navbar();
+
+let footerDiv = document.querySelector("#footer");
+
+footerDiv.innerHTML = footer();
+</script>
+<script src="../../../Sai/scripts/slidebar.js"></script>
+<script type="module" src="./scripts/nature.js"></script> 
+<script type="module" src="./scripts/dataN.js"></script>

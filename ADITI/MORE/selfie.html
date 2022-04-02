@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>selfie</title>
+    <link rel="stylesheet" href="../../AnandData/navbar.css">
+    <link rel="stylesheet" href="../../Sai/styles/footer.css">
     <link rel="stylesheet" href="styles/sefie.css">
 </head>
 <style>
@@ -20,6 +22,7 @@ body {
     height:750px;
     width:100%;
     margin:auto;
+    margin-top: 70px;
 }
 #sel{
     width:100%;
@@ -186,8 +189,8 @@ select{
 }
 </style>
 <body>
-    <div>NAVBAR</div>
 
+    <nav id="navbar"></nav>
     <div id="bella">
         <img id="sel" src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/selfie-switch-banner_d3448dcc-35ab-40a1-917e-80acd43be98e.jpg?v=1631182912">
         <h2 id="h2">Bella Vita Organic #SelfieSwitch</h2>
@@ -269,7 +272,18 @@ select{
                 src="https://cdn.shopify.com/s/files/1/0054/6665/2718/t/277/assets/whatsapp.svg?v=10753259276865380946"
                 alt=""></button>
     </section>
-
-     <div>FOOTER</div>
+    <footer id="footer"></footer>
+    <script type="module">
+        import navbar from "../../Sai/Components/navbar.js";
+        import footer from "../../Sai/Components/Footer.js";
+        
+        let navbarDiv = document.querySelector("#navbar");
+        navbarDiv.innerHTML = navbar();
+        
+        let footerDiv = document.querySelector("#footer");
+        
+        footerDiv.innerHTML = footer();
+            </script>
+            <script src="../../Sai/scripts/slidebar.js"></script>
 </body>
 </html>

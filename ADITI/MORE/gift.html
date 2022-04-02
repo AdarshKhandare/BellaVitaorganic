@@ -5,11 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gift</title>
+    <link rel="stylesheet" href="../../AnandData/navbar.css">
+    <link rel="stylesheet" href="../../Sai/styles/footer.css">
     <link rel="stylesheet" href="styles/gift.css">
 </head>
 
 <body>
-   <div>NAVBAR</div> 
+      
+<nav id="navbar"></nav>
 
    <p id="des">Home > Gift Cards</p>
    <div id="cel">
@@ -26,7 +29,7 @@
   <div><img id="gift" src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/Congrats_Gift_Card.png?v=13811229110920938309"></div>
    </div>
 
-   <div>FOOTER</div>
+
    
        <!-- Bella Cash left yellow button -->
        <section id="bellaCash">
@@ -40,5 +43,25 @@
                 src="https://cdn.shopify.com/s/files/1/0054/6665/2718/t/277/assets/whatsapp.svg?v=10753259276865380946"
                 alt=""></button>
     </section>
+
+
+    <footer id="footer"></footer>
+
+
+    <script type="module">
+import navbar from "../../Sai/Components/navbar.js";
+import footer from "../../Sai/Components/Footer.js";
+
+let navbarDiv = document.querySelector("#navbar");
+navbarDiv.innerHTML = navbar();
+
+let footerDiv = document.querySelector("#footer");
+
+footerDiv.innerHTML = footer();
+    </script>
+    <script src="../../Sai/scripts/slidebar.js"></script>
+
+    
+    
 </body>
 </html>

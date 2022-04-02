@@ -5,11 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>salon</title>
+    <link rel="stylesheet" href="../../AnandData/navbar.css">
+    <link rel="stylesheet" href="../../Sai/styles/footer.css">
     <link rel="stylesheet" href="styles/salon.css">
 </head>
 
 <body>
-    <div>NAVBAR</div> 
+    <nav id="navbar"></nav>
 
     <p id="des">Home > Gift Cards</p>
     <p id="bella">BELLA VITA ORGANIC SALON</p>
@@ -40,6 +42,18 @@
                 alt=""></button>
     </section>
 
-    <div>FOOTER</div>
+    <footer id="footer"></footer>
+    <script type="module">
+        import navbar from "../../Sai/Components/navbar.js";
+        import footer from "../../Sai/Components/Footer.js";
+        
+        let navbarDiv = document.querySelector("#navbar");
+        navbarDiv.innerHTML = navbar();
+        
+        let footerDiv = document.querySelector("#footer");
+        
+        footerDiv.innerHTML = footer();
+            </script>
+            <script src="../../Sai/scripts/slidebar.js"></script>
 </body>
 </html>

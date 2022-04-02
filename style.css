@@ -5,6 +5,9 @@
     padding: 0;
     font-family: sans-serif;
 }
+#carousel{
+    margin-top: 70px;
+}
 
 #carousel .carousel-indicators{
     position:static;

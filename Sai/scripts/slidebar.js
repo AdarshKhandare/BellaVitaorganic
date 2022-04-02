@@ -4,9 +4,12 @@ function openWindow(){
 function closeWindow(){
     document.querySelector(".pop-up").style.display="none"
 }
-function sign(){
-   window.location.href="./signup.html"
-}
+let signup = document.querySelector("#navbar #btn")
+signup.addEventListener("click", function () {
+    window.location.href="../signup.html"
+})
+   
+
 function openCart(){
     document.querySelector(".cartpop").style.display="flex"
 }

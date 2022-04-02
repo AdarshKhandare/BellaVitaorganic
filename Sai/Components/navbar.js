@@ -74,29 +74,30 @@ const navbar =()=>{
         <!-- middle header -->
         <div id="wrapperNavigation">
                 <div>
-                    <a href="">
+                    <a href="../../AnandData/allProducts.html">
                         ALL PRODUCTS
                     </a>
                 </div>
                 <div>
-                    <a href="">
+                    <a href="../../AnandData/bestSellers.html">
                         <span>BESTSELLERS</span>
                     </a>
                 </div>
                 <div>
-                    <a href="">
+                    <a href="../../Build-A-Box/bab.html">
                         <span>BUILD A BOX</span>
                     </a>
                 </div>
                 <div class="rama">
 
-                    <a href="" >
+                    <a href="../../ADITI/offers/offer.html" >
                         OFFERS
                     </a>
                     <div class="kiran">
-                        <span>All Offers</span><br>
+                        <span>
+                        <a href="../../ADITI/offers/offer.html" >All Offers</a></span><br>
                         <hr>
-                        <span>Collabaration</span><br>
+                        <a href="../../ADITI/offers/colb.html" >Collaboration</a></span><br>
                     </div>
                 </div>
                 <div class="rama">
@@ -104,17 +105,17 @@ const navbar =()=>{
                         <span>BY CATEGORY</span>
                     </a>
                     <div class="kiran">
-                        <span>Skin Care</span><br>
+                    <a href="../../sagar/dryskin.html" >Skin Care</a></span><br>
                         <hr>
-                        <span>Hair Care</span><br>
+                        <a href="../../sagar/hair.html" >Hair Care</a></span><br>
                         <hr>
-                        <span>Face Care</span><br>
+                        <a href="../../sagar/face.html">Face Care</a></span><br>
                         <hr>
                         <span>Body Care</span><br>
                         <hr>
-                        <span>Essential Oils</span><br>
+                        <a href="../../sagar/essential.html">Essential Oils</a></span><br>
                         <hr>
-                        <span>Perfumes</span><br>
+                        <a href="../../sagar/perfume.html">Perfumes</a></span><br>
                         <hr>
                         <span>Natural Soaps</span><br>
                         <hr>
@@ -184,15 +185,21 @@ const navbar =()=>{
 
                 </div>
                 <div class="rama">
-                    <a href="" >
+                    <a href="../../Combo/combo.html" >
                         <span>COMBOS</span>
                     </a>
                     <div class="kiran">
-                        <span>Combos</span><br>
+                    <a href="../../Combo/combo.html" >
+                    Combos
+                    </a><br>
                         <hr>
-                        <span>C-Glow Range</span><br>
+                        <a href="../../Combo/c-glow-range.html" >
+                        C-Glow Range
+                        </a><br>
                         <hr>
-                        <span>Gifts</span><br>
+                        <a href="../../Combo/giftBox.html" >
+                        Gifts
+                        </a><br>
                     </div>
 
 
@@ -202,15 +209,23 @@ const navbar =()=>{
                         <span>MORE</span>
                     </a>
                     <div class="kiran">
-                        <span>Natural Soaps</span><br>
+                    <a href="../../ADITI/MORE/nature_soap/natural_soap.html" >
+                    Natural Soaps
+                    </a><br>
                         <hr>
-                        <span>SELFIE SWITCH</span><br>
+                        <a href="../../ADITI/MORE/selfie.html" >
+                        SELFIE SWITCH
+                        </a><br>
                         <hr>
-                        <span>Gift Cards</span><br>
+                        <a href="../../ADITI/MORE/gift.html" >
+                        Gift Cards
+                        </a><br>
                         <hr>
                         <span>Blog</span><br>
                         <hr>
-                        <span>Salon</span><br>
+                        <a href="../../ADITI/MORE/salon.html" >
+                        Salon
+                        </a><br>
                         <hr>
                         <span>Order Tracking</span><br>
                         <hr>
@@ -290,7 +305,7 @@ const navbar =()=>{
                 <input type="submit" id ="login" value="LOGIN">          
             </form>
         <p>Forgot Your password?</p>  
-        <button id="btn" onClick="sign()">CREATE AN ACCOUNT</button>
+        <button id="btn">CREATE AN ACCOUNT</button>
         </div>
     </div>
 

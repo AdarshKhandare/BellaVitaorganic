@@ -1,3 +1,6 @@
+import navbar from "./Sai/Components/navbar.js";
+import footer from "./Sai/Components/Footer.js";
+
 let belowCategoryCards = [
   "https://cdn.shopify.com/s/files/1/0054/6665/2718/files/874-874-01.png?v=1645425693",
   "https://cdn.shopify.com/s/files/1/0054/6665/2718/files/cat-hair-care-desktop-22-09.jpg?v=1632336344",
@@ -18,37 +21,7 @@ const displaycards = (arr) => {
 
 displaycards(belowCategoryCards);
 
-// let carouselImages = document.querySelectorAll(".slides>img");
-// let carouselSlides = document.querySelector("#sampleWork>.slides");
 
-// let counter = 1;
-// let prevBtn = document.querySelector("#sampleWork>.prev")
-// let nextBtn = document.querySelector("#sampleWork>.next")
-// let size = carouselImages[0].clientWidth;
-// carouselSlides.style.transform = 'translateX(' + (-size * counter) + 'px)';
-
-// nextBtn.addEventListener("click", () => {
-//     carouselSlides.style.transition = "transform 0.5s ease-in-out";
-//     counter++;
-//     carouselSlides.style.transform = 'translateX('+(-size*counter) +'px)';
-// })
-// prevBtn.addEventListener("click", () => {
-//     carouselSlides.style.transition = "transform 0.5s ease-in-out";
-//     counter--;
-//     carouselSlides.style.transform = 'translateX('+(-size*counter) +'px)';
-// })
-
-// carouselSlides.addEventListener("transitionend", () => {
-//   console.log(carouselImages[counter]);
-//     if (carouselImages[counter].id === "lastClone") {
-//         carouselSlides.style.transform = "none";
-//         counter = carouselImages.length - 5;
-//       carouselSlides.style.transform = 'translateX(' + (-size * counter) + 'px)';
-//       console.log("dvdd")
-//     }
-// })
-
-// Arr of testimonials
 let reviewsArr = [];
 
 class Review {
@@ -137,9 +110,16 @@ console.log("dvdv")
 
 
 // -----------------------------------------------------------------
-// BECOME PART OF OUR EXCLUSIVE BELLA CASH!
+// Navbar
+
+let navbarDiv = document.querySelector("#navbar");
+navbarDiv.innerHTML = navbar();
+
+let footerDiv = document.querySelector("#footer");
+
+footerDiv.innerHTML = footer();
 
 
 
 
-
+  

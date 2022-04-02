@@ -69,3 +69,8 @@
     color: rgb(110, 109, 109);
     margin-top: -20px;
 }
+
+#probutton > a{
+    text-decoration: none;
+    color: white
+}

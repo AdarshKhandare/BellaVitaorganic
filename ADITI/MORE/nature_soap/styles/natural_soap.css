@@ -1,0 +1,252 @@
+body{
+    margin: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600;1,700;1,800&display=swap');
+*{
+    margin: 0%;
+    padding: 0%;
+  
+}
+.navigator{
+    margin-top: 40px;
+    margin-left: 60px;
+    font-weight: 600;
+    font-size: small;
+    font-size:16px;
+    text-transform: capitalize;
+  color: rgb(88, 88, 88);
+}
+.navigator a{
+    text-decoration: none;
+    color: inherit;
+    font-weight: 500;
+}
+#filter{
+    display: flex;
+    justify-content: right;
+    height: fit-content;
+    padding-right: 30px;
+ /* border: 1px solid red; */
+    margin-right: 30px;
+}
+ #filter>select{
+    height: 35px;
+    border-radius: 0%;
+    outline: none;
+} 
+#filter > p{
+    margin-top: 8px;
+    margin-right: 10px;
+    color:#232323;
+    font-family: "Century Gothic Thin";
+}
+
+/* left filter start here */
+
+#container{
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+
+#data{
+    
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 20px;
+    justify-content: space-between;
+   
+}
+#divFlex{
+    margin-top:20px;
+    width: 280px;
+    height: 450px;
+    text-align: center;
+    border-radius: 15px;
+    position:relative;
+    margin-right: 0px;
+    box-shadow: rgba(0, 0, 0, 0.35) 4px 5px 15px;
+}
+
+
+#divI > img{
+    width: 100%;
+    height: 300px;
+    margin-bottom: 0px;
+}
+
+#divI > img:hover{
+    opacity: 0.4;
+
+}
+#divI > button{
+    width:180px;
+    height:40px;
+    color:white;
+    background-color:black;
+    font-size:16px;
+    border-radius:0px;
+    position: absolute;
+    z-index: 2;
+    border:none;
+    display:none;
+    margin: auto;	
+    margin-left: 45px;
+    margin-top: -120px;
+}
+#divI > button:hover{
+    background-color:#52b359;
+    
+}
+#divI:hover .mybuttonoverlap{
+        display: block;
+}
+
+#quick{
+    width:100%;
+    margin-top:-10px;
+    background-color:#43403d;;
+    color:white;
+    position: absolute;
+    z-index: 2;
+    border:none;
+    display:none;
+    height: 20px;
+}
+#divI:hover .mybquickoverlap {
+    display: block;
+}
+
+
+#name{
+  margin-top: 15px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  line-height: 19px;
+  font-family: 'Museo Sans', sans-serif;;
+  /* font-weight:bold; */
+  color: #232323;
+  text-align: center;
+  padding: 1px;
+  font-size: 17px;
+text-align: center; 
+    
+}
+#rating{
+    margin-top: -10px;
+}
+
+#save{
+    font-size:13px;
+    color: rgb(9, 168, 9);
+}
+#divp{
+    display:flex;
+    justify-content: space-between;
+    margin-right: 8px;
+    font-size: 23px;
+    letter-spacing: 1px;
+    font-family: "Times New Roman", Times, serif;
+    margin-top: -15px
+
+}
+#divp > h5:last-child{
+    color: #e95144;
+     font-size:20px;
+    margin-right:60px
+}
+#strickprice{
+    color: #969696;
+  text-decoration: line-through;
+  margin-left:70px;
+  font-size:20px;
+ 
+}
+/* boxes end here */
+
+/* total  start here*/
+#total{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width:100%;
+    height:60px;
+    padding: 5px;
+    margin: 0;
+    color:#43403d;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background-color:white
+
+
+}
+
+
+/* Bella Cash Button */
+
+#bellaCash>button{
+    background-color: #FFC400;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    cursor: pointer;
+    height: 60px;
+    padding: 15px 20px;
+     /* position: absolute; */
+     display:flex;
+     align-items: center;
+     font-size:14px;
+     font-weight:100;
+     position:fixed;
+     margin: 10px;
+     bottom:30px;
+     letter-spacing:1px
+}
+
+#bellaCash>button>img{
+    margin-right: 10px;
+}
+
+/* WhatsApp button */
+
+
+#whatsAppButton>button{
+    width:60px;
+    height:60px;
+    position: fixed;
+    bottom:0px;
+    right:0;
+    margin:30px;
+    outline: none;
+    border-radius:50%;
+    border:5px solid #fff;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+
+
+/* glow page start here */
+
+#glow{
+    height: 580px;
+    width: 100%;
+    text-align: center;
+    background-image:url("https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS4etLjn7hCBy0lIbkjxKWRWW-7qkQpQh7To7-hlAOl8oq9Kmbm");
+    padding:20px
+}
+#glow > img{
+    width:95%;
+    
+}
+#glow > p{
+    font-size:25px;
+    text-align: left;
+    margin-left: 40px;
+    margin-bottom: 20px;
+    color:#232323;
+    
+}
+
+

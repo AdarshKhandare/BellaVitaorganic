@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>offer</title>
+    <link rel="stylesheet" href="styles/offer.css">
+</head>
+<body>
+<div>navbar</div>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+ <a href="#">
+  <img src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/Flexi-Box-Web-Banner-A-com_9f029a49-afb3-444a-9f3b-8819770f969c.jpg?v=1635050503" style="width:100%">
+</a>
+</div>
+
+<div class="mySlides fade">
+  <a href="#">
+  <img src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/4-For-3-latest-Web-Banner-B_14b61ee5-d34b-44c5-88a8-c2f393cd73b4.png?v=1630932287" style="width:100%">
+</a>
+</div>
+
+<div class="mySlides fade">
+ <a href="#">
+  <img src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/Latest-Build-A-box-Banner-A.jpg?v=1629210477" style="width:100%">
+</a>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center;">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<div class="offer">
+    <button class="btn"onclick="window.location.href='index.html'">All Offers</button>
+    <button class="btn"onclick="window.location.href='btn.html'">Limited Period Offers</button>
+</div>
+
+<div class="product">
+ <div>
+     <a href="#">
+  <img id="buy"src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/soap-offer.png?v=1630650412" ></a>
+  <p>Lather up with our natural handmade wash bar! Choose any 3 soaps of your choice at just Rs 349.</p>  
+
+ </div>
+ <div>
+     <a href="#">
+     <img id="buy" src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/Desktop-Raksha-Bandhan-Offer-8-_Gift-Cards.jpg?v=1628844663"> </a>
+    <p>Now choose any 4 products of your choice with our Flexi Box at just Rs. 999/- No sections, no steps, no</p>
+
+    </div>
+ <div>
+      <a href="#">
+      <img id="buy" src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/offer-1.png?v=1628314418"></a>
+      <p>Buy any 4 products of your choice and get the lowest valued product for free!</p>
+    
+ </div>
+ <div>
+     <a href="#">
+     <img id="buy" src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/offer-2.png?v=1628314418"></a>
+     <p>Add any 5 products and build a complete care box to pamper yourself from head-to-toe</p>
+    
+ </div>
+ <div>
+     <a href="#">
+     <img id="buy" src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/offer-3.png?v=1628314418"></a>
+     <p>Buy any 3 luxury perfumes of your choice and build your own land of fragrances. Why have 1 when you</p>
+    
+ </div>
+ <div>
+      <a href="#">
+      <img id="buy" src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/offer-4.png?v=1628314418"></a>
+      <p>Buy any 5 face care products according to your skin type & build a face care routine exclusively for..</p>
+    
+ </div>
+ <div>
+ <a href="#">
+ <img id="buy" src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/offer-5.png?v=1628314418"></a>
+ <p>Buy any 3 pure essential oils to enhance your beauty, aura, and home.</p>
+
+ </div>
+ <div>
+ <a href="#">
+ <img id="buy" src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/offer-8.png?v=1628314418"></a>
+ <p>Buy any 7 products to combat the humid rainy season with your customized box made specially fo..</p>
+
+ </div>
+</div>
+
+ <!-- Bella Cash left yellow button -->
+ <section id="bellaCash">
+  <button><img src="https://cdn.sweettooth.io/v1/images/launcher_icons/crown.svg?color=%23000000"
+          alt="">BellaCash</button>
+</section>
+
+<!-- Whats app button -->
+<section id="whatsAppButton">
+  <button><img
+          src="https://cdn.shopify.com/s/files/1/0054/6665/2718/t/277/assets/whatsapp.svg?v=10753259276865380946"
+          alt=""></button>
+</section>
+
+<div>Footer</div>
+
+</body>
+</html> 
+<script>
+    let slideIndex = 0;
+    showSlides();
+    
+    function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+
+    // function opentab1()
+    //     product,innHTML=null;
+    //     var offer=  document.getElementById("btn").value;
+
+    // }
+    </script>

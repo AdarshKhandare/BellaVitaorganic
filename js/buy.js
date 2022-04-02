@@ -19,7 +19,12 @@ var cardArr=JSON.parse(localStorage.getItem("cardArr"))||[];
         btu1.addEventListener("click", function(){
             dicre(index)
         } )
-       
+       btu3=document.createElement("button");
+       btu3.id="btu3"
+       btu3.innerText=`X Remove`
+       btu3.addEventListener("click", function(){
+         remove(index)
+    } )
       btu1.innerHTML="-"
       var quant=document.createElement("p");
       quant.innerText= elem.quant;
@@ -32,25 +37,39 @@ var cardArr=JSON.parse(localStorage.getItem("cardArr"))||[];
        btu2.setAttribute("id", "btu2");
        let div2=document.createElement("div")
        div2.id="div2" 
-       div2.append(btu1,quant,btu2)
+       div2.append(btu1,quant,btu2 ,btu3)
        div1.append(title,price,quantity,div2)
        div.append(img,div1)
        document.getElementById("addproduct").append(div)
 
   });
 }
+ function remove(index){
+   product=cardArr.filter(function(el,i) {
+     return i!==index
+   })
+  
+  
+   localStorage.setItem("cardArr",JSON.stringify(product))
+   window.location.href="buy.html"
+   display(product)
+   display(cardArr)
+  
+ }
 function  increse(index){
  if( cardArr[index].quant !=0){
    cardArr[index].quant++
 
 localStorage.setItem("cardArr", JSON.stringify(cardArr));
 document.getElementById("total").innerText=total
+document.getElementById("anand").innerText=Math.floor(total*0.25)
 addto()
 }
 else if(cardArr[index].quant==0){
  cardArr[index].quant++
  localStorage.setItem("cardArr", JSON.stringify(cardArr));
    document.getElementById("total").innerText=total
+   document.getElementById("anand").innerText=Math.floor(total*0.25)
   addto()
  
 }
@@ -63,6 +82,7 @@ display(cardArr)
 
   },0);
   document.getElementById("total").innerText=total
+  document.getElementById("anand").innerText=Math.floor(total*0.25)
 display(cardArr)
  }
     function dicre(index){
@@ -70,6 +90,7 @@ display(cardArr)
        cardArr[index].quant--
        localStorage.setItem("cardArr", JSON.stringify(cardArr));
        document.getElementById("total").innerText=total
+       document.getElementById("anand").innerText=Math.floor(total*0.25)
        subto()
      }
      else if(cardArr[index].quant==0){
@@ -77,6 +98,7 @@ display(cardArr)
        localStorage.setItem("cardArr", JSON.stringify(cardArr));
      
      document.getElementById("total").innerText=total
+     document.getElementById("anand").innerText=Math.floor(total*0.25)
      subto()
       }
        }
@@ -89,6 +111,7 @@ function subto(){
   
      },0);
      document.getElementById("total").innerText=total
+     document.getElementById("anand").innerText=Math.floor(total*0.25)
     //  addE()
   display(cardArr)
     }

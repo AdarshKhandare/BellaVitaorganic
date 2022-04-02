@@ -326,6 +326,7 @@
                 <h3 id="total">234</h3></div>
               
             </div>
+            <p style="font-size: 15px; color: rgb(56, 55, 55);">or 4 interest-free payments of  <samp style="color: black; font-weight: bold;">Rs.<samp id="anand">0</samp> with <samp><img  style="height: 20px; padding-top: 2px;" src="https://cdn.sezzle.in/branding/2.0/Sezzle_Logo_FullColor.svg"></samp> ⓘ</p>
              <button id="btn1">CHECK OUT</button>
              <button id="btn2">VIEW CART</button>
         </div>
@@ -457,6 +458,8 @@
   
      },0);
      document.getElementById("total").innerText=total
+     let a=total*0.25
+     document.getElementById("anand").innerHTML= Math.floor(a)
     //  addE()
   display(cardArr)
     }

@@ -141,4 +141,22 @@
 
 <p>Fill in your card details here and click on Pay Now. You get a pop-up message that your order has been Placed. As I said earlier Address, the payment page was done also by <b>Adarsh M.Khandare</p>
 
+## How do we Move Forward?
+<br>
+<p>So, we started on Monday and the deadline is of Sunday evening. we decided to make our deadline for the project. so we decided to complete it by Friday evening. so we decided to take one page each. and we managed the project by Friday Evening. on Saturday we all push our code to git and merged all the pages.</p>
 
+## How did we complete the project?
+<br>
+<p>So, we started on Monday evening and the deadline was off Sunday evening. So we divided the work among ourselves, someone was working on the navbar, one on the signup page, one on the footer, and others on their respective pages. One day before the deadline, we merged all the code and were successful in cloning the website.</p>
+<p>We learned many new things about building websites, solved problems that came while we were working on the website, and merged our work on Github because it was a new platform for all of us, but once we started working, gradually we got a good hang of Github.</p>
+<p>So, in all this has been a great experience for me and the team members.</p>
+
+## Team Members
+<ul>
+<li>Bhupesh kumawat</li>
+<li>Sai Kiran Arishanapalli</li>
+<li>Anand Raj Singh</li>
+<li>Adarsh M.Khandare</li>
+<li>Aditi Hinge</li>
+<li>Sagar Kothadiya</li>
+</ul>

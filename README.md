@@ -12,6 +12,6 @@
 </ul>
 <br>
 
-<img src="Main-images\Image 2.jpg">
+<img src="Main-images\Image1.jpg">
 <br>
 

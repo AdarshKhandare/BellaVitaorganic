@@ -14,7 +14,7 @@
 
 <img src="Main-images\image1.png">
 <br>
-<h1>Landing Page</h1>
-<br>
 <img src="Main-images\image2.png">
 <br>
+
+<p>The above picture is of the landing page that is created by Bhupesh kumawat which is almost similar to the landing page of Bella Vita Organic. He used HTML, CSS, and bootstrap for styling the Home page.</p>

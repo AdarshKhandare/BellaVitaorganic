@@ -14,4 +14,7 @@
 
 <img src="Main-images\image1.png">
 <br>
-
+<h1>Landing Page</h1>
+<br>
+<img src="Main-images\image2.png">
+<br>

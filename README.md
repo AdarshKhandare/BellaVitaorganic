@@ -34,4 +34,4 @@
 <br>
 <p>Here, the user should enter the valid <b>Email-Address</b> and <b>Password</b> which was given at the time of signup. And click on Login. It shows an alert message login was successful.</p>
 <br>
-<p>He also bulit the <b>footer of the website</b>
+<p>He also bulit the <b>footer</b> of the website</P>

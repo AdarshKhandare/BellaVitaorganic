@@ -49,6 +49,9 @@
 <p>And he made search Bar functionality in the Navbar. Here we can search for any item from all the products on the website.</p>
 
 ## Build A Box & Combo Pages
+<b>Biuld a Box Page</b>
+<br>
+<br>
 <img src="https://miro.medium.com/max/875/0*e3Q1m0I7x6X-FQ4U.png">
 <br>
 <br>

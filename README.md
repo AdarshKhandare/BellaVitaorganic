@@ -13,24 +13,24 @@
 <br>
 
 ## Landing Page
-<img src="Main-images\image1.png">
+<img src="https://miro.medium.com/max/875/0*qUhG-ilpDuHN0tF3.png">
 <br>
-<img src="Main-images\image2.png">
+<img src="https://miro.medium.com/max/875/0*oO2QIc8msuU6MHZi.png">
 <br>
 
 <p>The above picture is of the landing page that is created by <b>Bhupesh kumawat</b> which is almost similar to the <b>landing page</b> of Bella Vita Organic. He used HTML, CSS. He have also used Bootstrap, which is a free open-source frontend development framework for carousels.</p>
 <br>
 
 ## Navbar & Signup Page
-<img src="Main-images\image3.png">
+<img src="https://miro.medium.com/max/875/0*NfdcxCdwNGN7CB34.png">
 <br>
-<img src="Main-images\image4.png">
+<img src="https://miro.medium.com/max/875/0*QqYPvYyR1pDmzR7C.png">
 <br>
 <p>The above picture is of the <b>Signup page</b> that is created by <b>Sai Kiran Arishanapalli</b> which is almost similar to the Signup page of Bella Vita Organic. He is involved in all the HTML, CSS, javascript, JSON, and DOM-related parts of the page and validation of the data given by the user, and storing the data in the local storage. After filling in all the inputs Click on getting Started Now this page will redirect to the <b>Login page</b> as shown below picture.</p>
 
 <br>
 
-<img src="Main-images\image5.png">
+<img src="https://miro.medium.com/max/875/0*6VZMvQhoM3UbKS2D.png">
 <br>
 <p>Here, the user should enter the valid <b>Email-Address</b> and <b>Password</b> which was given at the time of signup. And click on Login. It shows an alert message login was successful.</p>
 <br>
@@ -38,15 +38,15 @@
 
 ## All products & Bestsellers page
 
-<img src="Main-images\image6.png">
+<img src="https://miro.medium.com/max/875/0*xT0US8DpBIM0t53u.png">
 <br>
 <br>
 <br>
-<img src="Main-images\image7.png">
+<img src="https://miro.medium.com/max/875/0*VDXYFr04kj_nxZX2.png">
 <br>
 <p>Product Page and Best Seller Page were created by <b>Anand Raj Singh</b> and he added functionality like sorting we can sort the product’s price from low to high and high to low. We can also Sort the name of the product by alphabetical order. And he also made categories as a sidebar on all the web pages.</p>
 <br>
 <p>And he made search Bar functionality in the Navbar. Here we can search for any item from all the products on the website.</p>
 
 ## Build A Box & Combo Pages
-<img src="https://miro.medium.com/max/875/0*Niq9ShFvx1ogG8S8.png">
+<img src="https://miro.medium.com/max/875/0*e3Q1m0I7x6X-FQ4U.png">

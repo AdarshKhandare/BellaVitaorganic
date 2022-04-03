@@ -47,3 +47,6 @@
 <p>Product Page and Best Seller Page were created by <b>Anand Raj Singh</b> and he added functionality like sorting we can sort the product’s price from low to high and high to low. We can also Sort the name of the product by alphabetical order. And he also made categories as a sidebar on all the web pages.</p>
 <br>
 <p>And he made search Bar functionality in the Navbar. Here we can search for any item from all the products on the website.</p>
+
+## Build A Box & Combo Pages
+<img src="https://miro.medium.com/max/875/0*Niq9ShFvx1ogG8S8.png">

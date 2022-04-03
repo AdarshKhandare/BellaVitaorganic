@@ -28,3 +28,10 @@
 <br>
 <p>The above picture is of the <b>Signup page</b> that is created by <b>Sai Kiran Arishanapalli</b> which is almost similar to the Signup page of Bella Vita Organic. He is involved in all the HTML, CSS, javascript, JSON, and DOM-related parts of the page and validation of the data given by the user, and storing the data in the local storage. After filling in all the inputs Click on getting Started Now this page will redirect to the <b>Login page</b> as shown below picture.</p>
 
+<br>
+<b>Login Page</b>
+<img src="Main-images\image5.png">
+<br>
+<p>Here, the user should enter the valid <b>Email-Address</b> and <b>Password</b> which was given at the time of signup. And click on Login. It shows an alert message login was successful.</p>
+<br>
+<p>He also bulit the <b>footer of the website</b>

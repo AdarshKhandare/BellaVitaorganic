@@ -299,7 +299,7 @@
                         <path class="path3" d="M898.021 228.688C885.162 213.507 865.763 204.8 844.8 204.8H217.954l-5.085-30.506C206.149 133.979 168.871 102.4 128 102.4H76.8c-14.138 0-25.6 11.462-25.6 25.6s11.462 25.6 25.6 25.6H128c15.722 0 31.781 13.603 34.366 29.112l85.566 513.395C254.65 736.421 291.929 768 332.799 768h512c14.139 0 25.6-11.461 25.6-25.6s-11.461-25.6-25.6-25.6h-512c-15.722 0-31.781-13.603-34.366-29.11l-12.63-75.784 510.206-44.366c39.69-3.451 75.907-36.938 82.458-76.234l34.366-206.194c3.448-20.677-1.952-41.243-14.813-56.424zm-35.69 48.006l-34.366 206.194c-2.699 16.186-20.043 32.221-36.39 33.645l-514.214 44.714-50.874-305.246h618.314c5.968 0 10.995 2.054 14.155 5.782 3.157 3.73 4.357 9.024 3.376 14.912z"></path>
                     </svg>
                     <div class="cartCount" data-cart-count="">
-                    <span>0</span>
+                    <span id="countcard">0</span>
                     </div>
                 </a>                    
             </div>
@@ -331,17 +331,24 @@
 
     
     <!-- cart pop-upwindow -->
-
     <div class="cartpop">
         <div class="bag">
-            <div class="close" onClick="closeCart()"> +</div>
+            <div class="close" onclick="closeCart()"> +</div>
             <h4>SHOPPING CART :</h4>
-            <hr>
+            
              <!-- sagar you can add  cart items here -->
-            <div>
-                <p>Your cart is currently empty.</p>
+            <div id="appedcard11">
+               
             </div>
-
+            <hr>
+             <div id="cardtotal" style="display: flex; justify-content: space-between; width: 80%; margin: auto; ">
+              <h4>Total</h4>
+              <div style="display: flex;">
+                <h3>Rs.</h3>
+                <h3 id="total">234</h3></div>
+              
+            </div>
+            <p style="font-size: 15px; color: rgb(56, 55, 55);">or 4 interest-free payments of  <samp style="color: black; font-weight: bold;">Rs.<samp id="anand">0</samp> with <samp><img  style="height: 20px; padding-top: 2px;" src="https://cdn.sezzle.in/branding/2.0/Sezzle_Logo_FullColor.svg"></samp> ⓘ</p>
              <button id="btn1">CHECK OUT</button>
              <button id="btn2">VIEW CART</button>
         </div>
@@ -393,6 +400,72 @@
 <script type="text/javascript" src="./sidebar/sidebar.js"></script>
 <script src="./data.js"></script>
 <script type="module" src="./appendFunction/searchfun.js"></script>
+<script>
+    function openWindow(){
+       document.querySelector(".pop-up").style.display="flex"
+   }
+   function closeWindow(){
+       document.querySelector(".pop-up").style.display="none"
+   }
+  function sign(){
+      window.location.href="./signup.html"
+  }
+  function openCart(){
+       document.querySelector(".cartpop").style.display="flex"
+   }
+   function closeCart(){
+       document.querySelector(".cartpop").style.display="none"
+   }
+   var cardArr=JSON.parse(localStorage.getItem("cardArr"))||[];
+      document.getElementById("countcard").innerHTML=cardArr.length
+      display(cardArr)
+      function display(cardArr){
+       document.querySelector("#appedcard11").innerHTML=""
+       cardArr.map(function(elem,index){
+            let div=document.createElement("div")
+            div.style.display="flex"
+            let img=document.createElement("img")
+            img.src=elem.image
+            img.style.width="70PX"
+            img.style.height="70px"
+            let div1=document.createElement("div")
+            let name=document.createElement("p")
+            name.style.fontSize="10px"
+            name.style.textAlign="left"
+            name.innerText=elem.name
+            let price=document.createElement("h6")
+            price.style.marginTop="0px"
+            price.innerHTML=`${elem.quant}X Rs.${elem.price}`
+            price.style.textAlign="right"
+           let hr=document.createElement("hr")
+            div1.append(name,price)
+            div.append(img,div1)
+            document.querySelector("#appedcard11").append(div,hr)
+            
+
+       })
+      }
+      function subto(){
+   var total=cardArr.reduce(function(acc,e ,index){
+  return acc+(e.price*e.quant)
+//    display(cardArr)
+ 
+    },0);
+    document.getElementById("total").innerText=total
+    let a=total*0.25
+    document.getElementById("anand").innerHTML= Math.floor(a)
+   //  addE()
+ display(cardArr)
+   }
+
+   subto()
+  
+
+
+   document.getElementById("countcard").innerHTML=cardArr.length
+
+
+</script>
 
 <script type="module">
         import footer from "../Sai/Components/Footer.js";
@@ -400,19 +473,19 @@
 let footerDiv = document.querySelector("#footer");
 
 footerDiv.innerHTML = footer();
-     function openWindow(){
-        document.querySelector(".pop-up").style.display="flex"
-    }
-    function closeWindow(){
-        document.querySelector(".pop-up").style.display="none"
-    }
-   function sign(){
-       window.location.href="./signup.html"
-   }
-   function openCart(){
-        document.querySelector(".cartpop").style.display="flex"
-    }
-    function closeCart(){
-        document.querySelector(".cartpop").style.display="none"
-    }
+//      function openWindow(){
+//         document.querySelector(".pop-up").style.display="flex"
+//     }
+//     function closeWindow(){
+//         document.querySelector(".pop-up").style.display="none"
+//     }
+//    function sign(){
+//        window.location.href="./signup.html"
+//    }
+//    function openCart(){
+//         document.querySelector(".cartpop").style.display="flex"
+//     }
+//     function closeCart(){
+//         document.querySelector(".cartpop").style.display="none"
+//     }
 </script>

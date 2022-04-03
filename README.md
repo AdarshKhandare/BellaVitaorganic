@@ -20,4 +20,10 @@
 
 <p>The above picture is of the landing page that is created by <b>Bhupesh kumawat</b> which is almost similar to the landing page of Bella Vita Organic. He used HTML, CSS, and bootstrap for styling the Home page.</p>
 <br>
+
+## Navbar Page && Signup Page
 <img src="Main-images\image3.png">
+<br>
+<img src="Main-images\image4.png">
+<br>
+

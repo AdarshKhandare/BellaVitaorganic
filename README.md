@@ -37,10 +37,14 @@
 <p>He also bulit the <b>footer</b> of the website</P>
 
 ## All products & Bestsellers page
-
+<b>All products page</b>
+<br>
+<br>
 <img src="https://miro.medium.com/max/875/0*xT0US8DpBIM0t53u.png">
 <br>
 <br>
+<br>
+<b>Bestseller Page</b><br>
 <br>
 <img src="https://miro.medium.com/max/875/0*VDXYFr04kj_nxZX2.png">
 <br>

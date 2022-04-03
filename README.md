@@ -50,3 +50,7 @@
 
 ## Build A Box & Combo Pages
 <img src="https://miro.medium.com/max/875/0*e3Q1m0I7x6X-FQ4U.png">
+<br>
+<br>
+<b>Combo Page</b>
+<img src="https://miro.medium.com/max/875/0*Niq9ShFvx1ogG8S8.png">

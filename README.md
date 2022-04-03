@@ -18,7 +18,7 @@
 <img src="Main-images\image2.png">
 <br>
 
-<p>The above picture is of the landing page that is created by <b>Bhupesh kumawat</b> which is almost similar to the landing page of Bella Vita Organic. He used HTML, CSS, and bootstrap for styling the Home page.</p>
+<p>The above picture is of the landing page that is created by <b>Bhupesh kumawat</b> which is almost similar to the <b>landing page</b> of Bella Vita Organic. He used HTML, CSS, and bootstrap for styling the Home page. He have also used Bootstrap, which is a free open-source frontend development framework for carousels.</p>
 <br>
 
 ## Navbar Page && Signup Page
@@ -26,4 +26,4 @@
 <br>
 <img src="Main-images\image4.png">
 <br>
-
+<p>The above picture is of the <b>Signup page</b> that is created by <b>Sai Kiran Arishanapalli</b> which is almost similar to the Signup page of Bella Vita Organic. I am involved in all the HTML, CSS, javascript, JSON, and DOM-related parts of the page and validation of the data given by the user, and storing the data in the local storage. After filling in all the inputs Click on getting Started Now this page will redirect to the Login-in Page as shown below picture.</p>

@@ -30,6 +30,7 @@
 
 <br>
 <b>Login Page</b>
+<br>
 <img src="Main-images\image5.png">
 <br>
 <p>Here, the user should enter the valid <b>Email-Address</b> and <b>Password</b> which was given at the time of signup. And click on Login. It shows an alert message login was successful.</p>
@@ -39,9 +40,11 @@
 ## All products & Bestsellers page
 <br>
 <b>All Products Page</b>
+<br>
 <img src="Main-images\image6.png">
 <br>
 <br>
 <b>Bestsellers page</b>
+<br>
 <img src="Main-images\image7.png">
 <br>

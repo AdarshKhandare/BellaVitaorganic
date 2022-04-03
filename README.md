@@ -92,6 +92,7 @@
 <br>
 <br>
 <img src="https://miro.medium.com/max/1400/0*ECbfgBgtBDVvoUcQ.png">
+<br>
 <p>Offers, Terms & Conditions, Selfie Switch Page, and Salon Page are created by <b>Aditi Hinge</b>.</p>
 <p>On Offers Page we see all offers of products. If we want to know the terms & conditions of the offers we have to visit the Collaboration Page</p>
 <p>If you want to try our product in the same category which you are using currently. Take a selfie with the product you currently using and upload it in the form which is present on the selfie page we will try to get our product to you.</p>
@@ -109,7 +110,35 @@
 <img src="https://miro.medium.com/max/1400/0*KPk55tfHjj4daZe_.png">
 <br>
 <br>
-<b>essential oil Page</b>
+<b>Essential oil Page</b>
 <br>
 <br>
 <img src="https://miro.medium.com/max/1400/0*Gu9Eylv2zX9iitPH.png">
+<br>
+<p>Skincare, Haircare, and Essential Oil are created by <b>Sagar Kothadiya</b>.On these web pages by hovering your cursor on the product you can see the <b>BUY NOW</b> button by clicking on the button the product will add to the cart. By clicking on the Cart icon on the Navbar you can see the added cart items. The below picture shows what it looks like.</p>
+
+<br>
+<br>
+<b>Cart page</b>
+<img src="https://miro.medium.com/max/1400/0*UoKTqUDIbLJGbrB5.png">
+<br>
+<p>This Added Cart functionality was also done by <b>Sagar Kothadiya</b>. We can also see the check out button below the cart items click on that it will redirect to the Address Page</p>
+
+## Address,Payment Pages
+<br>
+<b>Address Pages</b>:
+<br>
+<br>
+<img src="https://miro.medium.com/max/1400/0*SD5qTGSfaTMc9Tzb.png">
+<br>
+<br>
+<b>Payment page</b>:
+<br>
+<br>
+<img src="https://miro.medium.com/max/1400/0*yr58Ok5Qwzc9LCNx.png">
+<br>
+<p>Fill in your address details here where the product has to be delivered. After filling click on the Payment button it will redirect to the payment page as shown in the figure.</p>
+
+<p>Fill in your card details here and click on Pay Now. You get a pop-up message that your order has been Placed. As I said earlier Address, the payment page was done also by <b>Adarsh M.Khandare</p>
+
+

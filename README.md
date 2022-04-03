@@ -21,7 +21,7 @@
 <p>The above picture is of the landing page that is created by <b>Bhupesh kumawat</b> which is almost similar to the <b>landing page</b> of Bella Vita Organic. He used HTML, CSS. He have also used Bootstrap, which is a free open-source frontend development framework for carousels.</p>
 <br>
 
-## Navbar Page && Signup Page
+## Navbar & Signup Page
 <img src="Main-images\image3.png">
 <br>
 <img src="Main-images\image4.png">
@@ -35,3 +35,11 @@
 <p>Here, the user should enter the valid <b>Email-Address</b> and <b>Password</b> which was given at the time of signup. And click on Login. It shows an alert message login was successful.</p>
 <br>
 <p>He also bulit the <b>footer</b> of the website</P>
+
+## All products & Bestsellers page
+<b>All Products Page</b>
+<img src="Main-images\image6.png">
+<br>
+<b>Bestsellers page</b>
+<img src="Main-images\image7.png">
+<br>

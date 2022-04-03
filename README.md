@@ -95,3 +95,21 @@
 <p>Offers, Terms & Conditions, Selfie Switch Page, and Salon Page are created by <b>Aditi Hinge</b>.</p>
 <p>On Offers Page we see all offers of products. If we want to know the terms & conditions of the offers we have to visit the Collaboration Page</p>
 <p>If you want to try our product in the same category which you are using currently. Take a selfie with the product you currently using and upload it in the form which is present on the selfie page we will try to get our product to you.</p>
+
+## Skin care,Hair care,Essential oil & cart Pages
+<b>Skin Care Page</b>
+<br>
+<br>
+<img src="https://miro.medium.com/max/1400/0*KW89IJEpUkz4UIWj.png">
+<br>
+<br>
+<b>Hair Care Page</b>
+<br>
+<br>
+<img src="https://miro.medium.com/max/1400/0*KPk55tfHjj4daZe_.png">
+<br>
+<br>
+<b>essential oil Page</b>
+<br>
+<br>
+<img src="https://miro.medium.com/max/1400/0*Gu9Eylv2zX9iitPH.png">

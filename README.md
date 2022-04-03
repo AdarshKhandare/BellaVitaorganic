@@ -71,3 +71,24 @@
 <br>
 <br>
 <img src="https://miro.medium.com/max/875/0*Niq9ShFvx1ogG8S8.png">
+<br>
+<p>Build a box, combo, address, and Payment Pages are created by <b>Adarsh M.Khandare</b>.</p>
+<p>Build-A-Box page is a page where users can buy 3–4 products at a fixed price as boxes of(Flexi Box, The Tinty Box, Ultimate Perfume Box, Complete Care Box, Winter Care Box, Monsoon Care Box, The Face Care Box, The Essential Oil Box, The Summer Box).On the combo page, you can add to the box of all combo products by clicking on ADD TO BOX button.</p>
+
+## Offers,Collaboration & Selfie Switch Page
+<b>Offers Page</b>
+<br>
+<br>
+<img src="https://miro.medium.com/max/1400/0*GU8v0QLVetLVP5XL.png">
+<br>
+<br>
+<b>Collaboration Page</b>
+<br>
+<br>
+<img src="https://miro.medium.com/max/1400/0*rfOZQzS1RDFEtsoW.png">
+<br>
+<br>
+<b>Selfie Switch Page</b>
+<br>
+<br>
+<img src="https://miro.medium.com/max/1400/0*ECbfgBgtBDVvoUcQ.png">

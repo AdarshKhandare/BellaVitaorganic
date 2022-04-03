@@ -153,8 +153,9 @@ font-weight: 700;
     height:100%;
     background-color: white;
     opacity: 1;
+    overflow-y: scroll;
     padding:100px 10px 0px 10px;
-    position: relative;
+    position: fixed;
 }
 .bag>hr{
     border:0.0001px solid rgb(221, 216, 216);

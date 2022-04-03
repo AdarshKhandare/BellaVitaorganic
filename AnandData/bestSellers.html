@@ -70,7 +70,9 @@ let data= JSON.parse(localStorage.getItem("data"));
 console.log("search",data);
 let parent= document.getElementById("bestsell");
 
-
+let cartArr= JSON.parse(localStorage.getItem("cardArr"))||[];
+console.log(cartArr.length)
+document.getElementById("cartC").innerHTML=cartArr.length
 
 document.getElementById("icon-search").addEventListener("click",()=>{
    let searchbar= document.getElementById("searchbar");

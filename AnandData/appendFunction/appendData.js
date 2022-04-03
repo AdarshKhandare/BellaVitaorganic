@@ -49,7 +49,10 @@ function gotocart(data){
    data.quant=1;
    cartArr.push(data);
    console.log("newcart",cartArr);
+  
    localStorage.setItem("cardArr", JSON.stringify(cartArr));
+   console.log(cartArr)
+  
    window.location.href="../sagar/buy.html";
 }
 export {displayData};

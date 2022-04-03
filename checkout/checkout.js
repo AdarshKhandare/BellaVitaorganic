@@ -52,7 +52,7 @@ function showTotal(cart_items){
 
     let total = cart_items.reduce(function(acc,ele){
 
-        return acc + (+ele.price)
+        return acc + (+ele.price * (+ele.quant))
     },0)
 
     document.querySelector("#tdb_amount").innerText = "Rs."+" "+ total;
